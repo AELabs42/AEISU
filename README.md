@@ -3,7 +3,6 @@
 ### Tensor Core-Accelerated Inverse Supersampling for Real-Time Game Upscaling
 
 [![License: MIT](https://img.shields.io/badge/code%20%26%20weights-MIT-blue.svg)](LICENSE)
-[![CPU correctness](https://github.com/AELabs42/AEISU/actions/workflows/cpu-tests.yml/badge.svg)](https://github.com/AELabs42/AEISU/actions/workflows/cpu-tests.yml)
 
 AEISU is a compact, single-frame **2x neural upscaler**. A low-resolution controller predicts local filter coefficients;
 the reconstruction head applies those filters directly to the original RGB neighborhood. The design keeps neural

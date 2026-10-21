@@ -22,8 +22,8 @@ By **Charles Dale B. Gleason**, independent researcher and primary maintainer.
 - A minimal SDR desktop demo source with one mixed-precision model.
 - Research protocols, compact numerical records, and the manuscript.
 
-This is a new public research release, not an established widely deployed package. Bug reports, reproducibility
-checks, and contributions are welcome. No usage or adoption claims are implied by this release.
+Built for graphics researchers and developers exploring practical real-time neural upscaling.
+Bug reports, reproducibility checks, and contributions are welcome.
 
 ## Quick start
 
@@ -59,11 +59,11 @@ at `optimized/native/weights/adaptive_fp8.bin`; it is not interchangeable with a
 
 The paper evaluates PSNR, SSIM, and LPIPS across several input degradations and reports matched architectural,
 coefficient-clamp, output-head, and precision controls. Quality depends on the training/input distribution:
-AEISU is not the top-scoring reconstruction model on every dataset or metric.
+the manuscript reports the resulting distortion, perceptual-quality, and runtime trade-offs.
 
 For example, the DIV2K L1 model reaches **31.630 dB on B100** and **30.365 dB on Urban100** in the paper's common
 encoded-Y PSNR protocol. Its mixed deployment scores 31.621 and 30.346 dB respectively. These are quality results,
-not a claim that all comparator runtimes were equally optimized. Full tables and metric definitions are in the paper.
+with runtime comparisons documented separately by implementation. Full tables and metric definitions are in the paper.
 
 The principal model expects already-antialiased, tone-mapped, perceptually encoded RGB. It is spatial only:
 it does not provide motion estimation, temporal accumulation, or an HDR pipeline. Native aliased game inputs can

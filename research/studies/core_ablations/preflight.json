@@ -1,0 +1,59 @@
+{
+  "reference": {
+    "fused_vs_tiled_max_abs": 5.364418029785156e-07,
+    "finite_outputs": true,
+    "output_shape": [
+      64,
+      80,
+      3
+    ]
+  },
+  "fixed_inputs": {
+    "fused_vs_tiled_max_abs": 4.76837158203125e-07,
+    "finite_outputs": true,
+    "output_shape": [
+      64,
+      80,
+      3
+    ]
+  },
+  "fixed_base": {
+    "fused_vs_tiled_max_abs": 5.960464477539062e-07,
+    "finite_outputs": true,
+    "output_shape": [
+      64,
+      80,
+      3
+    ]
+  },
+  "dense_core": {
+    "fused_vs_tiled_max_abs": 5.960464477539062e-07,
+    "finite_outputs": true,
+    "output_shape": [
+      64,
+      80,
+      3
+    ]
+  },
+  "metrics": {
+    "passed": true,
+    "maximum_absolute_differences": {
+      "rgb_mse": 5.421010862427522e-20,
+      "rgb_psnr_db": 0.0,
+      "rgb_ssim": 1.1102230246251565e-16,
+      "y_mse": 5.421010862427522e-20,
+      "y_psnr_db": 0.0,
+      "y_ssim": 1.1102230246251565e-16,
+      "rgb_mse_shave2": 5.421010862427522e-20,
+      "rgb_psnr_shave2_db": 0.0,
+      "rgb_ssim_shave2": 0.0,
+      "y_mse_shave2": 8.131516293641283e-20,
+      "y_psnr_shave2_db": 0.0,
+      "y_ssim_shave2": 1.1102230246251565e-16,
+      "lpips_alex_v01": 3.7031713873147964e-07
+    },
+    "lpips_tolerance": 1e-06,
+    "distortion_tolerance": 2e-10,
+    "note": "LPIPS batch-dependent FP32 convolution rounding; metric definition unchanged"
+  }
+}

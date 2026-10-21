@@ -1,0 +1,17 @@
+[
+  {
+    "model": "adaptive",
+    "max_absolute_error": 9.655952453613281e-06,
+    "mean_absolute_error": 8.087322953542753e-07
+  },
+  {
+    "model": "rgb_residual",
+    "max_absolute_error": 3.5762786865234375e-07,
+    "mean_absolute_error": 4.127252140051496e-08
+  },
+  {
+    "model": "depth_to_space",
+    "max_absolute_error": 7.748603820800781e-07,
+    "mean_absolute_error": 1.4328948338970804e-07
+  }
+]

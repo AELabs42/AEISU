@@ -1,0 +1,31 @@
+{
+  "model": "swinir_light_x2",
+  "input_shape_wh": [
+    960,
+    540
+  ],
+  "results": {
+    "eager": {
+      "median_ms": 124.58684921264648,
+      "p95_ms": 124.87571296691894,
+      "synchronized_loop_ms_per_frame": 124.64203200070187,
+      "peak_allocated_gib": 1.5367083549499512,
+      "peak_reserved_gib": 3.06640625,
+      "median_range_ms": [
+        124.44033813476562,
+        124.6859359741211
+      ]
+    },
+    "cuda_graph": {
+      "median_ms": 123.52865600585938,
+      "p95_ms": 123.81095504760742,
+      "synchronized_loop_ms_per_frame": 123.56531799887307,
+      "peak_allocated_gib": 0.1860966682434082,
+      "peak_reserved_gib": 3.06640625,
+      "median_range_ms": [
+        123.37844848632812,
+        123.5842399597168
+      ]
+    }
+  }
+}

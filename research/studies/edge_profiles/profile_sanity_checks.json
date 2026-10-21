@@ -1,0 +1,36 @@
+{
+  "selection": "First eligible frame in manifest order per environment; median target contrast edge; no output scores used",
+  "condition": "ssaa_area",
+  "regions": [
+    {
+      "image": "AbandonedSchool/0000/0001.png",
+      "x": 475,
+      "y": 190,
+      "edge_index": 2
+    },
+    {
+      "image": "ScifiBaseNightStartStop/0000/0003.png",
+      "x": 918,
+      "y": 379,
+      "edge_index": 0
+    },
+    {
+      "image": "ScifiFacility/0000/0001.png",
+      "x": 1056,
+      "y": 416,
+      "edge_index": 41
+    },
+    {
+      "image": "SeaPort/0000/0000.png",
+      "x": 1587,
+      "y": 437,
+      "edge_index": 4
+    },
+    {
+      "image": "SunTempleBush/0000/0000.png",
+      "x": 1058,
+      "y": 378,
+      "edge_index": 16
+    }
+  ]
+}

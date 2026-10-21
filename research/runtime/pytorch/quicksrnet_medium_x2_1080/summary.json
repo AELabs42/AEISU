@@ -1,0 +1,31 @@
+{
+  "model": "quicksrnet_medium_x2",
+  "input_shape_wh": [
+    1920,
+    1080
+  ],
+  "results": {
+    "eager": {
+      "median_ms": 3.544943928718567,
+      "p95_ms": 3.5535791635513307,
+      "synchronized_loop_ms_per_frame": 3.5507139994297177,
+      "peak_allocated_gib": 0.39858198165893555,
+      "peak_reserved_gib": 0.84375,
+      "median_range_ms": [
+        3.5444480180740356,
+        3.546031951904297
+      ]
+    },
+    "cuda_graph": {
+      "median_ms": 3.50547194480896,
+      "p95_ms": 3.512515151500702,
+      "synchronized_loop_ms_per_frame": 3.512853999854997,
+      "peak_allocated_gib": 0.1050410270690918,
+      "peak_reserved_gib": 0.84375,
+      "median_range_ms": [
+        3.505311965942383,
+        3.506959915161133
+      ]
+    }
+  }
+}

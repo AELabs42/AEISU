@@ -1,0 +1,51 @@
+{
+  "model": {
+    "checkpoint": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/Pytorch Models/aif_reparam_aggressive64_parallel32x4_ep1000_folded_production.pt",
+    "checkpoint_sha256": "d0208712e0d5e4a226335f6eddd4d926dd32f67de32ff590e836d219e99edefe",
+    "artifact": "{source_workspace}/AESS/models/aif_reparam_aggressive64_parallel32x4/adaptive_fp8.bin",
+    "artifact_sha256": "8a6ebf7042016fa50e55df3f4ad41f1e318ee66ecc2931984461df9af15f49d6",
+    "native_executable": "{source_workspace}/AESS/bin/Release/SrcPyrRuntimeTest.exe",
+    "native_executable_sha256": "5539d1d3e4cac52acba4029ee6173ce6eee6c702f10c7a10dcfbf52ea431af84",
+    "final_marker": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/final.txt",
+    "native_artifact_calibration_policy": "mixed",
+    "note": "No retraining, deployment modification, or reuse of bicubic LR images."
+  },
+  "shader_artifact": "{research_workspace}/output/side_runtime/2026-10-04_precision_sweep/models/shader_profile_selected_mixed.pt",
+  "shader_artifact_sha256": "e432f0bddea74db0440e8584bd6b3fa4e1490cdc511f97d3c9ce1174565c4c17",
+  "input": "{research_workspace}/data/Benchmark Data/Urban100/HR/img001.png",
+  "input_sha256": "9dbf74e85c4da0e27d9c0d28f6c11445f3425238eec4ef3f3f2d2b8bc1feeeb4",
+  "resize": "OpenCV INTER_LINEAR",
+  "hardware_start": {
+    "time_unix": 1791328319.8784313,
+    "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 52, 0 %, 2580 MHz, 13801 MHz, 64.99 W, 600.00 W"
+  },
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "batch": 1,
+  "warmup": 100,
+  "iterations": 200,
+  "trials": 5,
+  "execution": "CUDA graph replay",
+  "scope": "Complete resident input to clipped RGB; analysis/controller/reconstruction included",
+  "layout": "Native RGBA32F and shader contiguous NCHW FP32; same RGB values and dimensions",
+  "aggregation": "Median of trial medians; median of within-trial p95 values",
+  "order": "Per resolution/trial: native fixed FP8/FP16/mixed precision order, then shader INT8/FP16, shader FP16",
+  "instruction_audit": {
+    "binary": "{home}/AppData/Local/torch_extensions/torch_extensions/Cache/py313_cu130/aif_parallel_simt_v8/aif_parallel_simt_v8.pyd",
+    "sha256": "9e45ad31def096b8ba03b07edfdfeb7c86ebb6c82151d5683b72cd31d14b0991",
+    "counts": {
+      "tensor_ops": 0,
+      "half2_fma": 7262,
+      "fp32_fma": 8996,
+      "int8_dot": 608
+    },
+    "sass_sha256": "61e2a3e0e2db44447b79036e5d104b90a84f705875da2e9ea311508a5115b3a7",
+    "source_sha256": "e42bd0f1e9b3f14401bf0f50caa47527607cbeb990fc06dc23a04aba02a6532e",
+    "sources": {
+      "fusion_kernels.cu": "ea7b1de32d246e6fff214353afd4208cb031c30eaadbc397725822126c25e6ea",
+      "int8_kernels.cuh": "85aab2dd102c8ec7ebf5b46bc06f57f2f736863199639c14cf9ee7c59bce7b01",
+      "shader_kernels.cu": "e42bd0f1e9b3f14401bf0f50caa47527607cbeb990fc06dc23a04aba02a6532e"
+    }
+  },
+  "source_sha256": "8c90778f3cde9b6f5d97ec2116c6d86120363c8283bdddb0a8c97cc3ed4525a3"
+}

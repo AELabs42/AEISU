@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering\small
+\caption{Deployed complexity and FP16 PyTorch timing (ms), 540p-to-1080p. MACs count attention, required padding and AEISU reconstruction over the full padded PyTorch canvas; analysis and non-MAC operations are excluded. E: eager; G: graph replay.}
+\label{tab:comparator-complexity}
+\begin{tabularx}{\columnwidth}{Yrrrr}
+\toprule
+Method & Param. (k) & GMACs & E & G\\
+\midrule
+AEISU & 116.00 & 7.67 & 1.721 & 1.588\\
+QuickSRNet S & 22.86 & 11.79 & 0.326 & 0.292\\
+QuickSRNet M & 50.60 & 26.13 & 0.611 & 0.554\\
+RepNet & 26.61 & 3.43 & 0.173 & 0.129\\
+RT4KSR & 44.52 & 6.05 & 1.108 & 0.509\\
+SPAN & 410.70 & 212.38 & 5.922 & 5.820\\
+SwinIR-Light & 910.15 & 546.06 & 124.587 & 123.529\\
+\bottomrule
+\end{tabularx}
+\end{table}

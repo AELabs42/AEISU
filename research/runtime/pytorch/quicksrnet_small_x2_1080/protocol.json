@@ -1,0 +1,81 @@
+{
+  "model": "quicksrnet_small_x2",
+  "metadata": {
+    "name": "quicksrnet_small_x2",
+    "precision": "FP16",
+    "scale": 2,
+    "checkpoint": {
+      "url": "https://github.com/quic/aimet-model-zoo/releases/download/phase_2_january_artifacts/quicksrnet_small_2x_checkpoint_float32.pth.tar",
+      "path": "{research_workspace}/data/benchmark_assets/quicksrnet/quicksrnet_small_2x_checkpoint_float32.pth.tar",
+      "bytes": 282333,
+      "sha256": "d95d70f1d2366cb9c28d99f8c7aa5bb07e1ffeaf5d7e30d9c66ab0fa28c6d0f8"
+    },
+    "official_source": {
+      "commit": "1bd2bf5b17cdda9251437c444009b29e1a25054b",
+      "files": [
+        {
+          "path": "aimet_zoo_torch/quicksrnet/model/models.py",
+          "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/models.py"
+        },
+        {
+          "path": "aimet_zoo_torch/quicksrnet/model/blocks.py",
+          "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/blocks.py"
+        },
+        {
+          "path": "aimet_zoo_torch/quicksrnet/model/imresize.py",
+          "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/imresize.py"
+        }
+      ]
+    },
+    "source_hashes": {
+      "blocks.py": "d74567b729de2f9c269f0a5115382aa6ebe51be7edce1099cf6b280a72ee54a4",
+      "imresize.py": "1ec3d9a2844ec9653fc5e36b090b94ddc7965de9cf4c820764950a33fef60902",
+      "models.py": "31d8425e915a082274eeeab82d18f6aeda9e6d68f7ea7f5689807c5d922ad5b6",
+      "__init__.py": "e774e6588e0c3853c44510633a7d0440bf4fb4b8671a84fc9eff8fdcac443464"
+    },
+    "implementation": "Unmodified official QuickSRNet, PyTorch channels-last eager; no retraining",
+    "preflight_fp16_vs_fp32_psnr_db": 68.16080913522013,
+    "parameters": 22860,
+    "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+  },
+  "preflight": null,
+  "input": "{research_workspace}/data/Benchmark Data/Urban100/HR/img001.png",
+  "input_sha256": "9dbf74e85c4da0e27d9c0d28f6c11445f3425238eec4ef3f3f2d2b8bc1feeeb4",
+  "input_shape_wh": [
+    1920,
+    1080
+  ],
+  "output_shape_wh": [
+    3840,
+    2160
+  ],
+  "input_preparation": "RGB/255; OpenCV INTER_LINEAR",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "cudnn": 91900,
+  "device": "NVIDIA GeForce RTX 5090",
+  "hardware_start": {
+    "time_unix": 1791327886.5378377,
+    "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 53, 0 %, 2550 MHz, 13801 MHz, 72.48 W, 600.00 W"
+  },
+  "batch": 1,
+  "precision": "FP16",
+  "channels_last": true,
+  "tf32": false,
+  "cudnn_autotune": true,
+  "torch_compile": false,
+  "custom_cuda_extensions": false,
+  "image_tiling": false,
+  "warmup": 20,
+  "iterations": 50,
+  "trials": 5,
+  "timing": "Resident input to complete clipped RGB; all dynamic padding/analysis/reconstruction included; no disk I/O or CPU/GPU image transfers in interval",
+  "execution": [
+    "eager",
+    "cuda_graph"
+  ],
+  "order": "Alternates eager/graph per trial",
+  "aggregation": "Median of trial medians and trial p95 values; raw samples and synchronized-loop throughput retained",
+  "script_sha256": "a99b87063ba217b50af7c1919bbc5fccf90d188d3e44c0671d8a2bcd37a1c95c",
+  "adapter_sha256": "9ad3d362b3194ec5ef65ec76116d9f56a6bfa716ff8c87a39f8a4842964723f1"
+}

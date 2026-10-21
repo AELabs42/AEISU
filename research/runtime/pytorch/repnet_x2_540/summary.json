@@ -1,0 +1,31 @@
+{
+  "model": "repnet_x2",
+  "input_shape_wh": [
+    960,
+    540
+  ],
+  "results": {
+    "eager": {
+      "median_ms": 0.17289599776268005,
+      "p95_ms": 0.2440575964748859,
+      "synchronized_loop_ms_per_frame": 0.18552400055341423,
+      "peak_allocated_gib": 0.061279296875,
+      "peak_reserved_gib": 0.14453125,
+      "median_range_ms": [
+        0.1589919999241829,
+        0.2314079999923706
+      ]
+    },
+    "cuda_graph": {
+      "median_ms": 0.1287040039896965,
+      "p95_ms": 0.13042079880833626,
+      "synchronized_loop_ms_per_frame": 0.13095000060275197,
+      "peak_allocated_gib": 0.026254653930664062,
+      "peak_reserved_gib": 0.14453125,
+      "median_range_ms": [
+        0.12851199507713318,
+        0.12886400520801544
+      ]
+    }
+  }
+}

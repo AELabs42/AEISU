@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "step_edges": 16,
+  "cases": {
+    "sharp": {
+      "bright_excursion_pct": 0.0,
+      "dark_excursion_pct": 0.0,
+      "ringing_excess_pct": 0.0,
+      "rgb_excursion_pct": 0.0,
+      "excursion_over2pct_fraction": 0.0,
+      "contrast_ratio": 1.0,
+      "width_10_90_px": 0.7999999999999998,
+      "width_defined_fraction": 1.0,
+      "absolute_shift_50_px": 0.0
+    },
+    "blurred": {
+      "bright_excursion_pct": 0.0,
+      "dark_excursion_pct": 0.0,
+      "ringing_excess_pct": 0.0,
+      "rgb_excursion_pct": 2.4835268286338427e-06,
+      "excursion_over2pct_fraction": 0.0,
+      "contrast_ratio": 1.0000000745058049,
+      "width_10_90_px": 5.100042798302466,
+      "width_defined_fraction": 1.0,
+      "absolute_shift_50_px": 3.610924345087696e-07
+    },
+    "biased": {
+      "bright_excursion_pct": 0.0,
+      "dark_excursion_pct": 0.0,
+      "ringing_excess_pct": 0.0,
+      "rgb_excursion_pct": 2.4835268286338427e-06,
+      "excursion_over2pct_fraction": 0.0,
+      "contrast_ratio": 0.8999999726812049,
+      "width_10_90_px": 0.7999999999999994,
+      "width_defined_fraction": 1.0,
+      "absolute_shift_50_px": 4.001237563500126e-08
+    },
+    "shifted": {
+      "bright_excursion_pct": 0.0,
+      "dark_excursion_pct": 0.0,
+      "ringing_excess_pct": 0.0,
+      "rgb_excursion_pct": 0.0,
+      "excursion_over2pct_fraction": 0.0,
+      "contrast_ratio": 1.0,
+      "width_10_90_px": 0.8,
+      "width_defined_fraction": 1.0,
+      "absolute_shift_50_px": 2.0
+    },
+    "constant": {
+      "bright_excursion_pct": 0.0,
+      "dark_excursion_pct": 0.0,
+      "ringing_excess_pct": 0.0,
+      "rgb_excursion_pct": 0.0,
+      "excursion_over2pct_fraction": 0.0,
+      "contrast_ratio": 0.0,
+      "width_10_90_px": null,
+      "width_defined_fraction": 0.0,
+      "absolute_shift_50_px": null
+    },
+    "ringing_10pct": {
+      "bright_excursion_pct": 10.000000248352665,
+      "dark_excursion_pct": 10.000000248352684,
+      "ringing_excess_pct": 20.000000496705347,
+      "rgb_excursion_pct": 10.000000248352684,
+      "excursion_over2pct_fraction": 1.0,
+      "contrast_ratio": 1.0,
+      "width_10_90_px": 0.6666666639071923,
+      "width_defined_fraction": 1.0,
+      "absolute_shift_50_px": 2.069605598009616e-09
+    }
+  }
+}

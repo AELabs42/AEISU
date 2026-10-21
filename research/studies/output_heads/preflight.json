@@ -1,0 +1,56 @@
+[
+  {
+    "model": "adaptive",
+    "case": "odd_random",
+    "native_fp16_vs_fp32_db": 71.03333971498695,
+    "native_fp8_vs_oracle_db": null
+  },
+  {
+    "model": "adaptive",
+    "case": "flat",
+    "native_fp16_vs_fp32_db": 87.58700629495168,
+    "native_fp8_vs_oracle_db": null
+  },
+  {
+    "model": "adaptive",
+    "case": "real_crop",
+    "native_fp16_vs_fp32_db": 78.76169757295776,
+    "native_fp8_vs_oracle_db": 103.62226450639483
+  },
+  {
+    "model": "rgb_residual",
+    "case": "odd_random",
+    "native_fp16_vs_fp32_db": 74.11687362042892,
+    "native_fp8_vs_oracle_db": null
+  },
+  {
+    "model": "rgb_residual",
+    "case": "flat",
+    "native_fp16_vs_fp32_db": 83.55920240795761,
+    "native_fp8_vs_oracle_db": null
+  },
+  {
+    "model": "rgb_residual",
+    "case": "real_crop",
+    "native_fp16_vs_fp32_db": 79.08831098941802,
+    "native_fp8_vs_oracle_db": null
+  },
+  {
+    "model": "depth_to_space",
+    "case": "odd_random",
+    "native_fp16_vs_fp32_db": 69.70557857674711,
+    "native_fp8_vs_oracle_db": null
+  },
+  {
+    "model": "depth_to_space",
+    "case": "flat",
+    "native_fp16_vs_fp32_db": 77.36076851482116,
+    "native_fp8_vs_oracle_db": null
+  },
+  {
+    "model": "depth_to_space",
+    "case": "real_crop",
+    "native_fp16_vs_fp32_db": 72.23712597776034,
+    "native_fp8_vs_oracle_db": 109.62018580511624
+  }
+]

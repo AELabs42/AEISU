@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Target-selected isolated-edge diagnostic on 570 frames. B: bright excursion; R: excess profile ringing (both percentages of target edge contrast, lower is better); W: 10--90\% transition width in HR pixels. Means weight frames within environments, then environments equally. These are custom profile measurements, not whole-image quality scores.}
+\label{tab:edge-profiles}
+\begin{tabular}{l*{9}{r}}
+\toprule
+ & \multicolumn{3}{c}{Area} & \multicolumn{3}{c}{Bicubic} & \multicolumn{3}{c}{Native}\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Method & B & R & W & B & R & W & B & R & W\\
+\midrule
+AEISU mixed & 0.683 & 1.869 & 3.042 & 1.568 & 2.765 & 3.178 & 1.245 & 4.208 & 2.946\\
+Bilinear & 0.079 & 0.764 & 4.367 & 0.583 & 1.337 & 4.359 & 0.118 & 0.777 & 4.100\\
+Bicubic & 2.428 & 4.383 & 3.810 & 2.778 & 5.118 & 3.807 & 3.842 & 6.902 & 3.530\\
+EASU & 0.108 & 0.582 & 3.613 & 1.529 & 2.617 & 3.584 & 0.203 & 0.820 & 3.433\\
+EASU+RCAS & 2.215 & 4.415 & 3.333 & 4.088 & 7.791 & 3.337 & 2.556 & 5.158 & 3.139\\
+NIS & 1.900 & 4.811 & 3.805 & 2.180 & 5.008 & 3.818 & 3.653 & 8.843 & 3.498\\
+SGSR1 & 0.286 & 0.835 & 3.128 & 1.668 & 2.745 & 3.077 & 0.407 & 1.112 & 3.000\\
+RepNet & 3.923 & 11.306 & 3.313 & 3.243 & 8.665 & 3.332 & 7.637 & 19.666 & 3.080\\
+RT4KSR & 3.525 & 12.543 & 3.298 & 2.832 & 9.127 & 3.328 & 7.021 & 21.449 & 3.043\\
+QuickSRNet S & 3.223 & 8.834 & 3.104 & 1.692 & 4.517 & 3.107 & 6.656 & 16.088 & 2.892\\
+QuickSRNet M & 2.816 & 7.969 & 3.086 & 1.283 & 3.068 & 3.108 & 6.202 & 15.144 & 2.849\\
+SPAN & 2.954 & 8.333 & 3.128 & 0.976 & 1.997 & 3.073 & 8.337 & 31.214 & 3.068\\
+SwinIR-Light & 3.161 & 8.016 & 3.101 & 0.930 & 2.002 & 3.070 & 7.226 & 16.729 & 2.853\\
+\bottomrule
+\end{tabular}
+\end{table*}

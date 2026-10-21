@@ -1,0 +1,17 @@
+{
+  "binary": "{home}/AppData/Local/torch_extensions/torch_extensions/Cache/py313_cu130/aif_parallel_simt_v8/aif_parallel_simt_v8.pyd",
+  "sha256": "9e45ad31def096b8ba03b07edfdfeb7c86ebb6c82151d5683b72cd31d14b0991",
+  "counts": {
+    "tensor_ops": 0,
+    "half2_fma": 7262,
+    "fp32_fma": 8996,
+    "int8_dot": 608
+  },
+  "sass_sha256": "61e2a3e0e2db44447b79036e5d104b90a84f705875da2e9ea311508a5115b3a7",
+  "source_sha256": "e42bd0f1e9b3f14401bf0f50caa47527607cbeb990fc06dc23a04aba02a6532e",
+  "sources": {
+    "fusion_kernels.cu": "ea7b1de32d246e6fff214353afd4208cb031c30eaadbc397725822126c25e6ea",
+    "int8_kernels.cuh": "85aab2dd102c8ec7ebf5b46bc06f57f2f736863199639c14cf9ee7c59bce7b01",
+    "shader_kernels.cu": "e42bd0f1e9b3f14401bf0f50caa47527607cbeb990fc06dc23a04aba02a6532e"
+  }
+}

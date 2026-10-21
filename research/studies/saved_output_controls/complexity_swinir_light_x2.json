@@ -1,0 +1,1302 @@
+{
+  "parameters": 910152,
+  "buffer_elements": 3244032,
+  "processed_lr_shape": [
+    544,
+    960
+  ],
+  "convolution_macs": 88833024000,
+  "linear_macs": 360972288000,
+  "attention_matmul_macs": 96259276800,
+  "total_counted_macs": 546064588800,
+  "layers": [
+    {
+      "module": "conv_first",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        60,
+        544,
+        960
+      ],
+      "macs": 846028800
+    },
+    {
+      "module": "layers.0.residual_group.blocks.0.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.0.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.0.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.0.residual_group.blocks.0.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.0.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.1.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.1.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.1.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.0.residual_group.blocks.1.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.1.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.2.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.2.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.2.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.0.residual_group.blocks.2.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.2.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.3.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.3.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.3.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.0.residual_group.blocks.3.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.3.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.4.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.4.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.4.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.0.residual_group.blocks.4.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.4.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.5.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.5.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.5.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.0.residual_group.blocks.5.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.residual_group.blocks.5.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.0.conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        60,
+        544,
+        960
+      ],
+      "macs": 16920576000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.0.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.0.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.0.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.1.residual_group.blocks.0.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.0.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.1.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.1.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.1.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.1.residual_group.blocks.1.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.1.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.2.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.2.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.2.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.1.residual_group.blocks.2.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.2.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.3.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.3.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.3.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.1.residual_group.blocks.3.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.3.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.4.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.4.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.4.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.1.residual_group.blocks.4.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.4.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.5.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.5.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.5.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.1.residual_group.blocks.5.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.residual_group.blocks.5.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.1.conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        60,
+        544,
+        960
+      ],
+      "macs": 16920576000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.0.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.0.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.0.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.2.residual_group.blocks.0.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.0.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.1.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.1.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.1.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.2.residual_group.blocks.1.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.1.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.2.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.2.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.2.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.2.residual_group.blocks.2.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.2.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.3.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.3.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.3.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.2.residual_group.blocks.3.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.3.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.4.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.4.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.4.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.2.residual_group.blocks.4.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.4.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.5.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.5.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.5.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.2.residual_group.blocks.5.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.residual_group.blocks.5.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.2.conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        60,
+        544,
+        960
+      ],
+      "macs": 16920576000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.0.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.0.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.0.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.3.residual_group.blocks.0.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.0.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.1.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.1.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.1.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.3.residual_group.blocks.1.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.1.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.2.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.2.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.2.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.3.residual_group.blocks.2.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.2.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.3.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.3.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.3.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.3.residual_group.blocks.3.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.3.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.4.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.4.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.4.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.3.residual_group.blocks.4.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.4.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.5.attn.qkv",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        180
+      ],
+      "macs": 5640192000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.5.attn.proj",
+      "kind": "linear_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 1880064000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.5.attn",
+      "kind": "attention_matmul_macs",
+      "output_shape": [
+        8160,
+        64,
+        60
+      ],
+      "macs": 4010803200
+    },
+    {
+      "module": "layers.3.residual_group.blocks.5.mlp.fc1",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        120
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.residual_group.blocks.5.mlp.fc2",
+      "kind": "linear_macs",
+      "output_shape": [
+        1,
+        522240,
+        60
+      ],
+      "macs": 3760128000
+    },
+    {
+      "module": "layers.3.conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        60,
+        544,
+        960
+      ],
+      "macs": 16920576000
+    },
+    {
+      "module": "conv_after_body",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        60,
+        544,
+        960
+      ],
+      "macs": 16920576000
+    },
+    {
+      "module": "upsample.0",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        12,
+        544,
+        960
+      ],
+      "macs": 3384115200
+    }
+  ],
+  "model": "swinir_light_x2",
+  "requested_lr_shape": [
+    540,
+    960
+  ],
+  "macs_per_requested_lr_pixel": 1053365.3333333333,
+  "source_sha256": "25717fc85408182e83530149afaef5b85c58041bda39cc2c9f47bbbbd7f6cf31",
+  "torch": "2.11.0+cu130",
+  "cpu_meta_only": true,
+  "counting": "One multiply-accumulate is one MAC; deployed conv/linear and QK/AV products; excludes biases, activations, norms, softmax, pooling, interpolation, additions and memory movement",
+  "checkpoint_sha256": "193b229909ca89cd8b55de9c9e7fce146ae759d59dfcd78d8feb9dd1d6fa0fd7"
+}

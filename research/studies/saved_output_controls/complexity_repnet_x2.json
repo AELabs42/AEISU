@@ -1,0 +1,69 @@
+{
+  "parameters": 26608,
+  "buffer_elements": 0,
+  "processed_lr_shape": [
+    540,
+    960
+  ],
+  "convolution_macs": 3433881600,
+  "linear_macs": 0,
+  "attention_matmul_macs": 0,
+  "total_counted_macs": 3433881600,
+  "layers": [
+    {
+      "module": "body.0",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        32,
+        270,
+        480
+      ],
+      "macs": 447897600
+    },
+    {
+      "module": "body.2",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        32,
+        270,
+        480
+      ],
+      "macs": 1194393600
+    },
+    {
+      "module": "body.4",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        270,
+        480
+      ],
+      "macs": 1791590400
+    }
+  ],
+  "model": "repnet_x2",
+  "requested_lr_shape": [
+    540,
+    960
+  ],
+  "macs_per_requested_lr_pixel": 6624.0,
+  "source_sha256": "25717fc85408182e83530149afaef5b85c58041bda39cc2c9f47bbbbd7f6cf31",
+  "torch": "2.11.0+cu130",
+  "cpu_meta_only": true,
+  "counting": "One multiply-accumulate is one MAC; deployed conv/linear and QK/AV products; excludes biases, activations, norms, softmax, pooling, interpolation, additions and memory movement",
+  "checkpoint_sha256": "27c89889458948a4d22a122ef232206e68ece10a176cdd9ebb6f1b56523307ec",
+  "specification": {
+    "repo": "repnet",
+    "architecture": "submission_RTVSR_for_Track1/arch.py",
+    "checkpoint": "submission_RTVSR_for_Track1/repnet_x2.pth",
+    "factory": "repnet",
+    "scale": 2,
+    "kwargs": {},
+    "key": null,
+    "data_range": 1,
+    "extra": []
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "model": "swinir_light_x2",
+  "metadata": {
+    "name": "swinir_light_x2",
+    "precision": "fp16",
+    "checkpoint": "{home}/aa_sr_benchmark/checkpoints/SwinIR/002_lightweightSR_DIV2K_s64w8_SwinIR-S_x2.pth",
+    "checkpoint_sha256": "193b229909ca89cd8b55de9c9e7fce146ae759d59dfcd78d8feb9dd1d6fa0fd7",
+    "architecture": "{home}/aa_sr_benchmark/models_arch/swinir.py",
+    "architecture_sha256": "9e143898679ebeebc5d2fc94ad1b89c38aa4a4d43da4e0fcba0f93e476994913",
+    "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+    "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "tf32": false,
+    "mask_dtype_fix": true,
+    "prepared": true,
+    "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+    "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9",
+    "parameters": 910152
+  },
+  "preflight": null,
+  "input": "{research_workspace}/data/Benchmark Data/Urban100/HR/img001.png",
+  "input_sha256": "9dbf74e85c4da0e27d9c0d28f6c11445f3425238eec4ef3f3f2d2b8bc1feeeb4",
+  "input_shape_wh": [
+    960,
+    540
+  ],
+  "output_shape_wh": [
+    1920,
+    1080
+  ],
+  "input_preparation": "RGB/255; OpenCV INTER_LINEAR",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "cudnn": 91900,
+  "device": "NVIDIA GeForce RTX 5090",
+  "hardware_start": {
+    "time_unix": 1791327761.943535,
+    "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 50, 0 %, 2542 MHz, 13801 MHz, 63.87 W, 600.00 W"
+  },
+  "batch": 1,
+  "precision": "FP16",
+  "channels_last": true,
+  "tf32": false,
+  "cudnn_autotune": true,
+  "torch_compile": false,
+  "custom_cuda_extensions": false,
+  "image_tiling": false,
+  "warmup": 20,
+  "iterations": 50,
+  "trials": 5,
+  "timing": "Resident input to complete clipped RGB; all dynamic padding/analysis/reconstruction included; no disk I/O or CPU/GPU image transfers in interval",
+  "execution": [
+    "eager",
+    "cuda_graph"
+  ],
+  "order": "Alternates eager/graph per trial",
+  "aggregation": "Median of trial medians and trial p95 values; raw samples and synchronized-loop throughput retained",
+  "script_sha256": "a99b87063ba217b50af7c1919bbc5fccf90d188d3e44c0671d8a2bcd37a1c95c",
+  "adapter_sha256": "9ad3d362b3194ec5ef65ec76116d9f56a6bfa716ff8c87a39f8a4842964723f1"
+}

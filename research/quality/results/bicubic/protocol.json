@@ -1,0 +1,11 @@
+{
+  "model": {
+    "name": "bicubic",
+    "implementation": "PyTorch FP32 bicubic interpolation, align_corners=False, clamp [0,1]",
+    "torch": "2.11.0+cu130",
+    "scale": 2,
+    "note": "Output interpolation baseline, distinct from Pillow antialiased input degradation",
+    "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+  },
+  "global_protocol_sha256": "6ef9c1074b4b7cecfb739f47283917fed08026b0c95152fe4857f6f9a1d8d6bc"
+}

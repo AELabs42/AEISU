@@ -1,0 +1,8 @@
+{
+  "source": "AESS",
+  "source_main_sha256": "a47485445237f7f122781e4c79151d091ccc822fab52c4922c909d8deac3defe",
+  "model_sha256": "8a6ebf7042016fa50e55df3f4ad41f1e318ee66ecc2931984461df9af15f49d6",
+  "model": "AEISU folded epoch-1000 production mixed FP8/FP16",
+  "frame_generation": false,
+  "native_source_files": 29
+}

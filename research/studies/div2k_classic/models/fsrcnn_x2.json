@@ -1,0 +1,10 @@
+{
+  "checkpoint": "{research_workspace}/data/benchmark_assets/classic_comparators/checkpoints/FSRCNN/fsrcnn_x2.pth",
+  "checkpoint_sha256": "1af70e2cbf0d11b942008d6c425e469e9fe275a68f3ac8b6c21e8672d6e67b69",
+  "precision": "FP32",
+  "input": "BT.601 limited-range Y normalized by 255",
+  "chroma": "PyTorch FP32 bicubic RGB chroma carrier",
+  "reference": "https://github.com/yjn870/FSRCNN-pytorch/blob/master/test.py",
+  "parameters": 12809,
+  "scope": "Recomputed common RGB-output metrics; not a reproduction of published rounded Y-only scores"
+}

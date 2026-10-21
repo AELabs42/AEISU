@@ -1,0 +1,227 @@
+\begingroup
+% Original vector artwork. Tensor dimensions are annotated, not drawn to scale.
+\pgfdeclarelayer{aifWires}
+\pgfdeclarelayer{aifEdges}
+\pgfsetlayers{aifWires,main,aifEdges}
+\newcommand{\aifTensor}[7]{%
+  \begin{scope}[shift={(#2,#3)}]
+    \path[fill=#7!14]
+      (0,0) rectangle (#4,#5);
+    \path[fill=#7!25]
+      (0,#5)--(#6,{#5+0.65*#6})--({#4+#6},{#5+0.65*#6})--(#4,#5)--cycle;
+    \path[fill=#7!36]
+      (#4,0)--({#4+#6},{0.65*#6})--({#4+#6},{#5+0.65*#6})--(#4,#5)--cycle;
+    \foreach \i in {1,2,3}
+      \draw[#7!45,line width=0.3pt]
+        ({#4+\i*#6/4},{\i*0.65*#6/4})--({#4+\i*#6/4},{#5+\i*0.65*#6/4});
+    % Opaque perimeter strokes cover stripes and crossing connectors.
+    % Rounded joins avoid the spikes produced by acute mitered corners.
+    \begin{pgfonlayer}{aifEdges}
+      \draw[#7!80,line width=0.55pt,line join=round,line cap=round]
+        (0,0)--(#4,0)--({#4+#6},{0.65*#6})
+        --({#4+#6},{#5+0.65*#6})--(#6,{#5+0.65*#6})--(0,#5)--cycle;
+      \draw[#7!80,line width=0.55pt,line join=round,line cap=round]
+        (0,#5)--(#4,#5)--(#4,0)
+        (#4,#5)--({#4+#6},{#5+0.65*#6});
+    \end{pgfonlayer}
+    \coordinate (#1-in) at (0,{#5/2});
+    \coordinate (#1-out) at ({#4+#6},{#5/2});
+    \coordinate (#1-top) at ({#4/2+#6},{#5+0.65*#6});
+    \coordinate (#1-bottom) at ({#4/2},0);
+  \end{scope}}
+\newcommand{\aifGrid}[5]{%
+  \begin{scope}[shift={(#1,#2)}]
+    \fill[#5!7] (0,0) rectangle (#3,#3);
+    \foreach \i in {0,...,#4} {
+      \draw[#5!65,line width=0.35pt] ({\i*#3/#4},0)--({\i*#3/#4},#3);
+      \draw[#5!65,line width=0.35pt] (0,{\i*#3/#4})--(#3,{\i*#3/#4});
+    }
+  \end{scope}}
+\newcommand{\aifImage}[4]{%
+  \begin{scope}[shift={(#1,#2)},x=#3cm,y=#4cm]
+    \fill[aifBlue!9] (0,0) rectangle (1,1);
+    \fill[aifTeal!25] (0,0)--(0,0.45)--(0.4,0.8)--(0.74,0.29)--(1,0.63)--(1,0)--cycle;
+    \fill[aifTeal!55] (0,0)--(0,0.24)--(0.6,0.6)--(1,0.14)--(1,0)--cycle;
+    \fill[aifGold!65] (0.8,0.83) circle (0.075);
+    \draw[white,line width=1.3pt] (0.18,0)--(0.33,0.26)--(0.54,0.36)--(0.44,0.47);
+    \draw[aifInk!65,line width=0.55pt] (0,0) rectangle (1,1);
+  \end{scope}}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[x=1cm,y=1cm,
+  font=\rmfamily\fontsize{9}{10.5}\selectfont,text=aifInk,
+  stream/.style={-{Latex[length=1.7mm,width=1.25mm]},draw=aifInk,line width=0.7pt},
+  parameter/.style={stream,dashed,draw=aifGold},
+  joint/.style={draw=aifInk,fill=white,circle,minimum size=4.5mm,inner sep=0pt},
+  note/.style={font=\rmfamily\fontsize{8.1}{9.5}\selectfont,align=center},
+  heading/.style={anchor=west,font=\rmfamily\bfseries\fontsize{10}{12}\selectfont}]
+\path[use as bounding box] (-0.15,-0.1) rectangle (19.0,12.7);
+\node[heading] at (0,12.43) {(a) Neural controller and adaptive RGB reconstruction};
+\node[note,anchor=east] at (18.8,12.43) {$H,W$: LR image dimensions};
+% Overview/detail hierarchy follows SR-paper conventions; artwork is original.
+\begin{pgfonlayer}{aifWires}
+  \fill[aifBlue!3,rounded corners=2mm] (3.70,8.88) rectangle (17.60,12.13);
+  \fill[aifTeal!3,rounded corners=2mm] (0.02,0.16) rectangle (6.80,5.73);
+  \fill[aifGold!3,rounded corners=2mm] (7.30,0.16) rectangle (18.82,5.73);
+\end{pgfonlayer}
+
+% Feature volumes shrink spatially, split into independent streams, then expand.
+\fill[aifViolet!4,rounded corners=2mm] (6.9,9.00) rectangle (9.85,11.84);
+\draw[aifViolet!55,dashed,rounded corners=2mm,line width=0.5pt]
+  (6.9,9.00) rectangle (9.85,11.84);
+\def\aifThumbWidth{1.10}
+\def\aifThumbHeight{1.10}
+\aifImage{0.05}{9.70}{\aifThumbWidth}{\aifThumbHeight}
+\node[note,anchor=north,inner sep=0pt] at (0.6,9.49) {\textbf{LR RGB} $L$\\[2pt]$H\times W\times3$};
+\draw[stream] (1.15,10.25)--(1.86,10.25);
+\aifTensor{analysis}{1.9}{9.52}{0.6}{1.47}{0.36}{aifTeal}
+% Eight analysis planes: three color mixtures, one luma mixture, four stencils.
+\foreach \y in {9.72,9.89,10.06,10.23,10.40,10.57,10.74}
+  \draw[aifTeal!45,line width=0.35pt] (1.9,\y)--(2.5,\y);
+\node[note] at (2.38,11.56) {\textbf{Learned analysis}\\RGB mix + luma + 4 edges};
+\node[note] at (2.38,9.17) {$H\times W\times8$};
+\aifTensor{enc}{4.05}{9.72}{0.48}{1.06}{0.32}{aifBlue}
+\draw[stream] (analysis-out)--node[above=3pt,note] {$\U_2$\\$1\times1$} (enc-in);
+\node[note] at (4.43,9.17) {\textbf{Project}\\$H/2,\;32$};
+\aifTensor{cmp}{5.75}{9.93}{0.44}{0.64}{0.32}{aifViolet}
+\draw[stream] (enc-out)--node[above=3pt,note] {$\U_2$\\$1\times1$} (cmp-in);
+\node[note] at (6.14,9.17) {\textbf{Compress}\\$H/4,\;64$};
+\coordinate (split) at (6.72,10.25);
+\draw (cmp-out)--(split);
+\fill[aifInk] (split) circle (1.1pt);
+\foreach \j/\y in {A/10.62,B/9.42} {
+  \foreach \i in {0,1,2,3} {
+    \pgfmathsetmacro{\xx}{7.12+0.63*\i}
+    \aifTensor{b\j\i}{\xx}{\y}{0.25}{0.64}{0.12}{aifViolet}
+    \ifnum\i>0
+      \pgfmathtruncatemacro{\prev}{\i-1}
+      \draw[stream] (b\j\prev-out)--(b\j\i-in);
+    \fi
+  }
+  \draw[stream] (split)|-(b\j0-in);
+}
+\node[note] at (8.37,11.61) {$4\times[3\times3,\;32\rightarrow32]$};
+\node[note] at (8.37,10.34) {Branch A};
+\node[note] at (8.37,9.25) {Branch B};
+\node[joint,note] (cat) at (10.25,10.25) {C};
+\draw[stream] (bA3-out)-|(cat.north);
+\draw[stream] (bB3-out)-|(cat.south);
+\aifTensor{exp}{11.7}{9.72}{0.46}{1.06}{0.3}{aifViolet}
+\draw[stream] (cat)--node[above=3pt,note] {$1\times1$\\$\PS_2$} (exp-in);
+\node[note] at (11.98,9.17) {\textbf{Expand}\\$H/2,\;32$};
+\node[joint,font=\large] (add) at (12.94,10.25) {$+$};
+\draw[stream] (exp-out)--(add);
+% The long skip carries only half-resolution features, never reconstructed RGB.
+\begin{pgfonlayer}{aifWires}
+  \draw[stream,draw=aifBlue] (enc-top)--(enc-top |- 0,11.95)--(12.94,11.95)--(add.north);
+\end{pgfonlayer}
+\node[note,fill=aifBlue!3,inner sep=1.5pt,text=aifBlue] at (10.75,11.95)
+  {$H/2$ feature skip};
+\aifTensor{ref}{14.0}{9.72}{0.46}{1.06}{0.46}{aifBlue}
+\draw[stream] (add)--node[above=3pt,note] {$3\times3$} (ref-in);
+\node[note] at (14.45,9.17) {\textbf{Refine}\\$H/2,\;64$};
+\aifTensor{head}{16.3}{9.72}{0.66}{1.06}{0.45}{aifTeal}
+\draw[stream] (ref-out)--node[above=3pt,note] {$1\times1$\\linear} (head-in);
+\node[note] at (16.85,11.43) {\textbf{Packed coefficients} $V$};
+\node[note] at (16.85,9.17) {$H/2\times W/2\times64$\\$4$ LR sites $\times16$ coefficients};
+% Each output pixel is reconstructed from original samples, not decoded RGB.
+\fill[aifInk] (1.48,10.25) circle (1.1pt);
+\draw[stream,line width=0.8pt] (1.48,10.25)--(1.48,7.825)--(14.68,7.825);
+\node[note,fill=white,inner sep=2pt] at (6.45,7.825)
+  {\textbf{Original RGB samples}};
+\draw[stream,draw=aifTeal] (head-out)--(18.96,10.25)--(18.96,8.68)--(15.175,8.68)--(15.175,8.32);
+\aifGrid{14.8}{7.45}{0.75}{5}{aifGold}
+\aifGrid{16.3}{7.45}{0.75}{2}{aifGold}
+\draw[stream] (15.67,7.825)--(16.18,7.825);
+\node[note,anchor=north,inner sep=0pt] at (15.97,6.95)
+  {\textbf{Fused filter head}};
+\draw[parameter] (13.15,7.15)--(15.175,7.15)--(15.175,7.33);
+\node[note,anchor=east,inner sep=0pt] at (12.98,7.15) {Learned base + bank};
+\draw[stream] (17.17,7.825)--(17.65,7.825);
+\aifImage{17.65}{7.275}{\aifThumbWidth}{\aifThumbHeight}
+\node[note,anchor=north,inner sep=0pt] at (18.20,7.065)
+  {\textbf{HR RGB} $\widehat T$\\[2pt]$2H\times2W\times3$};
+
+\draw[aifInk!20,line width=0.5pt] (0,6.16)--(18.85,6.16);
+\node[heading] at (0,5.88) {(b) Packed coefficient layout};
+\node[heading] at (7.35,5.88) {(c) Source-conditioned reconstruction};
+
+% The packing inset makes LR parity distinct from the reconstruction phases.
+\node[note] at (1.8,5.52) {One spatial cell of $V$};
+\foreach \x/\col/\lab in {0.32/aifBlue/0,1.07/aifViolet/1,1.82/aifTeal/2,2.57/aifGold/3} {
+  \foreach \i in {0,...,15}
+    \path[draw=\col!65,fill=\col!18,line width=0.25pt]
+      (\x,{3.99+0.07*\i}) rectangle ({\x+0.5},{4.06+0.07*\i});
+  \node[note] at ({\x+0.25},3.74) {$\lab$};
+}
+\node[note] at (1.7,3.31) {Parity $\rho$: four groups of 16};
+\draw[stream] (3.18,4.56)--node[above,note] {index} (4.23,4.56);
+\foreach \x/\y/\col/\lab in {4.38/4.56/aifBlue/0,5.06/4.56/aifViolet/1,4.38/3.88/aifTeal/2,5.06/3.88/aifGold/3} {
+  \path[draw=\col,fill=\col!16,line width=0.65pt]
+    (\x,\y) rectangle ({\x+0.68},{\y+0.68});
+  \node[note] at ({\x+0.34},{\y+0.34}) {$\lab$};
+}
+\node[note] at (5.07,5.52) {$2\times2$ LR sites, parity $\rho$};
+\node[note] at (5.07,3.31) {Read the selected\\16-channel group};
+\draw[stream] (5.86,4.91)--(6.29,4.91)--(6.29,2.86);
+\node[note,fill=white,inner sep=2pt] at (6.29,3.49) {$g$};
+\foreach \i in {0,...,15}
+  \path[draw=aifTeal!70,fill=aifTeal!14,line width=0.35pt]
+    ({0.4+0.38*\i},2.22) rectangle ({0.78+0.38*\i},2.7);
+\node[note,anchor=north west,inner sep=0pt] at (0.4,2.08) {$a_0$};
+\node[note,anchor=north,inner sep=0pt] at (3.44,2.08) {$\cdots$};
+\node[note,anchor=north east,inner sep=0pt] at (6.48,2.08) {$a_{15}$};
+\node[note] at (3.43,1.51) {\textbf{16 coefficients} $a_p$ for LR site $p$};
+\node[note,align=center,text width=6.1cm] at (3.43,0.87)
+  {LR-site parity $\rho$ selects a group, not an HR phase.\\No full-LR coefficient tensor is materialized.};
+
+% A parameter bank, a four-phase spatial footprint, and a source-patch dot product.
+\node[note] at (8.27,5.52) {Bank $K$};
+\aifGrid{8.02}{4.48}{0.84}{5}{aifGold}
+\aifGrid{7.90}{4.36}{0.84}{5}{aifGold}
+\aifGrid{7.78}{4.24}{0.84}{5}{aifGold}
+\node[note] at (8.28,4.01) {$K_{0,\phi},\ldots,K_{15,\phi}$};
+\aifGrid{7.78}{2.86}{0.84}{5}{aifGold}
+\node[note] at (8.23,2.59) {Learned base $B_\phi$};
+\node[joint,font=\large] (mix) at (9.65,3.75) {$+$};
+\node[joint] (weighted) at (9.65,4.85) {$\Sigma$};
+\draw[stream] (8.95,4.68)--(9.23,4.68)|-(weighted.west);
+\draw[stream] (weighted.south)--(mix.north);
+\draw[stream] (9.65,5.44)--(weighted.north);
+\node[note] at (9.65,5.62) {$a_p$};
+\draw[stream] (8.65,3.28)-|(mix.south);
+\draw[stream] (mix)--(10.34,3.75);
+\foreach \x/\y/\u/\v in {10.45/4.17/0/0,11.75/4.17/0/1,10.45/2.77/1/0,11.75/2.77/1/1} {
+  \aifGrid{\x}{\y}{0.94}{5}{aifGold}
+  \node[note,anchor=north,inner sep=0pt] at ({\x+0.47},{\y-0.12}) {$(\u,\v)$};
+}
+\node[note] at (11.56,5.52) {$W_{p,\phi}$: phases $(\phi_y,\phi_x)$};
+\node[note,anchor=west,align=left] at (13.48,4.75)
+  {\textbf{Four $5\times5$ filters}\\One per HR phase\\Shared across R, G, B};
+\node[note,anchor=west,align=left,text width=4.7cm] at (13.48,3.6)
+  {$W_{p,\phi}=B_\phi+\sum_{k=0}^{15}a_{p,k}K_{k,\phi}$\\[4pt]
+   Fused filter assembly\\and RGB reconstruction.\\No image-sized filter buffer.};
+% Pixel geometry: center LR site and the corresponding 2x2 HR block.
+\aifGrid{8.03}{0.54}{1.45}{5}{aifInk}
+\fill[aifGold!45] (8.61,1.12) rectangle (8.9,1.41);
+\fill[aifInk] (8.755,1.265) circle (0.6pt);
+\draw[aifInk!65,line width=0.45pt] (8.69,1.20)--(7.73,0.55);
+\node[note,anchor=north east,inner sep=0pt] at (7.71,0.53) {$p$};
+\node[note,anchor=west,align=left] at (9.77,0.81)
+  {$5\times5$ original\\RGB neighborhood};
+\node[joint,font=\large] (dot) at (13.63,1.65) {$\cdot$};
+\draw[stream] (9.51,1.65)--(dot.west);
+\draw[stream] (12.87,4.58)--(13.14,4.58)--(13.14,2.24)--(13.63,2.24)--(dot.north);
+\node[note] at (14.34,2.14) {$\sum_\delta$};
+\draw[stream] (dot.east)--(15.02,1.65);
+\foreach \x/\y/\u/\v in {15.14/1.5/0/0,15.87/1.5/0/1,15.14/0.77/1/0,15.87/0.77/1/1} {
+  \path[draw=aifGold,fill=aifGold!13,line width=0.65pt]
+    (\x,\y) rectangle ({\x+0.73},{\y+0.73});
+  \node[font=\rmfamily\fontsize{7.5}{9}\selectfont,
+    inner sep=0pt,text height=1.7mm,text depth=0.7mm]
+    at ({\x+0.365},{\y+0.365}) {$(\u,\v)$};
+}
+\node[note,anchor=south,inner sep=0pt] at (15.87,2.4) {Phase $(\phi_y,\phi_x)$};
+\node[note,anchor=west,align=left] at (16.86,1.5)
+  {\textbf{$2\times2$ HR}\\RGB pixels\\$\widehat T(2p+\phi)$};
+\end{tikzpicture}}
+\endgroup

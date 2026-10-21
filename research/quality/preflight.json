@@ -1,0 +1,569 @@
+{
+  "metrics": {
+    "lpips_identity": 0.0,
+    "lpips_perturbed": 0.0047562457621097565,
+    "y_metric_reference_agreement": true
+  },
+  "methods": {
+    "aif_mixed": {
+      "metadata": {
+        "checkpoint": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/Pytorch Models/aif_reparam_aggressive64_parallel32x4_ep1000_folded_production.pt",
+        "checkpoint_sha256": "d0208712e0d5e4a226335f6eddd4d926dd32f67de32ff590e836d219e99edefe",
+        "artifact": "{source_workspace}/AESS/models/aif_reparam_aggressive64_parallel32x4/adaptive_fp8.bin",
+        "artifact_sha256": "8a6ebf7042016fa50e55df3f4ad41f1e318ee66ecc2931984461df9af15f49d6",
+        "native_executable": "{source_workspace}/AESS/bin/Release/SrcPyrRuntimeTest.exe",
+        "native_executable_sha256": "5539d1d3e4cac52acba4029ee6173ce6eee6c702f10c7a10dcfbf52ea431af84",
+        "final_marker": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/final.txt",
+        "native_artifact_calibration_policy": "mixed",
+        "note": "No retraining, deployment modification, or reuse of bicubic LR images.",
+        "precision": "Deployed stage-specific FP8/FP16 mixed",
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.011082261827746236,
+        "rgb_psnr_db": 19.553715934829064,
+        "rgb_ssim": 0.7115950333849713,
+        "y_mse": 0.007956242693474638,
+        "y_psnr_db": 20.99291977831505,
+        "y_ssim": 0.7265377402874067,
+        "rgb_mse_shave2": 0.011105199218350289,
+        "rgb_psnr_shave2_db": 19.544736461516013,
+        "rgb_ssim_shave2": 0.7111855398537376,
+        "y_mse_shave2": 0.007973784107390589,
+        "y_psnr_shave2_db": 20.983355271685127,
+        "y_ssim_shave2": 0.7261297967971223,
+        "lpips_alex_v01": 0.25294485688209534
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/aif_mixed.npz",
+        "npz_sha256": "fa4c82fe86d2b8150069b022990ae3419b0c25bc5975fbb64e0770fdf6054548",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/aif_mixed.png",
+        "png_sha256": "8d8db501b8d6ca2b80ed199e8805091bf349c6bc28361bf26e4e359186d9f4e2"
+      }
+    },
+    "bilinear": {
+      "metadata": {
+        "name": "bilinear",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.009022189049736846,
+        "rgb_psnr_db": 20.446880769947565,
+        "rgb_ssim": 0.6774104624292197,
+        "y_mse": 0.0064559823396730005,
+        "y_psnr_db": 21.900376662960625,
+        "y_ssim": 0.6943410245647925,
+        "rgb_mse_shave2": 0.009038666247278554,
+        "rgb_psnr_shave2_db": 20.438956496332324,
+        "rgb_ssim_shave2": 0.6769550049466356,
+        "y_mse_shave2": 0.00646852671036344,
+        "y_psnr_shave2_db": 21.891946241875466,
+        "y_ssim_shave2": 0.6938970394585615,
+        "lpips_alex_v01": 0.36169111728668213
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/bilinear.npz",
+        "npz_sha256": "066ed30f69d5508ecc9db4c112a1302f10d3b7847be047a29063a3df2fb7bcd2",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/bilinear.png",
+        "png_sha256": "9b5cc32b8f68b8facf290987b20fd8a62f4c685eb16edf1995b2cf912e06ccd6"
+      }
+    },
+    "bicubic": {
+      "metadata": {
+        "name": "bicubic",
+        "implementation": "PyTorch FP32 bicubic interpolation, align_corners=False, clamp [0,1]",
+        "torch": "2.11.0+cu130",
+        "scale": 2,
+        "note": "Output interpolation baseline, distinct from Pillow antialiased input degradation",
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.009645104987027413,
+        "rgb_psnr_db": 20.15693040696248,
+        "rgb_ssim": 0.7030253300092111,
+        "y_mse": 0.006905971936515058,
+        "y_psnr_db": 21.60775190805768,
+        "y_ssim": 0.718856887680309,
+        "rgb_mse_shave2": 0.009663459463109378,
+        "rgb_psnr_shave2_db": 20.148673708125862,
+        "rgb_ssim_shave2": 0.7026053315806877,
+        "y_mse_shave2": 0.006919893414528944,
+        "y_psnr_shave2_db": 21.599005948262512,
+        "y_ssim_shave2": 0.7184431773643495,
+        "lpips_alex_v01": 0.35925987362861633
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/bicubic.npz",
+        "npz_sha256": "d0288a2d35edeef0ba2204d466fbe480b9cf137988e2448531fb41a49c2314ae",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/bicubic.png",
+        "png_sha256": "7d7751bfe9da6502a08f8a0dbb85e67374d88d0dd41d443096e422ac53843c71"
+      }
+    },
+    "fsr1_easu": {
+      "metadata": {
+        "name": "fsr1_easu",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.009215278989811004,
+        "rgb_psnr_db": 20.35491512110528,
+        "rgb_ssim": 0.7009955454879686,
+        "y_mse": 0.006603765577416989,
+        "y_psnr_db": 21.80208351860066,
+        "y_ssim": 0.7172823629540436,
+        "rgb_mse_shave2": 0.009232720356644348,
+        "rgb_psnr_shave2_db": 20.34670318279458,
+        "rgb_ssim_shave2": 0.7005478696247716,
+        "y_mse_shave2": 0.006617031746463087,
+        "y_psnr_shave2_db": 21.793367817413728,
+        "y_ssim_shave2": 0.7168421217142766,
+        "lpips_alex_v01": 0.30842167139053345
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/fsr1_easu.npz",
+        "npz_sha256": "2c130dcffb28321f75e15f540a9cddcf9e157a9fda0796748a7e72ffeed4df51",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/fsr1_easu.png",
+        "png_sha256": "48e590581ba3cb36f7eccaf4bd27cf2f1b24b3a8a683a14defabf81c7bddab85"
+      }
+    },
+    "fsr1_rcas_02": {
+      "metadata": {
+        "name": "fsr1_rcas_02",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.01025485367186826,
+        "rgb_psnr_db": 19.890705322681704,
+        "rgb_ssim": 0.7053940166534443,
+        "y_mse": 0.0073626442156112725,
+        "y_psnr_db": 21.32966185389117,
+        "y_ssim": 0.7211570000406077,
+        "rgb_mse_shave2": 0.010275144595012681,
+        "rgb_psnr_shave2_db": 19.882120578826214,
+        "rgb_ssim_shave2": 0.7049765309429015,
+        "y_mse_shave2": 0.007378038516654441,
+        "y_psnr_shave2_db": 21.320590818922433,
+        "y_ssim_shave2": 0.7207415013057655,
+        "lpips_alex_v01": 0.25678551197052
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/fsr1_rcas_02.npz",
+        "npz_sha256": "619917bb69ec2d78a72e7683c3816c49c7703593e6846b094afb69c35de180b9",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/fsr1_rcas_02.png",
+        "png_sha256": "9eacda8966a36b373d2ccd7082c33c0d0acf8329667ec6d689ae3e110a57bbc4"
+      }
+    },
+    "nis_0": {
+      "metadata": {
+        "name": "nis_0",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.009315305205717644,
+        "rgb_psnr_db": 20.308029113541494,
+        "rgb_ssim": 0.697905020022036,
+        "y_mse": 0.006649976990950317,
+        "y_psnr_db": 21.771798573616472,
+        "y_ssim": 0.7168213753314661,
+        "rgb_mse_shave2": 0.009332264761084418,
+        "rgb_psnr_shave2_db": 20.300129485487854,
+        "rgb_ssim_shave2": 0.6974733731666454,
+        "y_mse_shave2": 0.006662830431710813,
+        "y_psnr_shave2_db": 21.76341239337205,
+        "y_ssim_shave2": 0.7163941167992214,
+        "lpips_alex_v01": 0.33702096343040466
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/nis_0.npz",
+        "npz_sha256": "c57a3ad21322829dc839cef4fbe2a0ce2a1b62282d5226d65c0e4c1377b0716b",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/nis_0.png",
+        "png_sha256": "8f7d4e5d0203014df640ef595d4d70b782eeff6dc30d85596402c34de2441f99"
+      }
+    },
+    "sgsr1": {
+      "metadata": {
+        "name": "sgsr1",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.010666679341700522,
+        "rgb_psnr_db": 19.719707603346947,
+        "rgb_ssim": 0.6892357220512082,
+        "y_mse": 0.007632255210523182,
+        "y_psnr_db": 21.17347115941694,
+        "y_ssim": 0.7111335242755439,
+        "rgb_mse_shave2": 0.010687694554309053,
+        "rgb_psnr_shave2_db": 19.711159664772165,
+        "rgb_ssim_shave2": 0.6888244502086502,
+        "y_mse_shave2": 0.007648084170189679,
+        "y_psnr_shave2_db": 21.164473411232,
+        "y_ssim_shave2": 0.7107173182360729,
+        "lpips_alex_v01": 0.2828105390071869
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/sgsr1.npz",
+        "npz_sha256": "9a81b00d9f5cb0148ada55632434c6d43e61c206e9eb9501b98b2a6cc45d9d02",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/sgsr1.png",
+        "png_sha256": "eeb6fa949db4762cfdb5b240afc52945c427bb1e9969eb073028ad6ffca0526c"
+      }
+    },
+    "repnet_x2": {
+      "metadata": {
+        "name": "repnet_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/models/competitive_official/repnet/submission_RTVSR_for_Track1/repnet_x2.pth",
+        "checkpoint_sha256": "27c89889458948a4d22a122ef232206e68ece10a176cdd9ebb6f1b56523307ec",
+        "architecture": "{home}/aa_sr_benchmark/models/competitive_official/repnet/submission_RTVSR_for_Track1/arch.py",
+        "architecture_sha256": "463827b38b9de41fe06b104c71c02f420230a9469f75616389da9b015c1c550a",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": false,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "loader_hashes": {
+          "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+          "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+          "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+        },
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.012300076179164031,
+        "rgb_psnr_db": 19.1009219879734,
+        "rgb_ssim": 0.6821381036295245,
+        "y_mse": 0.00887779837965776,
+        "y_psnr_db": 20.51694722297402,
+        "y_ssim": 0.709905270603993,
+        "rgb_mse_shave2": 0.012329093173969585,
+        "rgb_psnr_shave2_db": 19.09068865336476,
+        "rgb_ssim_shave2": 0.6817361477115791,
+        "y_mse_shave2": 0.008899836133702259,
+        "y_psnr_shave2_db": 20.506179896341933,
+        "y_ssim_shave2": 0.7094945718546699,
+        "lpips_alex_v01": 0.32389381527900696
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/repnet_x2.npz",
+        "npz_sha256": "ffdbe057947540ce81b8ae7df002e53dc04c4d41c361cebcc0479c40a51b58c5",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/repnet_x2.png",
+        "png_sha256": "716438209c90ddeca59ea0f99c218c62645c1a25219f0e6139e4a53c8e1ce4e7"
+      }
+    },
+    "rt4ksr_x2": {
+      "metadata": {
+        "name": "rt4ksr_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/models/competitive_official/rt4ksr/code/checkpoints/rt4ksr_x2.pth",
+        "checkpoint_sha256": "9ec7500092848a480e058a9c703e4b2254bc0cc97928c076bba272177752124f",
+        "architecture": "{home}/aa_sr_benchmark/models/competitive_official/rt4ksr/code/model/arch.py",
+        "architecture_sha256": "79b604979fb90611f5d484b4541c67f92974f83185fcbc95011a2865c41d0abf",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": false,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "loader_hashes": {
+          "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+          "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+          "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+        },
+        "supporting_source_hashes": {
+          "code/model/__init__.py": "2465f23fc98359c09e984246940c39c840228be9f87983fe06737ff48265707d",
+          "code/model/modules.py": "fa6261eba7106886de050ac55668bff858a7b32e0a6c97f43633311569c324ee",
+          "code/model/utils/rep_utils.py": "2c8ed76bdd8c17f436b52e7c3face4e6cf452dc7a1683bcf616c459f0de0cf4a"
+        },
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.012826132312030704,
+        "rgb_psnr_db": 18.919042842933752,
+        "rgb_ssim": 0.6833624118790061,
+        "y_mse": 0.009242556379198267,
+        "y_psnr_db": 20.34207891569027,
+        "y_ssim": 0.7036495970515761,
+        "rgb_mse_shave2": 0.012855556467525047,
+        "rgb_psnr_shave2_db": 18.90909119678848,
+        "rgb_ssim_shave2": 0.6829807441575628,
+        "y_mse_shave2": 0.009264793398668134,
+        "y_psnr_shave2_db": 20.33164260837129,
+        "y_ssim_shave2": 0.7032592046696665,
+        "lpips_alex_v01": 0.3157738149166107
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/rt4ksr_x2.npz",
+        "npz_sha256": "7c377f1efe35fe8e9340938f5434f879367345cd361c27733cf4ffd1ec0d00fb",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/rt4ksr_x2.png",
+        "png_sha256": "aa9d800e0af63d1bb559a62da0b374e841aa4c07f492cb59b44e9c56d8d8b257"
+      }
+    },
+    "quicksrnet_small_x2": {
+      "metadata": {
+        "name": "quicksrnet_small_x2",
+        "precision": "FP16",
+        "scale": 2,
+        "checkpoint": {
+          "url": "https://github.com/quic/aimet-model-zoo/releases/download/phase_2_january_artifacts/quicksrnet_small_2x_checkpoint_float32.pth.tar",
+          "path": "{research_workspace}/data/benchmark_assets/quicksrnet/quicksrnet_small_2x_checkpoint_float32.pth.tar",
+          "bytes": 282333,
+          "sha256": "d95d70f1d2366cb9c28d99f8c7aa5bb07e1ffeaf5d7e30d9c66ab0fa28c6d0f8"
+        },
+        "official_source": {
+          "commit": "1bd2bf5b17cdda9251437c444009b29e1a25054b",
+          "files": [
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/models.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/models.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/blocks.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/blocks.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/imresize.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/imresize.py"
+            }
+          ]
+        },
+        "source_hashes": {
+          "blocks.py": "d74567b729de2f9c269f0a5115382aa6ebe51be7edce1099cf6b280a72ee54a4",
+          "imresize.py": "1ec3d9a2844ec9653fc5e36b090b94ddc7965de9cf4c820764950a33fef60902",
+          "models.py": "31d8425e915a082274eeeab82d18f6aeda9e6d68f7ea7f5689807c5d922ad5b6",
+          "__init__.py": "e774e6588e0c3853c44510633a7d0440bf4fb4b8671a84fc9eff8fdcac443464"
+        },
+        "implementation": "Unmodified official QuickSRNet, PyTorch channels-last eager; no retraining",
+        "preflight_fp16_vs_fp32_psnr_db": 68.16140521892328,
+        "parameters": 22860,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.013654769032544173,
+        "rgb_psnr_db": 18.647156414590633,
+        "rgb_ssim": 0.6873494446686149,
+        "y_mse": 0.009888191268624827,
+        "y_psnr_db": 20.048831415569452,
+        "y_ssim": 0.7035744161045348,
+        "rgb_mse_shave2": 0.013686353055112918,
+        "rgb_psnr_shave2_db": 18.6371226107289,
+        "rgb_ssim_shave2": 0.6869639301144893,
+        "y_mse_shave2": 0.009912145621434046,
+        "y_psnr_shave2_db": 20.038323262727623,
+        "y_ssim_shave2": 0.7031855992523114,
+        "lpips_alex_v01": 0.27764222025871277
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/quicksrnet_small_x2.npz",
+        "npz_sha256": "2efcee1e52cb6eb78abbefbd96f2f1017c4c1a205dbe1c7ff239bf166b140702",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/quicksrnet_small_x2.png",
+        "png_sha256": "919f007d848c957ad0d5a3aade3e8db7baba6fb16260a468aa7104732c13ca46"
+      }
+    },
+    "quicksrnet_medium_x2": {
+      "metadata": {
+        "name": "quicksrnet_medium_x2",
+        "precision": "FP16",
+        "scale": 2,
+        "checkpoint": {
+          "url": "https://github.com/quic/aimet-model-zoo/releases/download/phase_2_january_artifacts/quicksrnet_medium_2x_checkpoint_float32.pth.tar",
+          "path": "{research_workspace}/data/benchmark_assets/quicksrnet/quicksrnet_medium_2x_checkpoint_float32.pth.tar",
+          "bytes": 621351,
+          "sha256": "a0d176b40a649e45a176c3b53f45e0237015f4f2c17b157ef5c81e38c4442a0d"
+        },
+        "official_source": {
+          "commit": "1bd2bf5b17cdda9251437c444009b29e1a25054b",
+          "files": [
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/models.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/models.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/blocks.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/blocks.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/imresize.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/imresize.py"
+            }
+          ]
+        },
+        "source_hashes": {
+          "blocks.py": "d74567b729de2f9c269f0a5115382aa6ebe51be7edce1099cf6b280a72ee54a4",
+          "imresize.py": "1ec3d9a2844ec9653fc5e36b090b94ddc7965de9cf4c820764950a33fef60902",
+          "models.py": "31d8425e915a082274eeeab82d18f6aeda9e6d68f7ea7f5689807c5d922ad5b6",
+          "__init__.py": "e774e6588e0c3853c44510633a7d0440bf4fb4b8671a84fc9eff8fdcac443464"
+        },
+        "implementation": "Unmodified official QuickSRNet, PyTorch channels-last eager; no retraining",
+        "preflight_fp16_vs_fp32_psnr_db": 64.69104391545847,
+        "parameters": 50604,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.014399167598562808,
+        "rgb_psnr_db": 18.416626133075205,
+        "rgb_ssim": 0.681410964365766,
+        "y_mse": 0.010448035641363854,
+        "y_psnr_db": 19.80965354558545,
+        "y_ssim": 0.6972731570378083,
+        "rgb_mse_shave2": 0.014432482669112142,
+        "rgb_psnr_shave2_db": 18.406589553407454,
+        "rgb_ssim_shave2": 0.6810243789165752,
+        "y_mse_shave2": 0.01047315038837094,
+        "y_psnr_shave2_db": 19.799226602042744,
+        "y_ssim_shave2": 0.696885073326384,
+        "lpips_alex_v01": 0.26626136898994446
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/quicksrnet_medium_x2.npz",
+        "npz_sha256": "d62afcbf70812583fe461b654817856375abd3472785337419c894ddc7e3827b",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/quicksrnet_medium_x2.png",
+        "png_sha256": "eda4ea217ecc9a134ce617140c37d17a2b2551e166f48e0b9c7b2699f437755e"
+      }
+    },
+    "span_x2": {
+      "metadata": {
+        "name": "span_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/checkpoints/SPAN/spanx2_ch48.pth",
+        "checkpoint_sha256": "561fd5cf419a23d4de1231ce258180f61aee4aa8caa1aaaa783769c7301847bc",
+        "architecture": "{home}/aa_sr_benchmark/models_arch/span/span_arch.py",
+        "architecture_sha256": "964f5086734690734d2fd17fa9494289819d3257431721c691bfb19e2ff228f9",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": false,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "loader_hashes": {
+          "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+          "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+          "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+        },
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.017053411702702984,
+        "rgb_psnr_db": 17.6818872309757,
+        "rgb_ssim": 0.6642314989030774,
+        "y_mse": 0.01240438149408668,
+        "y_psnr_db": 19.06424885595872,
+        "y_ssim": 0.6785028642749975,
+        "rgb_mse_shave2": 0.01709692142990223,
+        "rgb_psnr_shave2_db": 17.670820841325764,
+        "rgb_ssim_shave2": 0.6638219038101465,
+        "y_mse_shave2": 0.012436905919331241,
+        "y_psnr_shave2_db": 19.052876509391474,
+        "y_ssim_shave2": 0.6780979303514573,
+        "lpips_alex_v01": 0.2617619037628174
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/span_x2.npz",
+        "npz_sha256": "e0113feba6dae7bb1943cfa2bfbaf4457cdd4dc1550edc0ccc181e8d43c9b0a5",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/span_x2.png",
+        "png_sha256": "559186b8fb60c5f1ab74de29f4c453c144d110a2316e7050e54b5d49179ec865"
+      }
+    },
+    "swinir_light_x2": {
+      "metadata": {
+        "name": "swinir_light_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/checkpoints/SwinIR/002_lightweightSR_DIV2K_s64w8_SwinIR-S_x2.pth",
+        "checkpoint_sha256": "193b229909ca89cd8b55de9c9e7fce146ae759d59dfcd78d8feb9dd1d6fa0fd7",
+        "architecture": "{home}/aa_sr_benchmark/models_arch/swinir.py",
+        "architecture_sha256": "9e143898679ebeebc5d2fc94ad1b89c38aa4a4d43da4e0fcba0f93e476994913",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": true,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      },
+      "metrics": {
+        "rgb_mse": 0.01644301449741813,
+        "rgb_psnr_db": 17.84018560300765,
+        "rgb_ssim": 0.6658518570134929,
+        "y_mse": 0.011948130011050294,
+        "y_psnr_db": 19.227000603586248,
+        "y_ssim": 0.6796720822564938,
+        "rgb_mse_shave2": 0.016479703696805938,
+        "rgb_psnr_shave2_db": 17.830506011339878,
+        "rgb_ssim_shave2": 0.6654785294594998,
+        "y_mse_shave2": 0.011975929554273377,
+        "y_psnr_shave2_db": 19.2169076729763,
+        "y_ssim_shave2": 0.6793066656502987,
+        "lpips_alex_v01": 0.24731171131134033
+      },
+      "outputs": {
+        "npz": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/swinir_light_x2.npz",
+        "npz_sha256": "cca2fdc1ff0ee167a52fa8e3d4b13a1a8bed424d30caae3294ff9016483e7e88",
+        "png": "G:/Output Images/QRISP Final Benchmark 2026-10-04/preflight_outputs/swinir_light_x2.png",
+        "png_sha256": "0696510ee4fb5ab71e1e68aff5bd8582f0083fdac56ffb0c5fab18f8468eb285"
+      }
+    }
+  }
+}

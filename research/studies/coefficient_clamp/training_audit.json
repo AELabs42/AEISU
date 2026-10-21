@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "common_recorded_config": {
+    "batch": 32,
+    "patch": 512,
+    "source_pad": 16,
+    "seed": 1234,
+    "lr": 0.002,
+    "min_lr": 1e-06,
+    "optimizer": "adamw",
+    "weight_decay": 0.0,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_eps": 1e-08,
+    "grad_clip": 1.0,
+    "basis_grad_stride": 16,
+    "amp_dtype": "bf16",
+    "geometric_augmentation": true,
+    "train_source_dir": "{research_workspace}/data/train/Diverse Input",
+    "train_target_dir": "{research_workspace}/data/train/Diverse Output"
+  },
+  "models": {
+    "clamped": {
+      "final_training_mse": 0.00011471133399754763,
+      "optimizer_steps": [
+        87500
+      ],
+      "tensorboard_epochs": 100,
+      "cosine_max_absolute_error": 7.729502107811648e-11,
+      "checkpoint_sha256": "f428e2dbfb365660b0e17ce84fe148df290d4857124f5e75c3026b60d8541f28",
+      "tensorboard_sha256": {
+        "events.out.tfevents.1790805201.DESKTOP-PPOGMQ6.34880.0": "7b0950aa3a2ccc6f985ad312303a6ad6a41cef15edb0748ebb35ff9234ff838a"
+      }
+    },
+    "unclamped": {
+      "final_training_mse": 0.00011664319597184658,
+      "optimizer_steps": [
+        87500
+      ],
+      "tensorboard_epochs": 100,
+      "cosine_max_absolute_error": 7.729502107811648e-11,
+      "checkpoint_sha256": "84a36d0df7f3427d723b4ca0c35b773ec5f46a19ac521bf6a4844390528d57ab",
+      "tensorboard_sha256": {
+        "events.out.tfevents.1792186929.DESKTOP-PPOGMQ6.15976.0": "7272be7764522d20e7791c906e915540f2c2e3fd15f8dd202a845cdebf2f5783"
+      }
+    }
+  },
+  "caveat": "Both 100 epochs, 87500 updates, seed1234, area700 pairs, batch32, HR512, D4, MSE, cosine2e-3 to1e-6. clamped: fixed offsets, fused_cuda_16x5 (historical); unclamped: fixed offsets, fused_cuda_16x5. One training seed.",
+  "scope": "Recorded paths and training traces; not recovered historical scene membership"
+}

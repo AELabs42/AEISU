@@ -1,0 +1,74 @@
+{
+  "model": "aeisu_fp16",
+  "metadata": {
+    "checkpoint": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/Pytorch Models/aif_reparam_aggressive64_parallel32x4_ep1000_folded_production.pt",
+    "checkpoint_sha256": "d0208712e0d5e4a226335f6eddd4d926dd32f67de32ff590e836d219e99edefe",
+    "parameters": 115996,
+    "precision": "FP16 throughout",
+    "implementation": "Ordinary PyTorch; static linear analysis folding, grouped branch packing, GEMM/bmm synthesis",
+    "static_basis_projection": "FP32 projection at model preparation, then cast to execution precision",
+    "sources": {
+      "{research_workspace}/tools/paper_bench/runtime_torch_models.py": "9ad3d362b3194ec5ef65ec76116d9f56a6bfa716ff8c87a39f8a4842964723f1",
+      "{source_workspace}/AEISU/aeisu/model.py": "476195286b75600c19dd3be3919103f4d2c503b81926b1beab319cda72b845c4",
+      "{source_workspace}/AEISU/aeisu/reconstruction.py": "aef1d8ed2d5141f36a6b433e6932cb4de4c1c1439c79d74d0bebc1ab0061dc06",
+      "{source_workspace}/AEISU/aeisu/runtime.py": "e4171f726ad1175f0d91090a2e9b461aaa01e3c040b4c71c563067743f96e3f6"
+    }
+  },
+  "preflight": {
+    "analysis_fp32_max_abs": 7.450580596923828e-08,
+    "controller_vs_fp32": {
+      "mse": 7.847314918763004e-06,
+      "psnr_db": 51.05278918470585,
+      "max_abs": 0.025660991668701172
+    },
+    "synthesis_vs_direct": {
+      "mse": 4.023087640803169e-08,
+      "psnr_db": 73.9544050645369,
+      "max_abs": 0.0009765625
+    },
+    "output_vs_fp32": {
+      "mse": 1.490064107656508e-07,
+      "psnr_db": 68.26795046351121,
+      "max_abs": 0.0031930208206176758
+    }
+  },
+  "input": "{research_workspace}/data/Benchmark Data/Urban100/HR/img001.png",
+  "input_sha256": "9dbf74e85c4da0e27d9c0d28f6c11445f3425238eec4ef3f3f2d2b8bc1feeeb4",
+  "input_shape_wh": [
+    960,
+    540
+  ],
+  "output_shape_wh": [
+    1920,
+    1080
+  ],
+  "input_preparation": "RGB/255; OpenCV INTER_LINEAR",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "cudnn": 91900,
+  "device": "NVIDIA GeForce RTX 5090",
+  "hardware_start": {
+    "time_unix": 1791327712.2291157,
+    "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 47, 1 %, 2557 MHz, 13801 MHz, 67.14 W, 600.00 W"
+  },
+  "batch": 1,
+  "precision": "FP16",
+  "channels_last": true,
+  "tf32": false,
+  "cudnn_autotune": true,
+  "torch_compile": false,
+  "custom_cuda_extensions": false,
+  "image_tiling": false,
+  "warmup": 20,
+  "iterations": 50,
+  "trials": 5,
+  "timing": "Resident input to complete clipped RGB; all dynamic padding/analysis/reconstruction included; no disk I/O or CPU/GPU image transfers in interval",
+  "execution": [
+    "eager",
+    "cuda_graph"
+  ],
+  "order": "Alternates eager/graph per trial",
+  "aggregation": "Median of trial medians and trial p95 values; raw samples and synchronized-loop throughput retained",
+  "script_sha256": "a99b87063ba217b50af7c1919bbc5fccf90d188d3e44c0671d8a2bcd37a1c95c",
+  "adapter_sha256": "9ad3d362b3194ec5ef65ec76116d9f56a6bfa716ff8c87a39f8a4842964723f1"
+}

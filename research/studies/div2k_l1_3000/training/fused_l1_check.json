@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "tests": [
+    {
+      "mode": "soft",
+      "loss": "l1",
+      "stride": 16,
+      "phase": 0,
+      "loss_error": 0.0,
+      "gradient_max_errors": [
+        4.547473508864641e-12,
+        2.9802322387695312e-08,
+        2.9802322387695312e-08
+      ]
+    },
+    {
+      "mode": "soft",
+      "loss": "l1",
+      "stride": 16,
+      "phase": 37,
+      "loss_error": 0.0,
+      "gradient_max_errors": [
+        2.9558577807620168e-12,
+        2.9802322387695312e-08,
+        4.470348358154297e-08
+      ]
+    },
+    {
+      "mode": "none",
+      "loss": "l1",
+      "stride": 16,
+      "phase": 0,
+      "loss_error": 0.0,
+      "gradient_max_errors": [
+        3.637978807091713e-12,
+        1.4901161193847656e-08,
+        2.384185791015625e-07
+      ]
+    },
+    {
+      "mode": "none",
+      "loss": "l1",
+      "stride": 16,
+      "phase": 37,
+      "loss_error": 1.1920928955078125e-07,
+      "gradient_max_errors": [
+        4.092726157978177e-12,
+        1.4901161193847656e-08,
+        2.384185791015625e-07
+      ]
+    }
+  ]
+}

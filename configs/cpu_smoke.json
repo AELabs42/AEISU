@@ -1,0 +1,17 @@
+{
+  "training_input": "area",
+  "epochs": 1,
+  "steps_per_epoch": 2,
+  "batch": 1,
+  "patch": 32,
+  "source_pad": 16,
+  "lr": 0.002,
+  "min_lr": 0.000001,
+  "seed": 1234,
+  "basis_l1_scale": 0.5,
+  "basis_grad_stride": 16,
+  "gradient_phase": "fixed",
+  "grad_clip": 1,
+  "amp": "bf16",
+  "log_every": 1
+}

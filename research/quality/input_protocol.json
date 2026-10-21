@@ -1,0 +1,50 @@
+{
+  "selection_sha256": "e5e747692fcaebfab10d77e91c86280331613e9c265fbf324fc9c7923383d13a",
+  "aa": {
+    "sources": {
+      "smaa": {
+        "repository": "https://github.com/iryoku/smaa",
+        "commit": "71c806a838bdd7d517df19192a20f0c61b3ca29d",
+        "reference": "https://www.iryoku.com/smaa/",
+        "settings": "SMAA 1x High; luma edges; supplied uncompressed AreaTex/SearchTex; no predication or temporal processing",
+        "color": "Encoded-RGB edge detection; sRGB-decoded linear neighborhood blending; sRGB-encoded FP32 output",
+        "intermediates": "RGBA8 UNORM edges and weights, per reference integration"
+      },
+      "fxaa": {
+        "repository": "https://github.com/GameTechDev/CMAA2",
+        "commit": "071c6b0857559f4e36f614362e6d2aab1b61938a",
+        "upstream": "NVIDIA FXAA 3.11 by Timothy Lottes, preserved in Intel's CMAA2 sample",
+        "reference": "https://www.iryoku.com/aacourse/downloads/09-FXAA-3.11-in-15-Slides.pdf",
+        "settings": "PC Quality preset12; subpix0.75; edge threshold0.166; min0.0833; RGBL alpha=dot(encodedRGB,[0.299,0.587,0.114])",
+        "color": "Encoded-RGB LDR filtering; FP32 input/output; GREEN_AS_LUMA=0; Intel separate-R8 extension disabled"
+      }
+    },
+    "files": {
+      "antialias.exe": "4ec80f5f750dcd0c22474dc6a7d0f0ca323dca2b52ce395947fc9a5effd75991",
+      "antialias.cpp": "067bb3ae5b3af9ea9e692015f351870c441f44b35d3d6bb769a28ed751c2a217",
+      "antialias.hlsl": "1a1bb651507a2470d2189b53ee06793e5cfaa76c25442bf4af9f4bf5f880633d",
+      "build.ps1": "0dd39435a1c6956c4db2f84b9666eb000c59eb91d680579dd0f0042524489939",
+      "vendor/fxaa/Fxaa3_11.h": "4834fada78774fc55726adeb717c53ca7324b66820df08ef773515cafb148aef",
+      "vendor/smaa/AreaTex.h": "1933bf43ce86ba71f7ed5f0fa94b148610c634dc3395b9bc67a817d51ee73af2",
+      "vendor/smaa/LICENSE.txt": "2b848b67ba50ac40b53e11cf1ccdaee2a190ca83b4652cba695a5f1ce81f52ae",
+      "vendor/smaa/SearchTex.h": "1fac315ab5f87b60083c9b8387af17f056204d3d1bf21500f2acc5b3e8c1a37a",
+      "vendor/smaa/SMAA.hlsl": "4db53d92ef0b45661f8450303589ffabce93c352cae4282a6f32dd2b80efbeb9",
+      "BlendPS.cso": "ded4416c4e8228279e7e67b1cf4cbe6bf2fecacc459d8c06e53ae20cab8a5e6f",
+      "BlendVS.cso": "aa30d16e1c725f78a15b52a0f53856ffb6da77198de9b8bc16b890bd6a1eeced",
+      "EdgePS.cso": "2eb1de83ce3757f15d280f6059643cde95273f885c01031fbefd4aba87e6be99",
+      "EdgeVS.cso": "52d9aab4664d81d90084e45bf8c228e1510379d4ed94000dd5f5c8a558f33299",
+      "FullVS.cso": "39ce42bfaf8d4c38a56efefe250fbee887c1654715c44c63334e112c022ecce8",
+      "FxaaPS.cso": "602a973dfdc58bc47d36ac67606f5f6c2213e6f7cce1b13c9d8ecfdad993a715",
+      "PrepareLinearPS.cso": "cb229f034acb15b844e07a98bef11a5aef50b219b1aec772fb59f7b426d95cc4",
+      "PrepareLumaPS.cso": "cffe2f5bd154fbd93a9379342eb789c9488c091d1b6c2868037e9c9e6634ef1e",
+      "WeightPS.cso": "315437f8ce54ea4130694c1e21becab577e7d9d33cabf757b58886c9ea9b13e3",
+      "WeightVS.cso": "354603b060554e8c8d97e7c541c99ef148c408f20f41bd860d74513f9a348057"
+    },
+    "sampling": "Reference fullscreen triangle and pixel-center offsets; linear/point clamp samplers as specified",
+    "storage": "Lossless compressed float32 arrays; no extra uint8 quantization after AA"
+  },
+  "area": "Aligned 2x2 integer box reduction of Native HR, uint8 round-half-up",
+  "bicubic": "Previously prepared Pillow antialiased BICUBIC reduction of Native HR, not MATLAB",
+  "storage": "Lossless float32 NPZ inputs and PNG previews; Native HR PNG copied unchanged",
+  "runner_sha256": "7cfedecef60321ae73fc0f3d3eb6d84b865522e812ee3ae603d985ab17e84b9f"
+}

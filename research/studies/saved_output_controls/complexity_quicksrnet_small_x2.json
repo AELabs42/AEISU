@@ -1,0 +1,70 @@
+{
+  "parameters": 22860,
+  "buffer_elements": 0,
+  "processed_lr_shape": [
+    540,
+    960
+  ],
+  "convolution_macs": 11794636800,
+  "linear_macs": 0,
+  "attention_matmul_macs": 0,
+  "total_counted_macs": 11794636800,
+  "layers": [
+    {
+      "module": "cnn.0",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        32,
+        540,
+        960
+      ],
+      "macs": 447897600
+    },
+    {
+      "module": "cnn.2",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        32,
+        540,
+        960
+      ],
+      "macs": 4777574400
+    },
+    {
+      "module": "cnn.4",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        32,
+        540,
+        960
+      ],
+      "macs": 4777574400
+    },
+    {
+      "module": "conv_last",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        12,
+        540,
+        960
+      ],
+      "macs": 1791590400
+    }
+  ],
+  "model": "quicksrnet_small_x2",
+  "requested_lr_shape": [
+    540,
+    960
+  ],
+  "macs_per_requested_lr_pixel": 22752.0,
+  "source_sha256": "25717fc85408182e83530149afaef5b85c58041bda39cc2c9f47bbbbd7f6cf31",
+  "torch": "2.11.0+cu130",
+  "cpu_meta_only": true,
+  "counting": "One multiply-accumulate is one MAC; deployed conv/linear and QK/AV products; excludes biases, activations, norms, softmax, pooling, interpolation, additions and memory movement",
+  "checkpoint_sha256": "d95d70f1d2366cb9c28d99f8c7aa5bb07e1ffeaf5d7e30d9c66ab0fa28c6d0f8",
+  "source": "https://github.com/quic/aimet-model-zoo/releases/download/phase_2_january_artifacts/quicksrnet_small_2x_checkpoint_float32.pth.tar"
+}

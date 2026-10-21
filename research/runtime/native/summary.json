@@ -1,0 +1,338 @@
+{
+  "1280x720": {
+    "minimal": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 0.472688,
+        "median_range_ms": [
+          0.471296,
+          0.474512
+        ],
+        "median_of_p95_ms": 0.493728
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 0.308032,
+        "median_range_ms": [
+          0.307824,
+          0.309872
+        ],
+        "median_of_p95_ms": 0.32864
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.206432,
+        "median_range_ms": [
+          0.205968,
+          0.210416
+        ],
+        "median_of_p95_ms": 0.210784
+      }
+    },
+    "detailed": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 0.508336,
+        "median_range_ms": [
+          0.498032,
+          0.551776
+        ],
+        "median_of_p95_ms": 0.579136,
+        "stages_ms": {
+          "analysis_and_project": 0.034816,
+          "compress_and_four_branch_pairs": 0.3072,
+          "expand_shuffle_skip": 0.02864,
+          "refine_difference_of_medians": 0.070336,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.057472
+        }
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 0.344304,
+        "median_range_ms": [
+          0.339824,
+          0.347232
+        ],
+        "median_of_p95_ms": 0.402176,
+        "stages_ms": {
+          "analysis_and_project": 0.057376,
+          "compress_and_four_branch_pairs": 0.054112,
+          "expand_shuffle_skip": 0.02456,
+          "refine_difference_of_medians": 0.11248,
+          "coefficient_head": 0.033248,
+          "reconstruction": 0.057376
+        }
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.230896,
+        "median_range_ms": [
+          0.228208,
+          0.311632
+        ],
+        "median_of_p95_ms": 0.361248,
+        "stages_ms": {
+          "analysis_and_project": 0.026448000000000003,
+          "compress_and_four_branch_pairs": 0.058752,
+          "expand_shuffle_skip": 0.016928,
+          "refine_difference_of_medians": 0.069584,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.057184
+        }
+      }
+    }
+  },
+  "1920x1080": {
+    "minimal": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 0.974208,
+        "median_range_ms": [
+          0.97272,
+          0.976448
+        ],
+        "median_of_p95_ms": 0.997088
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 0.488064,
+        "median_range_ms": [
+          0.486912,
+          0.488656
+        ],
+        "median_of_p95_ms": 0.493888
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.415744,
+        "median_range_ms": [
+          0.41352,
+          0.418144
+        ],
+        "median_of_p95_ms": 0.439552
+      }
+    },
+    "detailed": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 0.999216,
+        "median_range_ms": [
+          0.997568,
+          0.999728
+        ],
+        "median_of_p95_ms": 1.02237,
+        "stages_ms": {
+          "analysis_and_project": 0.05943999999999999,
+          "compress_and_four_branch_pairs": 0.594032,
+          "expand_shuffle_skip": 0.079872,
+          "refine_difference_of_medians": 0.137568,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.1256
+        }
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 0.517392,
+        "median_range_ms": [
+          0.516048,
+          0.546864
+        ],
+        "median_of_p95_ms": 0.577536,
+        "stages_ms": {
+          "analysis_and_project": 0.051104,
+          "compress_and_four_branch_pairs": 0.087744,
+          "expand_shuffle_skip": 0.04096,
+          "refine_difference_of_medians": 0.17408,
+          "coefficient_head": 0.034592,
+          "reconstruction": 0.12704
+        }
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.434912,
+        "median_range_ms": [
+          0.432912,
+          0.435456
+        ],
+        "median_of_p95_ms": 0.458112,
+        "stages_ms": {
+          "analysis_and_project": 0.042912,
+          "compress_and_four_branch_pairs": 0.09768,
+          "expand_shuffle_skip": 0.028864,
+          "refine_difference_of_medians": 0.136704,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.126272
+        }
+      }
+    }
+  },
+  "2560x1440": {
+    "minimal": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 1.67674,
+        "median_range_ms": [
+          1.67165,
+          1.67746
+        ],
+        "median_of_p95_ms": 1.69984
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 1.13238,
+        "median_range_ms": [
+          1.1301,
+          1.13454
+        ],
+        "median_of_p95_ms": 1.15578
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.739904,
+        "median_range_ms": [
+          0.738544,
+          0.74424
+        ],
+        "median_of_p95_ms": 0.764064
+      }
+    },
+    "detailed": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 1.69886,
+        "median_range_ms": [
+          1.69821,
+          1.70062
+        ],
+        "median_of_p95_ms": 1.72058,
+        "stages_ms": {
+          "analysis_and_project": 0.100976,
+          "compress_and_four_branch_pairs": 0.982944,
+          "expand_shuffle_skip": 0.147456,
+          "refine_difference_of_medians": 0.235872,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.232
+        }
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 1.16149,
+        "median_range_ms": [
+          1.1579,
+          1.16392
+        ],
+        "median_of_p95_ms": 1.18266,
+        "stages_ms": {
+          "analysis_and_project": 0.16792,
+          "compress_and_four_branch_pairs": 0.125344,
+          "expand_shuffle_skip": 0.081456,
+          "refine_difference_of_medians": 0.395056,
+          "coefficient_head": 0.163168,
+          "reconstruction": 0.227392
+        }
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.760672,
+        "median_range_ms": [
+          0.75424,
+          0.763744
+        ],
+        "median_of_p95_ms": 0.783808,
+        "stages_ms": {
+          "analysis_and_project": 0.067136,
+          "compress_and_four_branch_pairs": 0.153952,
+          "expand_shuffle_skip": 0.065728,
+          "refine_difference_of_medians": 0.237056,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.232832
+        }
+      }
+    }
+  },
+  "960x540": {
+    "minimal": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 0.284784,
+        "median_range_ms": [
+          0.28408,
+          0.286512
+        ],
+        "median_of_p95_ms": 0.303136
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 0.20384,
+        "median_range_ms": [
+          0.20264,
+          0.20496
+        ],
+        "median_of_p95_ms": 0.225728
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.131936,
+        "median_range_ms": [
+          0.131648,
+          0.137456
+        ],
+        "median_of_p95_ms": 0.151744
+      }
+    },
+    "detailed": {
+      "fp16": {
+        "trials": 5,
+        "median_of_medians_ms": 0.312656,
+        "median_range_ms": [
+          0.31048,
+          0.378016
+        ],
+        "median_of_p95_ms": 0.368928,
+        "stages_ms": {
+          "analysis_and_project": 0.025888,
+          "compress_and_four_branch_pairs": 0.185536,
+          "expand_shuffle_skip": 0.020448,
+          "refine_difference_of_medians": 0.04368,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034944
+        }
+      },
+      "fp8": {
+        "trials": 5,
+        "median_of_medians_ms": 0.271648,
+        "median_range_ms": [
+          0.259664,
+          0.305504
+        ],
+        "median_of_p95_ms": 0.36096,
+        "stages_ms": {
+          "analysis_and_project": 0.041904,
+          "compress_and_four_branch_pairs": 0.064048,
+          "expand_shuffle_skip": 0.03224,
+          "refine_difference_of_medians": 0.07968,
+          "coefficient_head": 0.02288,
+          "reconstruction": 0.034784
+        }
+      },
+      "mixed": {
+        "trials": 5,
+        "median_of_medians_ms": 0.186672,
+        "median_range_ms": [
+          0.180368,
+          0.249232
+        ],
+        "median_of_p95_ms": 0.276256,
+        "stages_ms": {
+          "analysis_and_project": 0.019488000000000002,
+          "compress_and_four_branch_pairs": 0.058336,
+          "expand_shuffle_skip": 0.018464,
+          "refine_difference_of_medians": 0.049856,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034912
+        }
+      }
+    }
+  }
+}

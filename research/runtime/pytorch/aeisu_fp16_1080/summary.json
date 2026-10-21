@@ -1,0 +1,31 @@
+{
+  "model": "aeisu_fp16",
+  "input_shape_wh": [
+    1920,
+    1080
+  ],
+  "results": {
+    "eager": {
+      "median_ms": 7.06444787979126,
+      "p95_ms": 7.081711840629578,
+      "synchronized_loop_ms_per_frame": 7.073861999670044,
+      "peak_allocated_gib": 1.3850512504577637,
+      "peak_reserved_gib": 3.630859375,
+      "median_range_ms": [
+        7.062112092971802,
+        7.066751956939697
+      ]
+    },
+    "cuda_graph": {
+      "median_ms": 6.905376195907593,
+      "p95_ms": 6.9167694568634035,
+      "synchronized_loop_ms_per_frame": 6.9085539993830025,
+      "peak_allocated_gib": 0.12926244735717773,
+      "peak_reserved_gib": 3.630859375,
+      "median_range_ms": [
+        6.904623985290527,
+        6.906575918197632
+      ]
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-21",
+  "dataset": "GameIR Town05",
+  "track": "Target-derived 2x area / SSAA",
+  "new_inference": false,
+  "numerical_results_changed": false,
+  "display": "Original RGB, common half-up uint8 rounding, nearest-neighbor enlargement; no contrast enhancement",
+  "selection": "Previously author-selected candidates 51 and 56, plus previously requested candidate 41",
+  "model_artifact_sha256": "8a6ebf7042016fa50e55df3f4ad41f1e318ee66ecc2931984461df9af15f49d6",
+  "attribution": "GameIR (Zhou et al., 2024), dataset published under MIT; CARLA Simulator assets under CC-BY",
+  "main": [
+    {
+      "label": "Curved lamp arms",
+      "screening_number": 51,
+      "sequence": "static_town05/07",
+      "frame": "00000030",
+      "xywh": [
+        1590,
+        464,
+        80,
+        80
+      ],
+      "panels": [
+        {
+          "method": "target",
+          "source_sha256": "26b7a12f53fee798b8d9fcd884977337cfde06d9ac72cb2679f0d70d7f250e45",
+          "raw_sha256": "0a94bcbb2c25887c8493a7475bab19773446d428b45c2dce57effb1f7e86821a",
+          "png_sha256": "f1dc07735d080340c6f93f818968308d91e4b43ccab8c177300f7aba303e7616"
+        },
+        {
+          "method": "aif_mixed",
+          "source_sha256": "ce2bfed9261e47dc13a58d50fd5910950d7f9cdee09c6756df7fd35183a8eb27",
+          "raw_sha256": "a65f5e4cacce7bf72ee3329b85f24ccc6c8e57cf05d623c5eb2daaba5f4f1009",
+          "png_sha256": "3c696b6f6ef5fb28ac11f9c86fd8b4dca3f2c0c821ccd510287205659b0a3b78"
+        },
+        {
+          "method": "fsr1_easu_fp32",
+          "source_sha256": "2a70bb8c653cedc3272088950b178e68bb58c46795f723d0961b3cf7a4470c2d",
+          "raw_sha256": "1b98992d1b9aa8f52cb83de1a370d059b2a8e8afb76295bb11f43d3b92eb15e2",
+          "png_sha256": "95324633c2d31ae8d34e343bb02befd39345930bec56b23b510d1bce534e2c47"
+        },
+        {
+          "method": "repnet_x2_fp16",
+          "source_sha256": "62953611df920b00a44eb4588d0f0d97d3664c8361e8caf4bee41ae83f43e383",
+          "raw_sha256": "0a758e2c3b0fe96f75fe89208214f81cff21990a80ec59ae50ce2901fc1baf37",
+          "png_sha256": "bc00374a8b65d16c31a0bc77cc9d6f316028414c3f84b92fd74531a9276a3b4a"
+        },
+        {
+          "method": "rt4ksr_x2_fp16",
+          "source_sha256": "6ebcd9a179a0bf091852df3f8781a4afaefc86955e6db282f123f319fa2ecef2",
+          "raw_sha256": "9618eda7d04982184d82065917d9193b6b7659eb330569a49e3633e7f36bb715",
+          "png_sha256": "7f171cc30ee601e9298bb845818714ad16556a6982df589805357929adf05a8d"
+        },
+        {
+          "method": "span_x2_fp16",
+          "source_sha256": "a4f3340a9e8f4db1765d6bf0d61f028d9d858e7d2dd20fd0dec3af25d2302eab",
+          "raw_sha256": "4325f6a918a824669ec4b1daa14035f972046e0bf3b99d485ae981be6c94adaf",
+          "png_sha256": "db116e4f2a710e5185a600ea7a200a675dc85f31f8344146686931f3bda2865c"
+        },
+        {
+          "method": "swinir_light_x2_fp16",
+          "source_sha256": "6e84bdb334efbe0aab60e97c109e87ffec566da1a2f80da61996d9a44bc4db3a",
+          "raw_sha256": "2dce8dbb77c89805a335e5e4e82328c8f05e651d9af3b7a789f560784a9280ed",
+          "png_sha256": "da01908155580d0a630b89d0636caab1cc4fea468a9659a82af05ebd079498a0"
+        }
+      ]
+    },
+    {
+      "label": "Hood trim",
+      "screening_number": 56,
+      "sequence": "dynamic_town05/02",
+      "frame": "00000030",
+      "xywh": [
+        360,
+        954,
+        80,
+        80
+      ],
+      "panels": [
+        {
+          "method": "target",
+          "source_sha256": "b1772b3f912982262233d56ce8233500b014033999e010edb3b4b6690bbdf761",
+          "raw_sha256": "d0a20281408d8209cf2dca170a437cd42fdbf58fd4cae1d1a1291a4fc5b1588d",
+          "png_sha256": "3d8460932d4896d509e107bb809ebb349842c21ae6622063805efc95b31b49d8"
+        },
+        {
+          "method": "aif_mixed",
+          "source_sha256": "7d2a752ef0eb1bd4bf7f27f3f7d0b7cff13b6bdb664ee5203ea47e434b6e5956",
+          "raw_sha256": "d642ea3e967202dd00e378c9f0518d2f5526f863dc01ef8407e1151e6394188a",
+          "png_sha256": "3846d4c9fd08ca99cbe5e966db29910da63dc996e8b3e3cc0cb1e6c333ced8bb"
+        },
+        {
+          "method": "fsr1_easu_fp32",
+          "source_sha256": "923cddf665af92faa2b06c24b3db71256d719fa9f745187d7ca192f6de1740e2",
+          "raw_sha256": "562c058d2b731a53bc15c6a6ddfd6e984da83db3a0a653ee7a49e018df64d548",
+          "png_sha256": "f1bbdb88fd27bac66563ab030275bf925e5d1a1fb4dd5679b69218a7f4a6cc17"
+        },
+        {
+          "method": "repnet_x2_fp16",
+          "source_sha256": "22d2f6863b54986a4788d54cbdb6211870f5df6509c20fdc7b3c0749da297412",
+          "raw_sha256": "47e409c6f4d74035f34d1215d514afbf987615c53850b63bfd77d7630bd459a5",
+          "png_sha256": "434c935a633a0c4549bd6bb0d68f3bc88d415586e2a3415e4fe73faad27ff344"
+        },
+        {
+          "method": "rt4ksr_x2_fp16",
+          "source_sha256": "b127fd70672c8cb0ba10d851fc8ea037bfed5ac6f0d0c425390a1b3019cac415",
+          "raw_sha256": "ee14935621a16df819860ec22c1aa60f5f093da9ddc3fdceaadf04f0c7bf636b",
+          "png_sha256": "eb7626642c0964900bbbad73cdff7d2d0b46e033cfe4ac4dc670d59ede20ac6c"
+        },
+        {
+          "method": "span_x2_fp16",
+          "source_sha256": "95eb1293e185e54e881588fb2516321a90ae3c8cbb8db394de1af38d8f01cb35",
+          "raw_sha256": "9f42c6dcb932ee3d5d6c3a2411649282ee94fc164c25ff22646cc34015a98eb0",
+          "png_sha256": "688d9f0dff2fb028530850139e376e882b19f806c990c47ff70fbcef90900050"
+        },
+        {
+          "method": "swinir_light_x2_fp16",
+          "source_sha256": "eddf850fa13caeb54b6363fea3795e00271905754bb3e8a73d06a7f8c17bf35c",
+          "raw_sha256": "ca96181a30d1f74fb21937317f5cdae4d669a0f4e2714217c91320d8eab1bbbc",
+          "png_sha256": "4c0f278308233836464b94cb9b2d4a1fc6ff0d35f874f9a5f15b0dd3935307ab"
+        }
+      ]
+    }
+  ],
+  "supplement": [
+    {
+      "label": "Window surround",
+      "screening_number": 41,
+      "sequence": "dynamic_town05/04",
+      "frame": "00000030",
+      "xywh": [
+        1808,
+        800,
+        64,
+        64
+      ],
+      "panels": [
+        {
+          "method": "target",
+          "source_sha256": "831d88a6ca15ca2d12e72d33a4bd751b8b3a2e921008b5f86a0206ae1405ef7b",
+          "raw_sha256": "52d9d940864dbe8ed7fb41cac20e6eb090b7817acd94b9c00c833954afb85d8e",
+          "png_sha256": "ce506a57b6598297a95b74faebd1cdf99290c7cc99c248da700a75c2bbae487d"
+        },
+        {
+          "method": "aif_mixed",
+          "source_sha256": "8fbb35ae28c89ef20d072cdc17ca44719bc21e4fe374b809901aabbd4dc9da88",
+          "raw_sha256": "ed4b27fb66ef25057c29d3923243359a770e6fd38cd81d81b09a39e2329c50cb",
+          "png_sha256": "ef5790975c56e19f7fb44526ff3ddceadb7b9e35f24d256b8b20e9b4820f97d2"
+        },
+        {
+          "method": "fsr1_easu_fp32",
+          "source_sha256": "39d77ea24ab81018dbf188085f5afa51538fa5f54d4ca03b027060e72006d010",
+          "raw_sha256": "e41aef594d55fc16a4906f4a861674363f9cae7542ff050172756723be080bc9",
+          "png_sha256": "d41e2afd9d5b64eb780f06c6d31f534af1b8213ca82e6a8aae4c85b3be489df8"
+        },
+        {
+          "method": "repnet_x2_fp16",
+          "source_sha256": "001e81b3ca82a2d7aa76807ec32016179b9d2d8e87125f7050b1dd68b56b9f15",
+          "raw_sha256": "5f2d794acfa6f54b10ce734253e6487eca2755528091aecd73dc568017ff8e43",
+          "png_sha256": "d0c2ca2ebc238e3932fd5a63ded66a8eb844b84c7788af93ea16d5940c451701"
+        },
+        {
+          "method": "rt4ksr_x2_fp16",
+          "source_sha256": "5a7df4540d034071f3433253f48e365578ba8ed600b79c0cfcbcf0c2116bd585",
+          "raw_sha256": "1c90bcd477ffb5835a878f8497214f8716cb52dcd28e26810223d50e765742fe",
+          "png_sha256": "7dd9bae492c973c6542b3c9c8a07f12002e68742f8042cbe7816dba853ac6eb8"
+        },
+        {
+          "method": "span_x2_fp16",
+          "source_sha256": "13fbc814af74ac68d62d48685afccd5175b0b74a556334f0a4f782372c7996b4",
+          "raw_sha256": "2af559131e69689b1a414720d9e4abd48e8dd1bfaefa75cef274d11fc53bfd92",
+          "png_sha256": "1d1b593821300000e5e7b26acdd6b3f00cea330e30001fc1d93a561bdb68d134"
+        },
+        {
+          "method": "swinir_light_x2_fp16",
+          "source_sha256": "81d5abe088b81dce2092222778569e761cfbeab313931b813aa841efea77624d",
+          "raw_sha256": "bb431ccad9c29e0c5a301de9c6d6ec097f2a77101a2d7bc40b5cebf6db7dbb6b",
+          "png_sha256": "09c795e38948ae78aa84d1cbd8f309ae8c90aa655f799fab4590e47156b29de1"
+        }
+      ]
+    }
+  ]
+}

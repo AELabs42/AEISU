@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-21",
+  "privacy_and_asset_scan_passed": true,
+  "python_files_syntax_checked": 76,
+  "manuscript_source_assets_present": true,
+  "restricted_qrisp_figures_present": false,
+  "private_git_history_included": false,
+  "cpu_reference_tests": "11 tests passed locally on the clean snapshot",
+  "pretrained_cpu_smoke": "All three checkpoints produce finite 2x RGB output",
+  "gpu_work": false,
+  "pdf_visual_review": "13-page main and 11-page supplement rendered and inspected",
+  "manuscript_sha256": "20bac60799169c73bdf9e2472d5e3feeda87a8966c5139984cebb332ffcd51d8",
+  "supplement_sha256": "5de60efe227ddc9789e46458351261b8c14a42c73c355683c864145b78269a7d"
+}

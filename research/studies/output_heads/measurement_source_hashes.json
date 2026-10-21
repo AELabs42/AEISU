@@ -1,0 +1,23 @@
+{
+  "ablation_heads.py": "6dd26cfc8cff490ccd916cb43c21ea2a10dec12cd390b377dc533fd2e8861507",
+  "adaptive_reference.py": "b8f741a8ac41f0ef548a46116f3e368a93192b0d39e7219604ca1a1c905ffaa0",
+  "common.py": "f56c1a8061c4247aa897fe2b66d0c8fc9ed3500e658925e1967501bce67aaa20",
+  "DirectRgbReconstruction.cuh": "ceb6dc337195dc400685bce752629964d42372479ccf276d5bd3da977e9f5066",
+  "export_adaptive.py": "3fdaf348f94ea3dc91a7a30a5debbc1caaadc2d1abf80b23c243879124800853",
+  "export_srcpyr.py": "c31129f1d5656cc74a7da5fb359f8268cfbb233b91138f6f42bd451d0bc0549b",
+  "fake_fp8.py": "30445ab0a7515c018a90cfaebc5400f237edca839be6461ec8ad1de7b0c956fd",
+  "Fold_For_Production.py": "91b3dd6dd1f8a321ac19237d8bbd7b20cc03c7b36e945ef4a8d2e32843f05572",
+  "luma_metrics.py": "55b41f4dd31f543df926cfcce1171fd0bc6054c7acaa3acfdad6eaf0e80962e7",
+  "model_format.py": "a83ca755b65205e9bccd3d80c5e60d4d28369cd27c9bc8104dabe654e06b6a48",
+  "OUTPUT_HEAD_ABLATION.md": "17fb311b506edfa57b3fa5d1a69ef707e63a63e5f7ddc3b8a9035e2470d3759e",
+  "output_heads.py": "507f81ed3482533cc9273062e1a9be0ceaa5fb1de7ec305f7e3f996f06641238",
+  "reference.py": "2093c788040808233306aad9d42a9cba4e81f4f3dbec0bd6bcc1cf6987f101be",
+  "report_output_heads.py": "f02982ca0f6072d65851a93bd5f9e87d1d99d8120154904d8b21e4ec7d4ece95",
+  "SrcPyrArchitecture.h": "eec4486f26a1aa693dc2c5a6ea83282a75df5280de1d34dfc29c85790c15f5f0",
+  "SrcPyrCudaRuntime.cu": "20c5b34d2da1a36051e81f6a124ba7ed7c5f43dd84b1b65b4a36c600343f2cd3",
+  "SrcPyrModel.cpp": "39e38775be584d6ee0bf5a7f4410c6f88d6692573c1c2634645c4d68343dd895",
+  "SrcPyrModel.h": "4ab085bec525fbabec0ed700da14cb1b0e399b0742d56f93bf04ff4a26b0d1a2",
+  "SrcPyrRuntimeTest.cpp": "d8562ed906b61040b6accff3bc8e189bc2744204cf0bc9bafc1c9f67a2a283db",
+  "test_output_head_reference.py": "f5ca71dfae8bd2a9d6c86fd6718da8954d5a8f2366e29985fc4f55dd2b5b7be1",
+  "timing.py": "c31dece240cd8531da4107e7cf262894a0084b1cc7a627e4299cf3f36fd494aa"
+}

@@ -1,0 +1,31 @@
+{
+  "model": "rt4ksr_x2",
+  "input_shape_wh": [
+    1920,
+    1080
+  ],
+  "results": {
+    "eager": {
+      "median_ms": 1.9681599736213684,
+      "p95_ms": 2.241147172451019,
+      "synchronized_loop_ms_per_frame": 1.993767999811098,
+      "peak_allocated_gib": 0.3964653015136719,
+      "peak_reserved_gib": 0.73046875,
+      "median_range_ms": [
+        1.958303987979889,
+        2.4762719869613647
+      ]
+    },
+    "cuda_graph": {
+      "median_ms": 1.718832015991211,
+      "p95_ms": 1.725216031074524,
+      "synchronized_loop_ms_per_frame": 1.7229799996130168,
+      "peak_allocated_gib": 0.12936735153198242,
+      "peak_reserved_gib": 0.73046875,
+      "median_range_ms": [
+        1.718400001525879,
+        1.7198240160942078
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "smaa": {
+    "flat_max_error": 2.9802322387695312e-08,
+    "bitwise_repeat": true,
+    "fraction_blended": 0.010335286458333334,
+    "edges_nonzero_fraction": 0.012166341145833334,
+    "weights_nonzero_fraction": 0.012166341145833334
+  },
+  "fxaa": {
+    "flat_max_error": 0.0,
+    "bitwise_repeat": true,
+    "fraction_blended": 0.013997395833333334
+  }
+}

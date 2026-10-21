@@ -1,0 +1,51 @@
+{
+  "checkpoint": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/Pytorch Models/aif_reparam_aggressive64_parallel32x4_ep1000_folded_production.pt",
+  "checkpoint_sha256": "d0208712e0d5e4a226335f6eddd4d926dd32f67de32ff590e836d219e99edefe",
+  "artifact": "{source_workspace}/AESS/models/aif_reparam_aggressive64_parallel32x4/adaptive_fp8.bin",
+  "artifact_sha256": "8a6ebf7042016fa50e55df3f4ad41f1e318ee66ecc2931984461df9af15f49d6",
+  "native_executable": "{source_workspace}/AESS/bin/Release/SrcPyrRuntimeTest.exe",
+  "native_executable_sha256": "5539d1d3e4cac52acba4029ee6173ce6eee6c702f10c7a10dcfbf52ea431af84",
+  "final_marker": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/final.txt",
+  "native_artifact_calibration_policy": "mixed",
+  "note": "No retraining, deployment modification, or reuse of bicubic LR images.",
+  "gpu_user_description": "ASUS TUF RTX 5090 OC; current settings recorded below, not modified by this script",
+  "clock_or_power_changes": false,
+  "hardware_start": {
+    "time_unix": 1791327566.4856188,
+    "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 45, 0 %, 2550 MHz, 14001 MHz, 62.09 W, 600.00 W"
+  },
+  "input": "{research_workspace}/data/Benchmark Data/Urban100/HR/img001.png",
+  "input_sha256": "9dbf74e85c4da0e27d9c0d28f6c11445f3425238eec4ef3f3f2d2b8bc1feeeb4",
+  "input_preparation": "RGB/255 resized with OpenCV INTER_LINEAR to each LR timing shape; quality evaluated separately",
+  "warmup_per_precision_per_trial": 100,
+  "iterations_per_precision_per_trial": 200,
+  "precision_order": [
+    "fp8",
+    "fp16",
+    "mixed"
+  ],
+  "order_caveat": "Existing native harness has fixed precision order",
+  "metric": "CUDA event duration; no D3D readback, allocation, file I/O, capture, or presentation in interval",
+  "timing_boundary": "native event0 to event16; AFTER external input fence wait, BEFORE output fence signal; preprocessing+controller+reconstruction",
+  "aggregation": "median of trial medians; median of trial p95; run ranges retained",
+  "stage_caveat": "Detailed events add overhead. Refine is difference of native group/expand medians and INCLUDES the head when fused. The small coefficient_head field is only the remaining event gap for mixed/FP16, not a head compute measurement.",
+  "resolutions": [
+    [
+      960,
+      540
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1920,
+      1080
+    ],
+    [
+      2560,
+      1440
+    ]
+  ],
+  "harness_sha256": "a627a1069ad0d1212cad5ad774167ed44e2295818360d518809a0e0b00004561"
+}

@@ -1,0 +1,53 @@
+{
+  "selection_sha256": "e5e747692fcaebfab10d77e91c86280331613e9c265fbf324fc9c7923383d13a",
+  "methods": [
+    "aif_mixed",
+    "bilinear",
+    "bicubic",
+    "fsr1_easu",
+    "fsr1_rcas_02",
+    "nis_0",
+    "sgsr1",
+    "repnet_x2",
+    "rt4ksr_x2",
+    "quicksrnet_small_x2",
+    "quicksrnet_medium_x2",
+    "span_x2",
+    "swinir_light_x2"
+  ],
+  "conditions": [
+    "ssaa_area",
+    "bicubic_aa",
+    "fxaa",
+    "smaa",
+    "native"
+  ],
+  "metric": {
+    "network": "AlexNet calibrated LPIPS v0.1",
+    "precision": "FP32, TF32 disabled",
+    "domain": "Encoded RGB, [-1,1], two-HR-pixel border cropped, full resolution, no resizing or patches",
+    "alexnet_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "calibration_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "implementation_sha256": "780d09b907cb9b661e0ae28b2d163ddfba92f9e870d7feba34d4790cc6590658"
+  },
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tf32": false,
+  "source_hashes": {
+    "final_benchmark_suite.py": "2119028d595102ded50b5f2030d43aaf0367a1d178ed9f8da28eb0cad9afd5d1",
+    "final_benchmark_data.py": "7cfedecef60321ae73fc0f3d3eb6d84b865522e812ee3ae603d985ab17e84b9f",
+    "final_benchmark_models.py": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9",
+    "final_benchmark_metrics.py": "ad41d21543b798e7c0d6422a8f57304ca2a69d9a4177e917cbfdf63dd837ce18",
+    "final_benchmark_report.py": "b2ee8b163d97144674ee0564c5eb5b8f4134daf38c338ec2e7e8c8524debefc3",
+    "common.py": "f56c1a8061c4247aa897fe2b66d0c8fc9ed3500e658925e1967501bce67aaa20",
+    "comparison_models.py": "ce3f8204402fb614989c82c6a7c94d4b6c55efdf9dca094652351f51db6bcb5f",
+    "qrisp_similarity_pilot.py": "4672627f712f4ced1ffbf04b7ea53ac830bf913adbf6c22405469d3eacaca160",
+    "luma_metrics.py": "97756fb168167edf36a543e72cb909b5feabc0420e29f15ca84e302e8b66a4b4",
+    "pair_consistency.py": "0fbce48531775afb5057c8530cf5e388ebb449aac867374e576ef93185f2af9f"
+  },
+  "primary": "Y PSNR/SSIM and RGB LPIPS, shave2; RGB/full-border variants retained",
+  "blur": "Fixed RGB Gaussian sigma0.5/1/2 HR pixels, replicate border, AIF and EASU, Native/FXAA/SMAA",
+  "archive": "Lossless FP32 NPZ plus rounded RGB8 PNG for every prediction, including fixed-blur outputs",
+  "manuscript_sha256": "9ba9c10028973d08696de476bf968a8800f9b3c4221e1933d7c9006bb2a2662e"
+}

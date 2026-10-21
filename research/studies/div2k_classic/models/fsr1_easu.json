@@ -1,0 +1,15 @@
+{
+  "name": "fsr1_easu",
+  "precision": "FP32 reference shader",
+  "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+  "shader_hashes": {
+    "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+    "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+    "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+    "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+    "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+    "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+  },
+  "scale": 2,
+  "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+}

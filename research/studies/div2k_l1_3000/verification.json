@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "records": 219,
+  "all_output_hashes_verified": true,
+  "saved_metric_samples": 8,
+  "max_distortion_difference": 0.0,
+  "max_lpips_difference": 0.0,
+  "model_check": {
+    "fused_vs_tiled_max_abs": 7.748603820800781e-07,
+    "finite_outputs": true,
+    "output_shape": [
+      64,
+      80,
+      3
+    ]
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "parameters": 410700,
+  "buffer_elements": 0,
+  "processed_lr_shape": [
+    540,
+    960
+  ],
+  "convolution_macs": 212378112000,
+  "linear_macs": 0,
+  "attention_matmul_macs": 0,
+  "total_counted_macs": 212378112000,
+  "layers": [
+    {
+      "module": "conv_1",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 671846400
+    },
+    {
+      "module": "block_1.c1_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_1.c2_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_1.c3_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_2.c1_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_2.c2_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_2.c3_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_3.c1_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_3.c2_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_3.c3_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_4.c1_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_4.c2_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_4.c3_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_5.c1_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_5.c2_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_5.c3_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_6.c1_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_6.c2_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "block_6.c3_r",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "conv_2",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 10749542400
+    },
+    {
+      "module": "conv_cat",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        540,
+        960
+      ],
+      "macs": 4777574400
+    },
+    {
+      "module": "upsampler.0",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        12,
+        540,
+        960
+      ],
+      "macs": 2687385600
+    }
+  ],
+  "model": "span_x2",
+  "requested_lr_shape": [
+    540,
+    960
+  ],
+  "macs_per_requested_lr_pixel": 409680.0,
+  "source_sha256": "25717fc85408182e83530149afaef5b85c58041bda39cc2c9f47bbbbd7f6cf31",
+  "torch": "2.11.0+cu130",
+  "cpu_meta_only": true,
+  "counting": "One multiply-accumulate is one MAC; deployed conv/linear and QK/AV products; excludes biases, activations, norms, softmax, pooling, interpolation, additions and memory movement",
+  "checkpoint_sha256": "561fd5cf419a23d4de1231ce258180f61aee4aa8caa1aaaa783769c7301847bc",
+  "specification": {
+    "local": "SPAN",
+    "checkpoint": "checkpoints/SPAN/spanx2_ch48.pth",
+    "scale": 2
+  }
+}

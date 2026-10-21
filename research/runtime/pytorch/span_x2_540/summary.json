@@ -1,0 +1,31 @@
+{
+  "model": "span_x2",
+  "input_shape_wh": [
+    960,
+    540
+  ],
+  "results": {
+    "eager": {
+      "median_ms": 5.922303915023804,
+      "p95_ms": 5.956278395652771,
+      "synchronized_loop_ms_per_frame": 5.919464000035077,
+      "peak_allocated_gib": 0.9772725105285645,
+      "peak_reserved_gib": 2.185546875,
+      "median_range_ms": [
+        5.910304069519043,
+        5.927887916564941
+      ]
+    },
+    "cuda_graph": {
+      "median_ms": 5.8204638957977295,
+      "p95_ms": 5.845971012115479,
+      "synchronized_loop_ms_per_frame": 5.812720000976697,
+      "peak_allocated_gib": 0.026978492736816406,
+      "peak_reserved_gib": 2.185546875,
+      "median_range_ms": [
+        5.808815956115723,
+        5.824512004852295
+      ]
+    }
+  }
+}

@@ -1,0 +1,1562 @@
+[
+  {
+    "resolution": "960x540",
+    "mode": "minimal",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327566.589028,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 45, 0 %, 2550 MHz, 14001 MHz, 62.09 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327570.6743226,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 47, 0 %, 2902 MHz, 14001 MHz, 124.97 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.204736,
+        "p95_ms": 0.225728
+      },
+      "fp16": {
+        "median_ms": 0.284784,
+        "p95_ms": 0.305504
+      },
+      "mixed": {
+        "median_ms": 0.131936,
+        "p95_ms": 0.13392
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "detailed",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327570.7198284,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 47, 0 %, 2902 MHz, 14001 MHz, 124.97 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327571.8127222,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 54, 49 %, 2902 MHz, 13801 MHz, 155.20 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.261744,
+        "p95_ms": 0.347552,
+        "stages_ms": {
+          "analysis_and_project": 0.041760000000000005,
+          "compress_and_four_branch_pairs": 0.055728,
+          "expand_shuffle_skip": 0.030416,
+          "refine_difference_of_medians": 0.07968,
+          "coefficient_head": 0.022848,
+          "reconstruction": 0.034784
+        }
+      },
+      "fp16": {
+        "median_ms": 0.31048,
+        "p95_ms": 0.368192,
+        "stages_ms": {
+          "analysis_and_project": 0.025472,
+          "compress_and_four_branch_pairs": 0.184576,
+          "expand_shuffle_skip": 0.020448,
+          "refine_difference_of_medians": 0.043712,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034912
+        }
+      },
+      "mixed": {
+        "median_ms": 0.180368,
+        "p95_ms": 0.235584,
+        "stages_ms": {
+          "analysis_and_project": 0.019088,
+          "compress_and_four_branch_pairs": 0.046288,
+          "expand_shuffle_skip": 0.012704,
+          "refine_difference_of_medians": 0.051728,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034912
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "minimal",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327571.8576198,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 54, 49 %, 2902 MHz, 13801 MHz, 155.20 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327573.142033,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 48, 0 %, 2865 MHz, 14001 MHz, 220.21 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.307872,
+        "p95_ms": 0.32864
+      },
+      "fp16": {
+        "median_ms": 0.471296,
+        "p95_ms": 0.478528
+      },
+      "mixed": {
+        "median_ms": 0.206048,
+        "p95_ms": 0.210784
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "detailed",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327573.1916287,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 48, 0 %, 2865 MHz, 14001 MHz, 220.21 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327574.4793732,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 71 %, 2902 MHz, 13801 MHz, 174.59 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.344848,
+        "p95_ms": 0.427168,
+        "stages_ms": {
+          "analysis_and_project": 0.057376,
+          "compress_and_four_branch_pairs": 0.054112,
+          "expand_shuffle_skip": 0.024784,
+          "refine_difference_of_medians": 0.113232,
+          "coefficient_head": 0.033184,
+          "reconstruction": 0.057376
+        }
+      },
+      "fp16": {
+        "median_ms": 0.498032,
+        "p95_ms": 0.547904,
+        "stages_ms": {
+          "analysis_and_project": 0.03384,
+          "compress_and_four_branch_pairs": 0.305984,
+          "expand_shuffle_skip": 0.02864,
+          "refine_difference_of_medians": 0.070336,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.057472
+        }
+      },
+      "mixed": {
+        "median_ms": 0.228208,
+        "p95_ms": 0.279968,
+        "stages_ms": {
+          "analysis_and_project": 0.025216000000000002,
+          "compress_and_four_branch_pairs": 0.058432,
+          "expand_shuffle_skip": 0.016704,
+          "refine_difference_of_medians": 0.069584,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.057184
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "minimal",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327574.5429864,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 71 %, 2902 MHz, 13801 MHz, 174.59 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327576.4178739,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 51, 22 %, 2850 MHz, 13801 MHz, 326.12 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.487104,
+        "p95_ms": 0.493376
+      },
+      "fp16": {
+        "median_ms": 0.974208,
+        "p95_ms": 0.997696
+      },
+      "mixed": {
+        "median_ms": 0.413856,
+        "p95_ms": 0.441472
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "detailed",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327576.4620266,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 51, 22 %, 2850 MHz, 13801 MHz, 326.12 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327578.2453005,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 49, 0 %, 2842 MHz, 13801 MHz, 287.18 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.546864,
+        "p95_ms": 0.612512,
+        "stages_ms": {
+          "analysis_and_project": 0.091136,
+          "compress_and_four_branch_pairs": 0.08944,
+          "expand_shuffle_skip": 0.040624,
+          "refine_difference_of_medians": 0.17432,
+          "coefficient_head": 0.034592,
+          "reconstruction": 0.126976
+        }
+      },
+      "fp16": {
+        "median_ms": 0.999248,
+        "p95_ms": 1.02387,
+        "stages_ms": {
+          "analysis_and_project": 0.05968,
+          "compress_and_four_branch_pairs": 0.594032,
+          "expand_shuffle_skip": 0.079872,
+          "refine_difference_of_medians": 0.137568,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.125584
+        }
+      },
+      "mixed": {
+        "median_ms": 0.433248,
+        "p95_ms": 0.457312,
+        "stages_ms": {
+          "analysis_and_project": 0.042656,
+          "compress_and_four_branch_pairs": 0.097344,
+          "expand_shuffle_skip": 0.028832,
+          "refine_difference_of_medians": 0.136704,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.12624
+        }
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "minimal",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327578.3087995,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 49, 0 %, 2842 MHz, 13801 MHz, 287.18 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327580.9660208,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 50, 0 %, 2767 MHz, 13801 MHz, 372.67 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.1301,
+        "p95_ms": 1.15578
+      },
+      "fp16": {
+        "median_ms": 1.67674,
+        "p95_ms": 1.70589
+      },
+      "mixed": {
+        "median_ms": 0.738656,
+        "p95_ms": 0.764064
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "detailed",
+    "trial": 1,
+    "before": {
+      "time_unix": 1791327581.0294676,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 50, 0 %, 2767 MHz, 13801 MHz, 372.67 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327583.7882333,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 49, 0 %, 2880 MHz, 13801 MHz, 307.80 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.15946,
+        "p95_ms": 1.18339,
+        "stages_ms": {
+          "analysis_and_project": 0.1684,
+          "compress_and_four_branch_pairs": 0.12528,
+          "expand_shuffle_skip": 0.081472,
+          "refine_difference_of_medians": 0.393312,
+          "coefficient_head": 0.161408,
+          "reconstruction": 0.22736
+        }
+      },
+      "fp16": {
+        "median_ms": 1.69821,
+        "p95_ms": 1.72058,
+        "stages_ms": {
+          "analysis_and_project": 0.100976,
+          "compress_and_four_branch_pairs": 0.980992,
+          "expand_shuffle_skip": 0.147456,
+          "refine_difference_of_medians": 0.235872,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.230016
+        }
+      },
+      "mixed": {
+        "median_ms": 0.75704,
+        "p95_ms": 0.781344,
+        "stages_ms": {
+          "analysis_and_project": 0.067136,
+          "compress_and_four_branch_pairs": 0.152384,
+          "expand_shuffle_skip": 0.065696,
+          "refine_difference_of_medians": 0.23704,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.232736
+        }
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "minimal",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327583.8500202,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 49, 0 %, 2880 MHz, 13801 MHz, 307.80 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327586.5940454,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 51, 0 %, 2760 MHz, 13801 MHz, 371.25 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.13061,
+        "p95_ms": 1.15456
+      },
+      "fp16": {
+        "median_ms": 1.67165,
+        "p95_ms": 1.69078
+      },
+      "mixed": {
+        "median_ms": 0.740032,
+        "p95_ms": 0.759136
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "detailed",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327586.655395,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 49, 0 %, 2917 MHz, 14001 MHz, 208.02 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327589.761215,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 50, 0 %, 2917 MHz, 13801 MHz, 267.11 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.1579,
+        "p95_ms": 1.18099,
+        "stages_ms": {
+          "analysis_and_project": 0.16710399999999997,
+          "compress_and_four_branch_pairs": 0.125344,
+          "expand_shuffle_skip": 0.08144,
+          "refine_difference_of_medians": 0.393216,
+          "coefficient_head": 0.163168,
+          "reconstruction": 0.22736
+        }
+      },
+      "fp16": {
+        "median_ms": 1.6983,
+        "p95_ms": 1.72134,
+        "stages_ms": {
+          "analysis_and_project": 0.10200000000000001,
+          "compress_and_four_branch_pairs": 0.980992,
+          "expand_shuffle_skip": 0.147456,
+          "refine_difference_of_medians": 0.235872,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.230016
+        }
+      },
+      "mixed": {
+        "median_ms": 0.75424,
+        "p95_ms": 0.777952,
+        "stages_ms": {
+          "analysis_and_project": 0.06672,
+          "compress_and_four_branch_pairs": 0.15392,
+          "expand_shuffle_skip": 0.065728,
+          "refine_difference_of_medians": 0.236928,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.230688
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "minimal",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327589.8249059,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 50, 0 %, 2917 MHz, 13801 MHz, 267.11 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327591.569664,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 61, 67 %, 2835 MHz, 13801 MHz, 322.01 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.486912,
+        "p95_ms": 0.489344
+      },
+      "fp16": {
+        "median_ms": 0.97272,
+        "p95_ms": 0.991936
+      },
+      "mixed": {
+        "median_ms": 0.41352,
+        "p95_ms": 0.43744
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "detailed",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327591.6189172,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 61, 67 %, 2835 MHz, 13801 MHz, 322.01 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327593.7252812,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 50, 0 %, 2917 MHz, 14001 MHz, 251.95 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.518336,
+        "p95_ms": 0.623648,
+        "stages_ms": {
+          "analysis_and_project": 0.051168000000000005,
+          "compress_and_four_branch_pairs": 0.088064,
+          "expand_shuffle_skip": 0.040928,
+          "refine_difference_of_medians": 0.174112,
+          "coefficient_head": 0.03464,
+          "reconstruction": 0.127008
+        }
+      },
+      "fp16": {
+        "median_ms": 0.999216,
+        "p95_ms": 1.02253,
+        "stages_ms": {
+          "analysis_and_project": 0.05943999999999999,
+          "compress_and_four_branch_pairs": 0.593984,
+          "expand_shuffle_skip": 0.079872,
+          "refine_difference_of_medians": 0.137568,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.125568
+        }
+      },
+      "mixed": {
+        "median_ms": 0.434912,
+        "p95_ms": 0.458112,
+        "stages_ms": {
+          "analysis_and_project": 0.042944,
+          "compress_and_four_branch_pairs": 0.096896,
+          "expand_shuffle_skip": 0.028896,
+          "refine_difference_of_medians": 0.136704,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.12624
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "minimal",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327593.7725487,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 50, 0 %, 2917 MHz, 14001 MHz, 251.95 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327595.0115786,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 57, 82 %, 2887 MHz, 13801 MHz, 173.25 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.308032,
+        "p95_ms": 0.310208
+      },
+      "fp16": {
+        "median_ms": 0.47248,
+        "p95_ms": 0.493728
+      },
+      "mixed": {
+        "median_ms": 0.205968,
+        "p95_ms": 0.20848
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "detailed",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327595.0585296,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 57, 82 %, 2887 MHz, 13801 MHz, 173.25 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327596.3437426,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 59, 64 %, 2887 MHz, 13801 MHz, 223.15 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.344304,
+        "p95_ms": 0.402176,
+        "stages_ms": {
+          "analysis_and_project": 0.05752,
+          "compress_and_four_branch_pairs": 0.054112,
+          "expand_shuffle_skip": 0.02456,
+          "refine_difference_of_medians": 0.11248,
+          "coefficient_head": 0.033216,
+          "reconstruction": 0.057376
+        }
+      },
+      "fp16": {
+        "median_ms": 0.49864,
+        "p95_ms": 0.5296,
+        "stages_ms": {
+          "analysis_and_project": 0.034816,
+          "compress_and_four_branch_pairs": 0.305168,
+          "expand_shuffle_skip": 0.02864,
+          "refine_difference_of_medians": 0.070336,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.057472
+        }
+      },
+      "mixed": {
+        "median_ms": 0.230896,
+        "p95_ms": 0.361248,
+        "stages_ms": {
+          "analysis_and_project": 0.026448000000000003,
+          "compress_and_four_branch_pairs": 0.058752,
+          "expand_shuffle_skip": 0.016928,
+          "refine_difference_of_medians": 0.069568,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.057248
+        }
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "minimal",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327596.3908713,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 59, 64 %, 2887 MHz, 13801 MHz, 223.15 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327597.4531822,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 56, 53 %, 2895 MHz, 13801 MHz, 130.00 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.20384,
+        "p95_ms": 0.22576
+      },
+      "fp16": {
+        "median_ms": 0.2848,
+        "p95_ms": 0.302592
+      },
+      "mixed": {
+        "median_ms": 0.133024,
+        "p95_ms": 0.1536
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "detailed",
+    "trial": 2,
+    "before": {
+      "time_unix": 1791327597.51584,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 56, 53 %, 2895 MHz, 13801 MHz, 130.00 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327598.6948006,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 52, 0 %, 2887 MHz, 14001 MHz, 165.40 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.281728,
+        "p95_ms": 0.399136,
+        "stages_ms": {
+          "analysis_and_project": 0.043248,
+          "compress_and_four_branch_pairs": 0.06712,
+          "expand_shuffle_skip": 0.032944,
+          "refine_difference_of_medians": 0.07976,
+          "coefficient_head": 0.022896,
+          "reconstruction": 0.034784
+        }
+      },
+      "fp16": {
+        "median_ms": 0.318272,
+        "p95_ms": 0.40768,
+        "stages_ms": {
+          "analysis_and_project": 0.027327999999999998,
+          "compress_and_four_branch_pairs": 0.186704,
+          "expand_shuffle_skip": 0.020448,
+          "refine_difference_of_medians": 0.04368,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034944
+        }
+      },
+      "mixed": {
+        "median_ms": 0.207888,
+        "p95_ms": 0.32784,
+        "stages_ms": {
+          "analysis_and_project": 0.02112,
+          "compress_and_four_branch_pairs": 0.074144,
+          "expand_shuffle_skip": 0.018464,
+          "refine_difference_of_medians": 0.05688,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034944
+        }
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "minimal",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327598.740552,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 52, 0 %, 2887 MHz, 14001 MHz, 165.40 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327599.875395,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 43 %, 2895 MHz, 13801 MHz, 164.67 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.203216,
+        "p95_ms": 0.223072
+      },
+      "fp16": {
+        "median_ms": 0.28408,
+        "p95_ms": 0.303136
+      },
+      "mixed": {
+        "median_ms": 0.131744,
+        "p95_ms": 0.151744
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "detailed",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327599.921004,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 43 %, 2895 MHz, 13801 MHz, 164.67 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327601.1578047,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 51, 0 %, 2887 MHz, 14001 MHz, 165.60 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.259664,
+        "p95_ms": 0.36096,
+        "stages_ms": {
+          "analysis_and_project": 0.041567999999999994,
+          "compress_and_four_branch_pairs": 0.053936,
+          "expand_shuffle_skip": 0.02304,
+          "refine_difference_of_medians": 0.08312,
+          "coefficient_head": 0.02288,
+          "reconstruction": 0.034816
+        }
+      },
+      "fp16": {
+        "median_ms": 0.311104,
+        "p95_ms": 0.368928,
+        "stages_ms": {
+          "analysis_and_project": 0.025888,
+          "compress_and_four_branch_pairs": 0.184512,
+          "expand_shuffle_skip": 0.020448,
+          "refine_difference_of_medians": 0.04368,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034944
+        }
+      },
+      "mixed": {
+        "median_ms": 0.18232,
+        "p95_ms": 0.276256,
+        "stages_ms": {
+          "analysis_and_project": 0.018944000000000003,
+          "compress_and_four_branch_pairs": 0.046384,
+          "expand_shuffle_skip": 0.018176,
+          "refine_difference_of_medians": 0.04904,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.03488
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "minimal",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327601.2193916,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 51, 0 %, 2887 MHz, 14001 MHz, 165.60 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327602.4792385,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 58, 83 %, 2895 MHz, 13801 MHz, 182.67 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.308528,
+        "p95_ms": 0.333472
+      },
+      "fp16": {
+        "median_ms": 0.472832,
+        "p95_ms": 0.4968
+      },
+      "mixed": {
+        "median_ms": 0.206784,
+        "p95_ms": 0.231488
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "detailed",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327602.525146,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 58, 83 %, 2895 MHz, 13801 MHz, 182.67 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327603.8296807,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 39 %, 2872 MHz, 13801 MHz, 224.18 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.339952,
+        "p95_ms": 0.381056,
+        "stages_ms": {
+          "analysis_and_project": 0.057120000000000004,
+          "compress_and_four_branch_pairs": 0.054144,
+          "expand_shuffle_skip": 0.024176,
+          "refine_difference_of_medians": 0.11136,
+          "coefficient_head": 0.03328,
+          "reconstruction": 0.057376
+        }
+      },
+      "fp16": {
+        "median_ms": 0.551776,
+        "p95_ms": 0.59664,
+        "stages_ms": {
+          "analysis_and_project": 0.050832,
+          "compress_and_four_branch_pairs": 0.323712,
+          "expand_shuffle_skip": 0.02864,
+          "refine_difference_of_medians": 0.070304,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.057472
+        }
+      },
+      "mixed": {
+        "median_ms": 0.311632,
+        "p95_ms": 0.403584,
+        "stages_ms": {
+          "analysis_and_project": 0.030559999999999997,
+          "compress_and_four_branch_pairs": 0.084112,
+          "expand_shuffle_skip": 0.041008,
+          "refine_difference_of_medians": 0.074352,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.05712
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "minimal",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327603.8762171,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 39 %, 2872 MHz, 13801 MHz, 224.18 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327605.7428784,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 52, 0 %, 2827 MHz, 13801 MHz, 295.24 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.488656,
+        "p95_ms": 0.514464
+      },
+      "fp16": {
+        "median_ms": 0.973872,
+        "p95_ms": 0.997088
+      },
+      "mixed": {
+        "median_ms": 0.415744,
+        "p95_ms": 0.439552
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "detailed",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327605.7901793,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 52, 0 %, 2827 MHz, 13801 MHz, 295.24 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327607.5624146,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 63, 80 %, 2842 MHz, 13801 MHz, 332.08 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.516048,
+        "p95_ms": 0.568832,
+        "stages_ms": {
+          "analysis_and_project": 0.0504,
+          "compress_and_four_branch_pairs": 0.087744,
+          "expand_shuffle_skip": 0.04096,
+          "refine_difference_of_medians": 0.17408,
+          "coefficient_head": 0.034592,
+          "reconstruction": 0.12704
+        }
+      },
+      "fp16": {
+        "median_ms": 0.997568,
+        "p95_ms": 1.02109,
+        "stages_ms": {
+          "analysis_and_project": 0.058448,
+          "compress_and_four_branch_pairs": 0.593952,
+          "expand_shuffle_skip": 0.079872,
+          "refine_difference_of_medians": 0.137568,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.1256
+        }
+      },
+      "mixed": {
+        "median_ms": 0.432912,
+        "p95_ms": 0.452768,
+        "stages_ms": {
+          "analysis_and_project": 0.042112000000000004,
+          "compress_and_four_branch_pairs": 0.097728,
+          "expand_shuffle_skip": 0.028832,
+          "refine_difference_of_medians": 0.136704,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.126272
+        }
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "minimal",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327607.6241324,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 63, 80 %, 2842 MHz, 13801 MHz, 332.08 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327610.3101988,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 52, 0 %, 2865 MHz, 13801 MHz, 312.02 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.13238,
+        "p95_ms": 1.13904
+      },
+      "fp16": {
+        "median_ms": 1.6768,
+        "p95_ms": 1.69984
+      },
+      "mixed": {
+        "median_ms": 0.738544,
+        "p95_ms": 0.763168
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "detailed",
+    "trial": 3,
+    "before": {
+      "time_unix": 1791327610.3555634,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 52, 0 %, 2865 MHz, 13801 MHz, 312.02 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327613.2774317,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 53, 0 %, 2902 MHz, 13801 MHz, 304.39 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.16149,
+        "p95_ms": 1.18266,
+        "stages_ms": {
+          "analysis_and_project": 0.16792,
+          "compress_and_four_branch_pairs": 0.125376,
+          "expand_shuffle_skip": 0.081456,
+          "refine_difference_of_medians": 0.395056,
+          "coefficient_head": 0.1632,
+          "reconstruction": 0.227392
+        }
+      },
+      "fp16": {
+        "median_ms": 1.70062,
+        "p95_ms": 1.72282,
+        "stages_ms": {
+          "analysis_and_project": 0.10116800000000001,
+          "compress_and_four_branch_pairs": 0.982944,
+          "expand_shuffle_skip": 0.147424,
+          "refine_difference_of_medians": 0.235904,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.232
+        }
+      },
+      "mixed": {
+        "median_ms": 0.761232,
+        "p95_ms": 0.786976,
+        "stages_ms": {
+          "analysis_and_project": 0.067328,
+          "compress_and_four_branch_pairs": 0.153952,
+          "expand_shuffle_skip": 0.065728,
+          "refine_difference_of_medians": 0.237056,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.232832
+        }
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "minimal",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327613.3402336,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 53, 0 %, 2902 MHz, 13801 MHz, 304.39 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327615.979063,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 54, 0 %, 2745 MHz, 13801 MHz, 376.22 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.13454,
+        "p95_ms": 1.15869
+      },
+      "fp16": {
+        "median_ms": 1.67746,
+        "p95_ms": 1.70141
+      },
+      "mixed": {
+        "median_ms": 0.739904,
+        "p95_ms": 0.766208
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "detailed",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327616.0421455,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 54, 0 %, 2745 MHz, 13801 MHz, 376.22 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327618.6793694,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 53, 1 %, 2902 MHz, 14001 MHz, 287.70 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.16154,
+        "p95_ms": 1.1825,
+        "stages_ms": {
+          "analysis_and_project": 0.167872,
+          "compress_and_four_branch_pairs": 0.125344,
+          "expand_shuffle_skip": 0.081504,
+          "refine_difference_of_medians": 0.395296,
+          "coefficient_head": 0.163168,
+          "reconstruction": 0.227392
+        }
+      },
+      "fp16": {
+        "median_ms": 1.69886,
+        "p95_ms": 1.71734,
+        "stages_ms": {
+          "analysis_and_project": 0.100304,
+          "compress_and_four_branch_pairs": 0.98304,
+          "expand_shuffle_skip": 0.147456,
+          "refine_difference_of_medians": 0.235872,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.232064
+        }
+      },
+      "mixed": {
+        "median_ms": 0.760672,
+        "p95_ms": 0.783808,
+        "stages_ms": {
+          "analysis_and_project": 0.066544,
+          "compress_and_four_branch_pairs": 0.1544,
+          "expand_shuffle_skip": 0.065728,
+          "refine_difference_of_medians": 0.237136,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.234784
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "minimal",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327618.7419338,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 53, 1 %, 2902 MHz, 14001 MHz, 287.70 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327620.5075238,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 65, 83 %, 2842 MHz, 13801 MHz, 360.55 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.488512,
+        "p95_ms": 0.513696
+      },
+      "fp16": {
+        "median_ms": 0.9744,
+        "p95_ms": 0.993664
+      },
+      "mixed": {
+        "median_ms": 0.416448,
+        "p95_ms": 0.431584
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "detailed",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327620.5534863,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 65, 83 %, 2842 MHz, 13801 MHz, 360.55 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327622.42648,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 0 %, 2842 MHz, 13801 MHz, 328.23 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.517392,
+        "p95_ms": 0.577536,
+        "stages_ms": {
+          "analysis_and_project": 0.050848000000000004,
+          "compress_and_four_branch_pairs": 0.087744,
+          "expand_shuffle_skip": 0.04096,
+          "refine_difference_of_medians": 0.17408,
+          "coefficient_head": 0.034624,
+          "reconstruction": 0.128448
+        }
+      },
+      "fp16": {
+        "median_ms": 0.998704,
+        "p95_ms": 1.01936,
+        "stages_ms": {
+          "analysis_and_project": 0.058896,
+          "compress_and_four_branch_pairs": 0.595872,
+          "expand_shuffle_skip": 0.079872,
+          "refine_difference_of_medians": 0.137568,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.1256
+        }
+      },
+      "mixed": {
+        "median_ms": 0.435008,
+        "p95_ms": 0.461792,
+        "stages_ms": {
+          "analysis_and_project": 0.042912,
+          "compress_and_four_branch_pairs": 0.09768,
+          "expand_shuffle_skip": 0.028864,
+          "refine_difference_of_medians": 0.136752,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.126304
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "minimal",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327622.487955,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 0 %, 2842 MHz, 13801 MHz, 328.23 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327623.7123506,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 54, 0 %, 2857 MHz, 14001 MHz, 224.80 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.309872,
+        "p95_ms": 0.332832
+      },
+      "fp16": {
+        "median_ms": 0.472688,
+        "p95_ms": 0.493376
+      },
+      "mixed": {
+        "median_ms": 0.206432,
+        "p95_ms": 0.20896
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "detailed",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327623.757392,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 54, 0 %, 2857 MHz, 14001 MHz, 224.80 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327625.0239732,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 60, 81 %, 2887 MHz, 13801 MHz, 169.18 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.339824,
+        "p95_ms": 0.3872,
+        "stages_ms": {
+          "analysis_and_project": 0.056832,
+          "compress_and_four_branch_pairs": 0.054048,
+          "expand_shuffle_skip": 0.024192,
+          "refine_difference_of_medians": 0.111088,
+          "coefficient_head": 0.033408,
+          "reconstruction": 0.057344
+        }
+      },
+      "fp16": {
+        "median_ms": 0.508336,
+        "p95_ms": 0.579136,
+        "stages_ms": {
+          "analysis_and_project": 0.034624,
+          "compress_and_four_branch_pairs": 0.3072,
+          "expand_shuffle_skip": 0.02864,
+          "refine_difference_of_medians": 0.070336,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.057472
+        }
+      },
+      "mixed": {
+        "median_ms": 0.22976,
+        "p95_ms": 0.322912,
+        "stages_ms": {
+          "analysis_and_project": 0.026096,
+          "compress_and_four_branch_pairs": 0.058688,
+          "expand_shuffle_skip": 0.016896,
+          "refine_difference_of_medians": 0.069504,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.05728
+        }
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "minimal",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327625.0712452,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 60, 81 %, 2887 MHz, 13801 MHz, 169.18 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327626.112606,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 54, 10 %, 2902 MHz, 13801 MHz, 161.91 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.20264,
+        "p95_ms": 0.208032
+      },
+      "fp16": {
+        "median_ms": 0.284608,
+        "p95_ms": 0.301664
+      },
+      "mixed": {
+        "median_ms": 0.131648,
+        "p95_ms": 0.134752
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "detailed",
+    "trial": 4,
+    "before": {
+      "time_unix": 1791327626.1651573,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 53, 0 %, 2880 MHz, 14001 MHz, 166.30 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327627.7779675,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 53, 0 %, 2902 MHz, 13801 MHz, 158.48 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.271648,
+        "p95_ms": 0.32784,
+        "stages_ms": {
+          "analysis_and_project": 0.041904,
+          "compress_and_four_branch_pairs": 0.064048,
+          "expand_shuffle_skip": 0.03224,
+          "refine_difference_of_medians": 0.079024,
+          "coefficient_head": 0.022816,
+          "reconstruction": 0.034816
+        }
+      },
+      "fp16": {
+        "median_ms": 0.312656,
+        "p95_ms": 0.360192,
+        "stages_ms": {
+          "analysis_and_project": 0.025552,
+          "compress_and_four_branch_pairs": 0.185536,
+          "expand_shuffle_skip": 0.020448,
+          "refine_difference_of_medians": 0.043712,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034944
+        }
+      },
+      "mixed": {
+        "median_ms": 0.186672,
+        "p95_ms": 0.243232,
+        "stages_ms": {
+          "analysis_and_project": 0.019488000000000002,
+          "compress_and_four_branch_pairs": 0.058336,
+          "expand_shuffle_skip": 0.01952,
+          "refine_difference_of_medians": 0.04872,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.034912
+        }
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "minimal",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327627.83853,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 53, 0 %, 2902 MHz, 13801 MHz, 158.48 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327628.9403389,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 57, 61 %, 2895 MHz, 13801 MHz, 143.90 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.20496,
+        "p95_ms": 0.22688
+      },
+      "fp16": {
+        "median_ms": 0.286512,
+        "p95_ms": 0.307872
+      },
+      "mixed": {
+        "median_ms": 0.137456,
+        "p95_ms": 0.154912
+      }
+    }
+  },
+  {
+    "resolution": "960x540",
+    "mode": "detailed",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327628.9867494,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 57, 61 %, 2895 MHz, 13801 MHz, 143.90 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327630.112447,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 53, 0 %, 2895 MHz, 13801 MHz, 151.29 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.305504,
+        "p95_ms": 0.38432,
+        "stages_ms": {
+          "analysis_and_project": 0.044095999999999996,
+          "compress_and_four_branch_pairs": 0.071072,
+          "expand_shuffle_skip": 0.036608,
+          "refine_difference_of_medians": 0.079504,
+          "coefficient_head": 0.022944,
+          "reconstruction": 0.034784
+        }
+      },
+      "fp16": {
+        "median_ms": 0.378016,
+        "p95_ms": 0.414432,
+        "stages_ms": {
+          "analysis_and_project": 0.061824,
+          "compress_and_four_branch_pairs": 0.213232,
+          "expand_shuffle_skip": 0.020448,
+          "refine_difference_of_medians": 0.04368,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.034944
+        }
+      },
+      "mixed": {
+        "median_ms": 0.249232,
+        "p95_ms": 0.323168,
+        "stages_ms": {
+          "analysis_and_project": 0.028224000000000003,
+          "compress_and_four_branch_pairs": 0.0852,
+          "expand_shuffle_skip": 0.026688,
+          "refine_difference_of_medians": 0.049856,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.034816
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "minimal",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327630.1578536,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 53, 0 %, 2872 MHz, 14001 MHz, 167.63 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327631.5203087,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 61, 52 %, 2887 MHz, 13801 MHz, 205.09 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.307824,
+        "p95_ms": 0.31088
+      },
+      "fp16": {
+        "median_ms": 0.474512,
+        "p95_ms": 0.496992
+      },
+      "mixed": {
+        "median_ms": 0.210416,
+        "p95_ms": 0.232672
+      }
+    }
+  },
+  {
+    "resolution": "1280x720",
+    "mode": "detailed",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327631.566016,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 61, 52 %, 2887 MHz, 13801 MHz, 205.09 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327633.0344255,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 60, 43 %, 2887 MHz, 13801 MHz, 196.55 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.347232,
+        "p95_ms": 0.419264,
+        "stages_ms": {
+          "analysis_and_project": 0.057664,
+          "compress_and_four_branch_pairs": 0.054368,
+          "expand_shuffle_skip": 0.024608,
+          "refine_difference_of_medians": 0.115792,
+          "coefficient_head": 0.033248,
+          "reconstruction": 0.057376
+        }
+      },
+      "fp16": {
+        "median_ms": 0.532848,
+        "p95_ms": 0.586848,
+        "stages_ms": {
+          "analysis_and_project": 0.039536,
+          "compress_and_four_branch_pairs": 0.320688,
+          "expand_shuffle_skip": 0.02864,
+          "refine_difference_of_medians": 0.070336,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.057472
+        }
+      },
+      "mixed": {
+        "median_ms": 0.304176,
+        "p95_ms": 0.387936,
+        "stages_ms": {
+          "analysis_and_project": 0.029920000000000002,
+          "compress_and_four_branch_pairs": 0.082608,
+          "expand_shuffle_skip": 0.041072,
+          "refine_difference_of_medians": 0.07256,
+          "coefficient_head": 0.000512,
+          "reconstruction": 0.05712
+        }
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "minimal",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327633.0802763,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 60, 43 %, 2887 MHz, 13801 MHz, 196.55 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327634.85211,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 0 %, 2835 MHz, 13801 MHz, 313.68 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.488064,
+        "p95_ms": 0.493888
+      },
+      "fp16": {
+        "median_ms": 0.976448,
+        "p95_ms": 0.999552
+      },
+      "mixed": {
+        "median_ms": 0.418144,
+        "p95_ms": 0.442624
+      }
+    }
+  },
+  {
+    "resolution": "1920x1080",
+    "mode": "detailed",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327634.898826,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 55, 0 %, 2835 MHz, 13801 MHz, 313.68 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327636.6915417,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 54, 0 %, 2835 MHz, 14001 MHz, 268.59 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 0.516336,
+        "p95_ms": 0.572224,
+        "stages_ms": {
+          "analysis_and_project": 0.051104,
+          "compress_and_four_branch_pairs": 0.087744,
+          "expand_shuffle_skip": 0.04096,
+          "refine_difference_of_medians": 0.17408,
+          "coefficient_head": 0.034304,
+          "reconstruction": 0.127984
+        }
+      },
+      "fp16": {
+        "median_ms": 0.999728,
+        "p95_ms": 1.02237,
+        "stages_ms": {
+          "analysis_and_project": 0.05952,
+          "compress_and_four_branch_pairs": 0.595936,
+          "expand_shuffle_skip": 0.079872,
+          "refine_difference_of_medians": 0.137664,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.1256
+        }
+      },
+      "mixed": {
+        "median_ms": 0.435456,
+        "p95_ms": 0.459392,
+        "stages_ms": {
+          "analysis_and_project": 0.04304,
+          "compress_and_four_branch_pairs": 0.098048,
+          "expand_shuffle_skip": 0.028864,
+          "refine_difference_of_medians": 0.136736,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.126288
+        }
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "minimal",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327636.7534652,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P0, 54, 0 %, 2835 MHz, 14001 MHz, 268.59 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327639.4182665,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 54, 0 %, 2767 MHz, 13801 MHz, 375.69 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.13443,
+        "p95_ms": 1.15949
+      },
+      "fp16": {
+        "median_ms": 1.67435,
+        "p95_ms": 1.68269
+      },
+      "mixed": {
+        "median_ms": 0.74424,
+        "p95_ms": 0.769696
+      }
+    }
+  },
+  {
+    "resolution": "2560x1440",
+    "mode": "detailed",
+    "trial": 5,
+    "before": {
+      "time_unix": 1791327639.4645276,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 54, 0 %, 2767 MHz, 13801 MHz, 375.69 W, 600.00 W"
+    },
+    "after": {
+      "time_unix": 1791327642.0726078,
+      "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 56, 0 %, 2782 MHz, 13801 MHz, 422.02 W, 600.00 W"
+    },
+    "results": {
+      "fp8": {
+        "median_ms": 1.16392,
+        "p95_ms": 1.18643,
+        "stages_ms": {
+          "analysis_and_project": 0.168896,
+          "compress_and_four_branch_pairs": 0.125456,
+          "expand_shuffle_skip": 0.081456,
+          "refine_difference_of_medians": 0.395312,
+          "coefficient_head": 0.1632,
+          "reconstruction": 0.229264
+        }
+      },
+      "fp16": {
+        "median_ms": 1.70014,
+        "p95_ms": 1.71523,
+        "stages_ms": {
+          "analysis_and_project": 0.10017599999999999,
+          "compress_and_four_branch_pairs": 0.983072,
+          "expand_shuffle_skip": 0.147424,
+          "refine_difference_of_medians": 0.235904,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.232064
+        }
+      },
+      "mixed": {
+        "median_ms": 0.763744,
+        "p95_ms": 0.790336,
+        "stages_ms": {
+          "analysis_and_project": 0.067584,
+          "compress_and_four_branch_pairs": 0.154272,
+          "expand_shuffle_skip": 0.065712,
+          "refine_difference_of_medians": 0.238864,
+          "coefficient_head": 0.000544,
+          "reconstruction": 0.234816
+        }
+      }
+    }
+  }
+]

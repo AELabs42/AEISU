@@ -1,0 +1,27 @@
+{
+  "name": "rt4ksr_x2",
+  "precision": "fp16",
+  "checkpoint": "{research_workspace}/data/benchmark_assets/classic_comparators/models/competitive_official/rt4ksr/code/checkpoints/rt4ksr_x2.pth",
+  "checkpoint_sha256": "9ec7500092848a480e058a9c703e4b2254bc0cc97928c076bba272177752124f",
+  "architecture": "{research_workspace}/data/benchmark_assets/classic_comparators/models/competitive_official/rt4ksr/code/model/arch.py",
+  "architecture_sha256": "79b604979fb90611f5d484b4541c67f92974f83185fcbc95011a2865c41d0abf",
+  "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+  "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "tf32": false,
+  "mask_dtype_fix": false,
+  "prepared": true,
+  "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+  "loader_hashes": {
+    "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+    "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+    "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+  },
+  "supporting_source_hashes": {
+    "code/model/__init__.py": "2465f23fc98359c09e984246940c39c840228be9f87983fe06737ff48265707d",
+    "code/model/modules.py": "fa6261eba7106886de050ac55668bff858a7b32e0a6c97f43633311569c324ee",
+    "code/model/utils/rep_utils.py": "2c8ed76bdd8c17f436b52e7c3face4e6cf452dc7a1683bcf616c459f0de0cf4a"
+  },
+  "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+}

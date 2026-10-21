@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "records": 7200,
+  "all_output_files_present": true,
+  "output_files": 14400,
+  "hash_decode_preview_and_metric_samples": 24,
+  "sample_policy": "First and last identity in all 12 model/precision/condition slots",
+  "max_distortion_absolute_differences": {
+    "rgb_mse": 1.734723475976807e-18,
+    "rgb_psnr_db": 7.105427357601002e-15,
+    "rgb_ssim": 1.9984014443252818e-15,
+    "y_mse": 8.673617379884035e-19,
+    "y_psnr_db": 3.552713678800501e-15,
+    "y_ssim": 2.220446049250313e-16,
+    "rgb_mse_shave2": 1.734723475976807e-18,
+    "rgb_psnr_shave2_db": 3.552713678800501e-15,
+    "rgb_ssim_shave2": 2.1094237467877974e-15,
+    "y_mse_shave2": 3.469446951953614e-18,
+    "y_psnr_shave2_db": 7.105427357601002e-15,
+    "y_ssim_shave2": 2.220446049250313e-16
+  },
+  "max_lpips_absolute_difference": 7.271766662597656e-06,
+  "lpips_tolerance": 1e-05,
+  "checkpoint_and_selection_hashes_match": true,
+  "metric_source_sha256": "ad41d21543b798e7c0d6422a8f57304ca2a69d9a4177e917cbfdf63dd837ce18",
+  "verifier_sha256": "b88d50e777249129842425aa849273950fae3acfcd8eb592576c722237413fce"
+}

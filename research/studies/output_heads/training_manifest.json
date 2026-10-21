@@ -1,0 +1,53 @@
+{
+  "adaptive": {
+    "source_checkpoint": "{research_workspace}/Models/Training Run 2026-09-30 17-53-21 - aif_reparam_aggressive64_parallel32x4/Pytorch Models/aif_reparam_aggressive64_parallel32x4_ep0100.pt",
+    "source_sha256": "f428e2dbfb365660b0e17ce84fe148df290d4857124f5e75c3026b60d8541f28",
+    "marker_files": {
+      "100 epoch baseline original model.txt": ""
+    },
+    "folded_parameters": 115996,
+    "matched_config": {
+      "epochs": 100,
+      "lr": 0.002,
+      "min_lr": 1e-06,
+      "batch": 32,
+      "patch": 512,
+      "source_pad": 16
+    },
+    "global_step": 87500
+  },
+  "rgb_residual": {
+    "source_checkpoint": "{research_workspace}/Models/Training Run 2026-09-30 17-13-28 - aif_rgb_residual_parallel32x4/Pytorch Models/aif_rgb_residual_parallel32x4_ep0100.pt",
+    "source_sha256": "98c82d2bb9c2a84dea3ab5e7427365a7e95b25b951fa1c7fddbcb53d6697767f",
+    "marker_files": {
+      "rgb residuals model.txt": ""
+    },
+    "folded_parameters": 113356,
+    "matched_config": {
+      "epochs": 100,
+      "lr": 0.002,
+      "min_lr": 1e-06,
+      "batch": 32,
+      "patch": 512,
+      "source_pad": 16
+    },
+    "global_step": 87500
+  },
+  "depth_to_space": {
+    "source_checkpoint": "{research_workspace}/Models/Training Run 2026-09-30 18-32-00 - aif_depth_to_space_parallel32x4/Pytorch Models/aif_depth_to_space_parallel32x4_ep0100.pt",
+    "source_sha256": "9cba03117d4ae6d56300a7bebe5efabbdcced2ee43d5420e3f576e4d1a12eb3b",
+    "marker_files": {
+      "depth to space.txt": ""
+    },
+    "folded_parameters": 113256,
+    "matched_config": {
+      "epochs": 100,
+      "lr": 0.002,
+      "min_lr": 1e-06,
+      "batch": 32,
+      "patch": 512,
+      "source_pad": 16
+    },
+    "global_step": 87500
+  }
+}

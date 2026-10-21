@@ -1,0 +1,1126 @@
+{
+  "complete": true,
+  "records": 6000,
+  "means": {
+    "ssaa_area": {
+      "area_trained": {
+        "all": {
+          "lpips_alex_v01": 0.11238441471631327,
+          "rgb_mse": 0.0015157011582402297,
+          "rgb_psnr_db": 29.850719505824873,
+          "rgb_ssim": 0.9073509879870494,
+          "y_mse": 0.0010922049156657655,
+          "y_psnr_db": 31.344771339347226,
+          "y_ssim": 0.9145359931995547,
+          "rgb_mse_shave2": 0.001516073326721473,
+          "rgb_psnr_shave2_db": 29.851222058494585,
+          "rgb_ssim_shave2": 0.9072690027552065,
+          "y_mse_shave2": 0.0010924182034115694,
+          "y_psnr_shave2_db": 31.345599366378988,
+          "y_ssim_shave2": 0.914456249526842
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.08952379925176501,
+          "rgb_mse": 0.0007797931835924564,
+          "rgb_psnr_db": 32.67690820024196,
+          "rgb_ssim": 0.9293730492097216,
+          "y_mse": 0.0005616353957660994,
+          "y_psnr_db": 34.27034479734183,
+          "y_ssim": 0.936284566685639,
+          "rgb_mse_shave2": 0.0007793755100824624,
+          "rgb_psnr_shave2_db": 32.68224226603764,
+          "rgb_ssim_shave2": 0.9293194176639403,
+          "y_mse_shave2": 0.0005612850497055518,
+          "y_psnr_shave2_db": 34.27626037471005,
+          "y_ssim_shave2": 0.9362345959000606
+        },
+        "middle": {
+          "lpips_alex_v01": 0.11096603455021975,
+          "rgb_mse": 0.0014429655224893127,
+          "rgb_psnr_db": 29.55615944565891,
+          "rgb_ssim": 0.9080949506872873,
+          "y_mse": 0.0010332249401540621,
+          "y_psnr_db": 31.040284721162607,
+          "y_ssim": 0.9154314852106633,
+          "rgb_mse_shave2": 0.0014437241313301245,
+          "rgb_psnr_shave2_db": 29.5540669742673,
+          "rgb_ssim_shave2": 0.9079994066195372,
+          "y_mse_shave2": 0.001033712882040331,
+          "y_psnr_shave2_db": 31.03842386524957,
+          "y_ssim_shave2": 0.9153379015098374
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.136663410346955,
+          "rgb_mse": 0.0023243447686389193,
+          "rgb_psnr_db": 27.319090871573696,
+          "rgb_ssim": 0.8845849640641396,
+          "y_mse": 0.001681754411077133,
+          "y_psnr_db": 28.72368449953725,
+          "y_ssim": 0.8918919277023631,
+          "rgb_mse_shave2": 0.002325120338751835,
+          "rgb_psnr_shave2_db": 27.317356935178772,
+          "rgb_ssim_shave2": 0.8844881839821427,
+          "y_mse_shave2": 0.0016822566784888255,
+          "y_psnr_shave2_db": 28.72211385917738,
+          "y_ssim_shave2": 0.8917962511706274
+        }
+      },
+      "bicubic_trained": {
+        "all": {
+          "lpips_alex_v01": 0.09863940013262129,
+          "rgb_mse": 0.001755643186993134,
+          "rgb_psnr_db": 29.11567552503414,
+          "rgb_ssim": 0.9011703432095548,
+          "y_mse": 0.0012648274077910033,
+          "y_psnr_db": 30.60732334505101,
+          "y_ssim": 0.9088296753212082,
+          "rgb_mse_shave2": 0.001756730708917837,
+          "rgb_psnr_shave2_db": 29.113906029002916,
+          "rgb_ssim_shave2": 0.9010908984672736,
+          "y_mse_shave2": 0.0012655486635141423,
+          "y_psnr_shave2_db": 30.60583899808102,
+          "y_ssim_shave2": 0.9087527852640249
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.07813637993298474,
+          "rgb_mse": 0.0009198290883939531,
+          "rgb_psnr_db": 31.893194004692603,
+          "rgb_ssim": 0.9241341249562747,
+          "y_mse": 0.0006621716513133289,
+          "y_psnr_db": 33.47754968444217,
+          "y_ssim": 0.9315053266144253,
+          "rgb_mse_shave2": 0.0009197971178432969,
+          "rgb_psnr_shave2_db": 31.895624057318628,
+          "rgb_ssim_shave2": 0.9240821139689626,
+          "y_mse_shave2": 0.0006620937256035041,
+          "y_psnr_shave2_db": 33.480469702223004,
+          "y_ssim_shave2": 0.9314571665644
+        },
+        "middle": {
+          "lpips_alex_v01": 0.09755507508292798,
+          "rgb_mse": 0.0016783083282198208,
+          "rgb_psnr_db": 28.816728911383855,
+          "rgb_ssim": 0.9016412354424594,
+          "y_mse": 0.0012020662001893067,
+          "y_psnr_db": 30.299353632346907,
+          "y_ssim": 0.909470549979136,
+          "rgb_mse_shave2": 0.0016797888947480183,
+          "rgb_psnr_shave2_db": 28.812593443764648,
+          "rgb_ssim_shave2": 0.9015479594041087,
+          "y_mse_shave2": 0.0012030655460757741,
+          "y_psnr_shave2_db": 30.29541671481985,
+          "y_ssim_shave2": 0.9093794340852471
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.12022674538195133,
+          "rgb_mse": 0.0026687921443656285,
+          "rgb_psnr_db": 26.63710365902591,
+          "rgb_ssim": 0.8777356692299314,
+          "y_mse": 0.001930244371870374,
+          "y_psnr_db": 28.04506671836395,
+          "y_ssim": 0.8855131493700654,
+          "rgb_mse_shave2": 0.0026706061141622004,
+          "rgb_psnr_shave2_db": 26.6335005859255,
+          "rgb_ssim_shave2": 0.8776426220287497,
+          "y_mse_shave2": 0.0019314867188631485,
+          "y_psnr_shave2_db": 28.041630577200245,
+          "y_ssim_shave2": 0.8854217551424279
+        }
+      }
+    },
+    "bicubic_aa": {
+      "area_trained": {
+        "all": {
+          "lpips_alex_v01": 0.1514577267567316,
+          "rgb_mse": 0.0015784611361355078,
+          "rgb_psnr_db": 29.57749041098359,
+          "rgb_ssim": 0.9001133584748368,
+          "y_mse": 0.0011373930544288286,
+          "y_psnr_db": 31.059976289440947,
+          "y_ssim": 0.9078440565525014,
+          "rgb_mse_shave2": 0.001579035216094521,
+          "rgb_psnr_shave2_db": 29.576912645047635,
+          "rgb_ssim_shave2": 0.9000218312211864,
+          "y_mse_shave2": 0.0011377485492128517,
+          "y_psnr_shave2_db": 31.05964031951031,
+          "y_ssim_shave2": 0.9077550663568399
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.12518044050782917,
+          "rgb_mse": 0.0008246172075398409,
+          "rgb_psnr_db": 32.35969395850471,
+          "rgb_ssim": 0.9236516806950299,
+          "y_mse": 0.000594398624639494,
+          "y_psnr_db": 33.93382223549649,
+          "y_ssim": 0.931074374631382,
+          "rgb_mse_shave2": 0.0008243621590828045,
+          "rgb_psnr_shave2_db": 32.36326430433318,
+          "rgb_ssim_shave2": 0.9235904833195198,
+          "y_mse_shave2": 0.000594166785499756,
+          "y_psnr_shave2_db": 33.937784291203094,
+          "y_ssim_shave2": 0.9310170640844398
+        },
+        "middle": {
+          "lpips_alex_v01": 0.1513149499893188,
+          "rgb_mse": 0.0015069319556311905,
+          "rgb_psnr_db": 29.28851047987495,
+          "rgb_ssim": 0.9007825321206231,
+          "y_mse": 0.0010794047407631207,
+          "y_psnr_db": 30.762339040940375,
+          "y_ssim": 0.9086618283259631,
+          "rgb_mse_shave2": 0.0015079051909350821,
+          "rgb_psnr_shave2_db": 29.28550867939392,
+          "rgb_ssim_shave2": 0.9006757976305064,
+          "y_mse_shave2": 0.00108004498741208,
+          "y_psnr_shave2_db": 30.75952373084432,
+          "y_ssim_shave2": 0.9085572598219781
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.177877789773047,
+          "rgb_mse": 0.0024038342452354896,
+          "rgb_psnr_db": 27.08426679457109,
+          "rgb_ssim": 0.8759058626088574,
+          "y_mse": 0.0017383757978838728,
+          "y_psnr_db": 28.483767591885982,
+          "y_ssim": 0.8837959667001584,
+          "rgb_mse_shave2": 0.0024048382982656755,
+          "rgb_psnr_shave2_db": 27.081964951415813,
+          "rgb_ssim_shave2": 0.8757992127135322,
+          "y_mse_shave2": 0.0017390338747267197,
+          "y_psnr_shave2_db": 28.48161293648353,
+          "y_ssim_shave2": 0.8836908751641028
+        }
+      },
+      "bicubic_trained": {
+        "all": {
+          "lpips_alex_v01": 0.12066525288857523,
+          "rgb_mse": 0.0014151752081075527,
+          "rgb_psnr_db": 30.226449118669695,
+          "rgb_ssim": 0.9093122670600966,
+          "y_mse": 0.001019736148944076,
+          "y_psnr_db": 31.72215112903998,
+          "y_ssim": 0.9167122582943382,
+          "rgb_mse_shave2": 0.0014150240800732644,
+          "rgb_psnr_shave2_db": 30.229006274149725,
+          "rgb_ssim_shave2": 0.9092391267493939,
+          "y_mse_shave2": 0.0010195737556236903,
+          "y_psnr_shave2_db": 31.72504502027649,
+          "y_ssim_shave2": 0.9166408179044397
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.09745643279515208,
+          "rgb_mse": 0.0007226336939619604,
+          "rgb_psnr_db": 33.057327139750534,
+          "rgb_ssim": 0.9308201458162324,
+          "y_mse": 0.0005202692702386899,
+          "y_psnr_db": 34.655940711100456,
+          "y_ssim": 0.9379173848059306,
+          "rgb_mse_shave2": 0.0007219210816419831,
+          "rgb_psnr_shave2_db": 33.06537854621958,
+          "rgb_ssim_shave2": 0.9307730044956318,
+          "y_mse_shave2": 0.0005197098806706452,
+          "y_psnr_shave2_db": 34.66459159636654,
+          "y_ssim_shave2": 0.9378732312838955
+        },
+        "middle": {
+          "lpips_alex_v01": 0.1194695205800235,
+          "rgb_mse": 0.0013414029281741942,
+          "rgb_psnr_db": 29.95536547158114,
+          "rgb_ssim": 0.9102035637568133,
+          "y_mse": 0.0009602931473087305,
+          "y_psnr_db": 31.440985856372517,
+          "y_ssim": 0.9177427315404783,
+          "rgb_mse_shave2": 0.0013416111495657289,
+          "rgb_psnr_shave2_db": 29.955261075949775,
+          "rgb_ssim_shave2": 0.9101183535302596,
+          "y_mse_shave2": 0.0009603870740551524,
+          "y_psnr_shave2_db": 31.44113155646604,
+          "y_ssim_shave2": 0.91765892032957
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.14506980529054997,
+          "rgb_mse": 0.0021814890021865044,
+          "rgb_psnr_db": 27.666654744677473,
+          "rgb_ssim": 0.8869130916072432,
+          "y_mse": 0.0015786460292848085,
+          "y_psnr_db": 29.069526819647,
+          "y_ssim": 0.8944766585366069,
+          "rgb_mse_shave2": 0.0021815400090120806,
+          "rgb_psnr_shave2_db": 27.66637920027982,
+          "rgb_ssim_shave2": 0.8868260222222908,
+          "y_mse_shave2": 0.0015786243121452723,
+          "y_psnr_shave2_db": 29.069411907996894,
+          "y_ssim_shave2": 0.8943903020998525
+        }
+      }
+    },
+    "fxaa": {
+      "area_trained": {
+        "all": {
+          "lpips_alex_v01": 0.19015089947730301,
+          "rgb_mse": 0.0033659829120505987,
+          "rgb_psnr_db": 25.989420556367044,
+          "rgb_ssim": 0.8273672256242258,
+          "y_mse": 0.0024084594092647197,
+          "y_psnr_db": 27.498485658661625,
+          "y_ssim": 0.8412672569121579,
+          "rgb_mse_shave2": 0.00336807772841436,
+          "rgb_psnr_shave2_db": 25.986909673095884,
+          "rgb_ssim_shave2": 0.82720000104389,
+          "y_mse_shave2": 0.0024098274499192106,
+          "y_psnr_shave2_db": 27.496216948737377,
+          "y_ssim_shave2": 0.8411096093065604
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.15815908510237933,
+          "rgb_mse": 0.0017699184946974166,
+          "rgb_psnr_db": 28.924506599397155,
+          "rgb_ssim": 0.8688851070518091,
+          "y_mse": 0.0012697445709571966,
+          "y_psnr_db": 30.532172746223903,
+          "y_ssim": 0.8826650060869666,
+          "rgb_mse_shave2": 0.001770007326152043,
+          "rgb_psnr_shave2_db": 28.92537533824361,
+          "rgb_ssim_shave2": 0.8687779996858318,
+          "y_mse_shave2": 0.0012696992919786403,
+          "y_psnr_shave2_db": 30.533477411921293,
+          "y_ssim_shave2": 0.8825684612961329
+        },
+        "middle": {
+          "lpips_alex_v01": 0.18978895258158443,
+          "rgb_mse": 0.0032243810066624086,
+          "rgb_psnr_db": 25.68773495486353,
+          "rgb_ssim": 0.8269245673982648,
+          "y_mse": 0.0022933976630980044,
+          "y_psnr_db": 27.18710955424958,
+          "y_ssim": 0.8413944604340855,
+          "rgb_mse_shave2": 0.003227608184121484,
+          "rgb_psnr_shave2_db": 25.682779182476356,
+          "rgb_ssim_shave2": 0.8267249055810209,
+          "y_mse_shave2": 0.0022955720760862723,
+          "y_psnr_shave2_db": 27.18232861346287,
+          "y_ssim_shave2": 0.8412047396492672
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.2225046607479453,
+          "rgb_mse": 0.005103649234791971,
+          "rgb_psnr_db": 23.356020114840458,
+          "rgb_ssim": 0.7862920024226031,
+          "y_mse": 0.0036622359937389616,
+          "y_psnr_db": 24.77617467551141,
+          "y_ssim": 0.7997423042154211,
+          "rgb_mse_shave2": 0.0051066176749695515,
+          "rgb_psnr_shave2_db": 23.3525744985677,
+          "rgb_ssim_shave2": 0.786097097864818,
+          "y_mse_shave2": 0.003664210981692719,
+          "y_psnr_shave2_db": 24.772844820828013,
+          "y_ssim_shave2": 0.7995556269742817
+        }
+      },
+      "bicubic_trained": {
+        "all": {
+          "lpips_alex_v01": 0.17521783767888943,
+          "rgb_mse": 0.0034740282069514895,
+          "rgb_psnr_db": 25.830069658966273,
+          "rgb_ssim": 0.8242354234705711,
+          "y_mse": 0.002478499570100417,
+          "y_psnr_db": 27.350874374595133,
+          "y_ssim": 0.8387130886596763,
+          "rgb_mse_shave2": 0.0034765877503071304,
+          "rgb_psnr_shave2_db": 25.827047507928995,
+          "rgb_ssim_shave2": 0.8240707138208452,
+          "y_mse_shave2": 0.002480174516648429,
+          "y_psnr_shave2_db": 27.34812494324994,
+          "y_ssim_shave2": 0.8385574018766189
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.14566731683909895,
+          "rgb_mse": 0.0018339249001694427,
+          "rgb_psnr_db": 28.743736725772713,
+          "rgb_ssim": 0.8659349686877741,
+          "y_mse": 0.001312233084834115,
+          "y_psnr_db": 30.36445818921189,
+          "y_ssim": 0.8802021119403484,
+          "rgb_mse_shave2": 0.0018342624032325109,
+          "rgb_psnr_shave2_db": 28.74399429073071,
+          "rgb_ssim_shave2": 0.8658304716372914,
+          "y_mse_shave2": 0.001312355812485218,
+          "y_psnr_shave2_db": 30.365187631047483,
+          "y_ssim_shave2": 0.8801077994067399
+        },
+        "middle": {
+          "lpips_alex_v01": 0.17431066256016498,
+          "rgb_mse": 0.003335307995812719,
+          "rgb_psnr_db": 25.525897312429024,
+          "rgb_ssim": 0.8236905598642081,
+          "y_mse": 0.0023652296564253836,
+          "y_psnr_db": 27.036825812453113,
+          "y_ssim": 0.8387334061101377,
+          "rgb_mse_shave2": 0.0033389924593573766,
+          "rgb_psnr_shave2_db": 25.520474947832085,
+          "rgb_ssim_shave2": 0.8234942474443901,
+          "y_mse_shave2": 0.002367705583785133,
+          "y_psnr_shave2_db": 27.03160454096082,
+          "y_ssim_shave2": 0.8385465126640714
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.20567553363740443,
+          "rgb_mse": 0.0052528517248723065,
+          "rgb_psnr_db": 23.220574938697116,
+          "rgb_ssim": 0.7830807418597309,
+          "y_mse": 0.0037580359690417508,
+          "y_psnr_db": 24.65133912212037,
+          "y_ssim": 0.7972037479285434,
+          "rgb_mse_shave2": 0.0052565083883315,
+          "rgb_psnr_shave2_db": 23.216673285224164,
+          "rgb_ssim_shave2": 0.7828874223808538,
+          "y_mse_shave2": 0.0037604621536749317,
+          "y_psnr_shave2_db": 24.647582657741516,
+          "y_ssim_shave2": 0.7970178935590463
+        }
+      }
+    },
+    "smaa": {
+      "area_trained": {
+        "all": {
+          "lpips_alex_v01": 0.17107328945770864,
+          "rgb_mse": 0.003626464958939141,
+          "rgb_psnr_db": 25.633198591478013,
+          "rgb_ssim": 0.8362946426246046,
+          "y_mse": 0.0025952331980718243,
+          "y_psnr_db": 27.14353438417182,
+          "y_ssim": 0.8502506523372412,
+          "rgb_mse_shave2": 0.003628607726848802,
+          "rgb_psnr_shave2_db": 25.630652727736155,
+          "rgb_ssim_shave2": 0.8361372345899675,
+          "y_mse_shave2": 0.0025966021765232235,
+          "y_psnr_shave2_db": 27.141269174626945,
+          "y_ssim_shave2": 0.8501019944500147
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.14135750638321043,
+          "rgb_mse": 0.0018808500234191484,
+          "rgb_psnr_db": 28.660617953351316,
+          "rgb_ssim": 0.874931175110636,
+          "y_mse": 0.0013499148508884157,
+          "y_psnr_db": 30.273059451739368,
+          "y_ssim": 0.8885861444168418,
+          "rgb_mse_shave2": 0.0018808330107674674,
+          "rgb_psnr_shave2_db": 28.66127036723749,
+          "rgb_ssim_shave2": 0.8748307736080624,
+          "y_mse_shave2": 0.001349781022429099,
+          "y_psnr_shave2_db": 30.274180956123185,
+          "y_ssim_shave2": 0.888495082746357
+        },
+        "middle": {
+          "lpips_alex_v01": 0.17011020433157684,
+          "rgb_mse": 0.0034867161470583416,
+          "rgb_psnr_db": 25.298939699517653,
+          "rgb_ssim": 0.8357333538781159,
+          "y_mse": 0.0024807425007108597,
+          "y_psnr_db": 26.79919108622408,
+          "y_ssim": 0.8502460276223168,
+          "rgb_mse_shave2": 0.0034902291437358423,
+          "rgb_psnr_shave2_db": 25.29382411291502,
+          "rgb_ssim_shave2": 0.8355447865389236,
+          "y_mse_shave2": 0.0024830908925066618,
+          "y_psnr_shave2_db": 26.794285270206057,
+          "y_ssim_shave2": 0.8500665810231639
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.2017521576583385,
+          "rgb_mse": 0.005511828706339932,
+          "rgb_psnr_db": 22.94003812156507,
+          "rgb_ssim": 0.7982193988850624,
+          "y_mse": 0.003955042242616199,
+          "y_psnr_db": 24.358352614552018,
+          "y_ssim": 0.8119197849725647,
+          "rgb_mse_shave2": 0.0055147610260430965,
+          "rgb_psnr_shave2_db": 22.936863703056023,
+          "rgb_ssim_shave2": 0.7980361436229162,
+          "y_mse_shave2": 0.003956934614633907,
+          "y_psnr_shave2_db": 24.355341297551597,
+          "y_ssim_shave2": 0.8117443195805222
+        }
+      },
+      "bicubic_trained": {
+        "all": {
+          "lpips_alex_v01": 0.1613047732847431,
+          "rgb_mse": 0.003926302430125722,
+          "rgb_psnr_db": 25.255498326838847,
+          "rgb_ssim": 0.8290780579926833,
+          "y_mse": 0.0028055411630250305,
+          "y_psnr_db": 26.768858416186973,
+          "y_ssim": 0.8435617666010661,
+          "rgb_mse_shave2": 0.003929440744953664,
+          "rgb_psnr_shave2_db": 25.252023647247942,
+          "rgb_ssim_shave2": 0.8289202662899291,
+          "y_mse_shave2": 0.002807598695589905,
+          "y_psnr_shave2_db": 26.765660873026793,
+          "y_ssim_shave2": 0.8434123800515929
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.1339276767335832,
+          "rgb_mse": 0.002051375479835077,
+          "rgb_psnr_db": 28.229050784867372,
+          "rgb_ssim": 0.8686874187889388,
+          "y_mse": 0.0014697052595534581,
+          "y_psnr_db": 29.841281280540915,
+          "y_ssim": 0.8828040736984917,
+          "rgb_mse_shave2": 0.0020518317211358694,
+          "rgb_psnr_shave2_db": 28.228607064720276,
+          "rgb_ssim_shave2": 0.8685881547064274,
+          "y_mse_shave2": 0.0014698959596093299,
+          "y_psnr_shave2_db": 29.841281511468022,
+          "y_ssim_shave2": 0.8827138514600772
+        },
+        "middle": {
+          "lpips_alex_v01": 0.1603956476598978,
+          "rgb_mse": 0.0037896844989925723,
+          "rgb_psnr_db": 24.91918573486555,
+          "rgb_ssim": 0.8283414439961324,
+          "y_mse": 0.0026928143858994296,
+          "y_psnr_db": 26.422678605214518,
+          "y_ssim": 0.8433803802105323,
+          "rgb_mse_shave2": 0.0037942295706821796,
+          "rgb_psnr_shave2_db": 24.913191063433736,
+          "rgb_ssim_shave2": 0.8281526416609681,
+          "y_mse_shave2": 0.002695877848354856,
+          "y_psnr_shave2_db": 26.41689030191662,
+          "y_ssim_shave2": 0.8432004012046111
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.18959099546074865,
+          "rgb_mse": 0.0059378473115495115,
+          "rgb_psnr_db": 22.618258460783608,
+          "rgb_ssim": 0.790205311192979,
+          "y_mse": 0.004254103843622202,
+          "y_psnr_db": 24.042615362805524,
+          "y_ssim": 0.8045008458941755,
+          "rgb_mse_shave2": 0.005942260943042941,
+          "rgb_psnr_shave2_db": 22.614272813589793,
+          "rgb_ssim_shave2": 0.7900200025023932,
+          "y_mse_shave2": 0.004257022278805529,
+          "y_psnr_shave2_db": 24.038810805695746,
+          "y_ssim_shave2": 0.8043228874900893
+        }
+      }
+    },
+    "native": {
+      "area_trained": {
+        "all": {
+          "lpips_alex_v01": 0.16103798683732745,
+          "rgb_mse": 0.0040611079078030216,
+          "rgb_psnr_db": 25.18394990684256,
+          "rgb_ssim": 0.8336904205435293,
+          "y_mse": 0.002919721344677402,
+          "y_psnr_db": 26.679376405767997,
+          "y_ssim": 0.847482257874436,
+          "rgb_mse_shave2": 0.004066357108884948,
+          "rgb_psnr_shave2_db": 25.1784415849188,
+          "rgb_ssim_shave2": 0.8335216587152967,
+          "y_mse_shave2": 0.0029233737949465595,
+          "y_psnr_shave2_db": 26.674040532908275,
+          "y_ssim_shave2": 0.8473217452354912
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.13476806852966547,
+          "rgb_mse": 0.0021068007008661024,
+          "rgb_psnr_db": 28.223324185038713,
+          "rgb_ssim": 0.8726563674028286,
+          "y_mse": 0.0015173647805244337,
+          "y_psnr_db": 29.82002803328878,
+          "y_ssim": 0.8861325077412225,
+          "rgb_mse_shave2": 0.0021085549675940126,
+          "rgb_psnr_shave2_db": 28.220699240219492,
+          "rgb_ssim_shave2": 0.8725482302732326,
+          "y_mse_shave2": 0.001518527902255645,
+          "y_psnr_shave2_db": 29.817709411175485,
+          "y_ssim_shave2": 0.8860334390802743
+        },
+        "middle": {
+          "lpips_alex_v01": 0.1605592718347907,
+          "rgb_mse": 0.003929997393635815,
+          "rgb_psnr_db": 24.822349681074183,
+          "rgb_ssim": 0.8327688411791001,
+          "y_mse": 0.002810402221388677,
+          "y_psnr_db": 26.307654879533438,
+          "y_ssim": 0.8471279107554174,
+          "rgb_mse_shave2": 0.003936644210420068,
+          "rgb_psnr_shave2_db": 24.81427267955217,
+          "rgb_ssim_shave2": 0.8325685418246117,
+          "y_mse_shave2": 0.0028150533994903337,
+          "y_psnr_shave2_db": 26.29969505753725,
+          "y_ssim_shave2": 0.8469360488220404
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.18778662014752623,
+          "rgb_mse": 0.006146525628907153,
+          "rgb_psnr_db": 22.506175854414757,
+          "rgb_ssim": 0.7956460530486581,
+          "y_mse": 0.004431397032119096,
+          "y_psnr_db": 23.910446304481734,
+          "y_ssim": 0.8091863551266669,
+          "rgb_mse_shave2": 0.0061538721486407676,
+          "rgb_psnr_shave2_db": 22.50035283498473,
+          "rgb_ssim_shave2": 0.7954482040480471,
+          "y_mse_shave2": 0.004436540083093693,
+          "y_psnr_shave2_db": 23.904717130012077,
+          "y_ssim_shave2": 0.8089957478041611
+        }
+      },
+      "bicubic_trained": {
+        "all": {
+          "lpips_alex_v01": 0.16354970602318636,
+          "rgb_mse": 0.00480634358188957,
+          "rgb_psnr_db": 24.476904833549085,
+          "rgb_ssim": 0.8198197070777592,
+          "y_mse": 0.003463361743096385,
+          "y_psnr_db": 25.962167661909334,
+          "y_ssim": 0.8340314369772808,
+          "rgb_mse_shave2": 0.004814085800504351,
+          "rgb_psnr_shave2_db": 24.470176900029497,
+          "rgb_ssim_shave2": 0.8196445169112628,
+          "y_mse_shave2": 0.0034688168985852084,
+          "y_psnr_shave2_db": 25.955592611734087,
+          "y_ssim_shave2": 0.8338647930908546
+        },
+        "most_similar": {
+          "lpips_alex_v01": 0.13795622469857338,
+          "rgb_mse": 0.0025127388730045996,
+          "rgb_psnr_db": 27.474384177404804,
+          "rgb_ssim": 0.8616996050069727,
+          "y_mse": 0.0018117183378204057,
+          "y_psnr_db": 29.05809625763149,
+          "y_ssim": 0.8756146540833226,
+          "rgb_mse_shave2": 0.002515703440174408,
+          "rgb_psnr_shave2_db": 27.470324096179834,
+          "rgb_ssim_shave2": 0.8615895375399064,
+          "y_mse_shave2": 0.0018137428175801088,
+          "y_psnr_shave2_db": 29.054310986573856,
+          "y_ssim_shave2": 0.8755139212175853
+        },
+        "middle": {
+          "lpips_alex_v01": 0.16365075871348378,
+          "rgb_mse": 0.0046703283750628615,
+          "rgb_psnr_db": 24.10699457905684,
+          "rgb_ssim": 0.8188344479415615,
+          "y_mse": 0.003348278924734383,
+          "y_psnr_db": 25.582692348320215,
+          "y_ssim": 0.833627082665886,
+          "rgb_mse_shave2": 0.004679479358802681,
+          "rgb_psnr_shave2_db": 24.09781096632916,
+          "rgb_ssim_shave2": 0.8186267441408271,
+          "y_mse_shave2": 0.0033547325322846955,
+          "y_psnr_shave2_db": 25.573603856547532,
+          "y_ssim_shave2": 0.8334279983058367
+        },
+        "least_similar": {
+          "lpips_alex_v01": 0.1890421346575021,
+          "rgb_mse": 0.007235963497601249,
+          "rgb_psnr_db": 21.849335744185595,
+          "rgb_ssim": 0.778925068284745,
+          "y_mse": 0.005230087966734369,
+          "y_psnr_db": 23.245714379776302,
+          "y_ssim": 0.7928525741826331,
+          "rgb_mse_shave2": 0.007247074602535959,
+          "rgb_psnr_shave2_db": 21.842395637579525,
+          "rgb_ssim_shave2": 0.7787172690530549,
+          "y_mse_shave2": 0.0052379753458908235,
+          "y_psnr_shave2_db": 23.23886299208093,
+          "y_ssim_shave2": 0.7926524597491437
+        }
+      }
+    }
+  },
+  "paired_uncertainty": {
+    "contrasts": 15,
+    "simultaneous_critical_value": 2.731719180528178,
+    "rows": [
+      {
+        "id": "Bicubic-trained minus Area-trained / ssaa_area",
+        "metric": "y_psnr_shave2_db",
+        "point": -0.7397603682979721,
+        "scene_effects": {
+          "AbandonedSchool": -0.6685885515613634,
+          "ScifiBaseNightStartStop": -0.7172140668732752,
+          "ScifiFacility": -1.0576825551466982,
+          "SeaPort": -0.7290284656921955,
+          "SunTempleBush": -0.526288202216314
+        },
+        "leave_one_scene_out_range": [
+          -0.7931284098183937,
+          -0.6602798215857923
+        ],
+        "nominal_95_percent_interval": [
+          -0.923852268868345,
+          -0.5698106289036549
+        ],
+        "simultaneous_95_percent_band": [
+          -0.9850657927330874,
+          -0.4944549438628568
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / ssaa_area",
+        "metric": "y_ssim_shave2",
+        "point": -0.00570346426281676,
+        "scene_effects": {
+          "AbandonedSchool": -0.0047356363504604815,
+          "ScifiBaseNightStartStop": -0.002451134060598381,
+          "ScifiFacility": -0.00990820338201126,
+          "SeaPort": -0.005568710681940758,
+          "SunTempleBush": -0.005853636839074361
+        },
+        "leave_one_scene_out_range": [
+          -0.006516546813371216,
+          -0.00465227948301794
+        ],
+        "nominal_95_percent_interval": [
+          -0.008017978656153871,
+          -0.0036601926783001197
+        ],
+        "simultaneous_95_percent_band": [
+          -0.008740149007471996,
+          -0.002666779518161524
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / ssaa_area",
+        "metric": "lpips_alex_v01",
+        "point": -0.013745014583691983,
+        "scene_effects": {
+          "AbandonedSchool": -0.015922172196830314,
+          "ScifiBaseNightStartStop": -0.010148692565659687,
+          "ScifiFacility": -0.0054459546071787684,
+          "SeaPort": -0.011444325714061648,
+          "SunTempleBush": -0.025763927834729333
+        },
+        "leave_one_scene_out_range": [
+          -0.015819779577820228,
+          -0.010740286270932597
+        ],
+        "nominal_95_percent_interval": [
+          -0.0205247966733192,
+          -0.008081044204405804
+        ],
+        "simultaneous_95_percent_band": [
+          -0.022719846003525827,
+          -0.00477018316385814
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / bicubic_aa",
+        "metric": "y_psnr_shave2_db",
+        "point": 0.6654047007661781,
+        "scene_effects": {
+          "AbandonedSchool": 0.46553700186602853,
+          "ScifiBaseNightStartStop": 1.073944446878123,
+          "ScifiFacility": 0.820271080651068,
+          "SeaPort": 0.635456032892133,
+          "SunTempleBush": 0.3318149415435734
+        },
+        "leave_one_scene_out_range": [
+          0.563269764238207,
+          0.7488021405718435
+        ],
+        "nominal_95_percent_interval": [
+          0.42600619434506665,
+          0.9035754278029823
+        ],
+        "simultaneous_95_percent_band": [
+          0.3295260902023236,
+          1.0012833113300326
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / bicubic_aa",
+        "metric": "y_ssim_shave2",
+        "point": 0.008885751547598852,
+        "scene_effects": {
+          "AbandonedSchool": 0.009408693669185841,
+          "ScifiBaseNightStartStop": 0.004365834959367487,
+          "ScifiFacility": 0.010343894348679883,
+          "SeaPort": 0.008869456261332287,
+          "SunTempleBush": 0.011440878499429097
+        },
+        "leave_one_scene_out_range": [
+          0.008246969809641902,
+          0.010015730694656444
+        ],
+        "nominal_95_percent_interval": [
+          0.006247519050883346,
+          0.011264515598051573
+        ],
+        "simultaneous_95_percent_band": [
+          0.005342842810791791,
+          0.012428660284405913
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / bicubic_aa",
+        "metric": "lpips_alex_v01",
+        "point": -0.030792473868156534,
+        "scene_effects": {
+          "AbandonedSchool": -0.03159625707194208,
+          "ScifiBaseNightStartStop": -0.026091866055503482,
+          "ScifiFacility": -0.03171081226319075,
+          "SeaPort": -0.03113671255608401,
+          "SunTempleBush": -0.033426721394062026
+        },
+        "leave_one_scene_out_range": [
+          -0.031967625821319706,
+          -0.030133911986680084
+        ],
+        "nominal_95_percent_interval": [
+          -0.033628933529697015,
+          -0.02786705476977903
+        ],
+        "simultaneous_95_percent_band": [
+          -0.03478094639691446,
+          -0.02680400133939861
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / fxaa",
+        "metric": "y_psnr_shave2_db",
+        "point": -0.14809200548744172,
+        "scene_effects": {
+          "AbandonedSchool": -0.11933236481996445,
+          "ScifiBaseNightStartStop": -0.18951498487699325,
+          "ScifiFacility": -0.22422317162472183,
+          "SeaPort": -0.12828562936010712,
+          "SunTempleBush": -0.0791038767554717
+        },
+        "leave_one_scene_out_range": [
+          -0.16533903767041735,
+          -0.12905921395312703
+        ],
+        "nominal_95_percent_interval": [
+          -0.19522872397299124,
+          -0.10361684900795734
+        ],
+        "simultaneous_95_percent_band": [
+          -0.21159451396652285,
+          -0.08458949700836062
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / fxaa",
+        "metric": "y_ssim_shave2",
+        "point": -0.0025522074299408892,
+        "scene_effects": {
+          "AbandonedSchool": -0.0009381309420641859,
+          "ScifiBaseNightStartStop": -0.0030085034058183746,
+          "ScifiFacility": -0.0051580052782469465,
+          "SeaPort": -0.0019401296830414694,
+          "SunTempleBush": -0.0017162678405373555
+        },
+        "leave_one_scene_out_range": [
+          -0.0029557265519108977,
+          -0.00190075796786493
+        ],
+        "nominal_95_percent_interval": [
+          -0.0039120917483963045,
+          -0.0014275156604168003
+        ],
+        "simultaneous_95_percent_band": [
+          -0.004336505142550243,
+          -0.0007679097173315355
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / fxaa",
+        "metric": "lpips_alex_v01",
+        "point": -0.014933061798413638,
+        "scene_effects": {
+          "AbandonedSchool": -0.018610043916851282,
+          "ScifiBaseNightStartStop": -0.0062777664201955075,
+          "ScifiFacility": -0.011574297522505134,
+          "SeaPort": -0.016604798970123152,
+          "SunTempleBush": -0.02159840216239295
+        },
+        "leave_one_scene_out_range": [
+          -0.01709688564296813,
+          -0.013266726707418741
+        ],
+        "nominal_95_percent_interval": [
+          -0.019875444315843954,
+          -0.010007555742139235
+        ],
+        "simultaneous_95_percent_band": [
+          -0.02191809109773714,
+          -0.007948032499090136
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / smaa",
+        "metric": "y_psnr_shave2_db",
+        "point": -0.3756083016001561,
+        "scene_effects": {
+          "AbandonedSchool": -0.45571240160424864,
+          "ScifiBaseNightStartStop": -0.3463727526122078,
+          "ScifiFacility": -0.4349047595210642,
+          "SeaPort": -0.319397287059342,
+          "SunTempleBush": -0.3216543072038398
+        },
+        "leave_one_scene_out_range": [
+          -0.3896610552353579,
+          -0.3555822765991188
+        ],
+        "nominal_95_percent_interval": [
+          -0.4585201505182697,
+          -0.32242468742340974
+        ],
+        "simultaneous_95_percent_band": [
+          -0.4762721482676608,
+          -0.27494445493265146
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / smaa",
+        "metric": "y_ssim_shave2",
+        "point": -0.006689614398422528,
+        "scene_effects": {
+          "AbandonedSchool": -0.006110593499728867,
+          "ScifiBaseNightStartStop": -0.004638616934901085,
+          "ScifiFacility": -0.009431581461740945,
+          "SeaPort": -0.004793361326921763,
+          "SunTempleBush": -0.008473918768817978
+        },
+        "leave_one_scene_out_range": [
+          -0.0072023637643021665,
+          -0.006004122632591979
+        ],
+        "nominal_95_percent_interval": [
+          -0.008475482894409326,
+          -0.0047447840624907
+        ],
+        "simultaneous_95_percent_band": [
+          -0.009239525202872884,
+          -0.004139703593972171
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / smaa",
+        "metric": "lpips_alex_v01",
+        "point": -0.009768516172965286,
+        "scene_effects": {
+          "AbandonedSchool": -0.012223113576571132,
+          "ScifiBaseNightStartStop": 0.0025242161626617132,
+          "ScifiFacility": -0.004252865662177419,
+          "SeaPort": -0.010213722599049402,
+          "SunTempleBush": -0.024677095189690607
+        },
+        "leave_one_scene_out_range": [
+          -0.012841699256872174,
+          -0.006041371418784025
+        ],
+        "nominal_95_percent_interval": [
+          -0.01826506374643157,
+          -0.0019807545516007524
+        ],
+        "simultaneous_95_percent_band": [
+          -0.021249297382492247,
+          0.001712265036561673
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": false
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / native",
+        "metric": "y_psnr_shave2_db",
+        "point": -0.7184479211741746,
+        "scene_effects": {
+          "AbandonedSchool": -0.8288538059652808,
+          "ScifiBaseNightStartStop": -0.5290441181922816,
+          "ScifiFacility": -0.7911856757353917,
+          "SeaPort": -0.6052827112653283,
+          "SunTempleBush": -0.8378732947125336
+        },
+        "leave_one_scene_out_range": [
+          -0.7657988719196354,
+          -0.688591577789559
+        ],
+        "nominal_95_percent_interval": [
+          -0.8231212136983116,
+          -0.6041595387346107
+        ],
+        "simultaneous_95_percent_band": [
+          -0.8732424020156524,
+          -0.5636534403326967
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / native",
+        "metric": "y_ssim_shave2",
+        "point": -0.013456952144637047,
+        "scene_effects": {
+          "AbandonedSchool": -0.014213130080141134,
+          "ScifiBaseNightStartStop": -0.006100221560060293,
+          "ScifiFacility": -0.01689305797247531,
+          "SeaPort": -0.009940909456419567,
+          "SunTempleBush": -0.020137441654088817
+        },
+        "leave_one_scene_out_range": [
+          -0.015296134790780735,
+          -0.011786829767274076
+        ],
+        "nominal_95_percent_interval": [
+          -0.01866231446815019,
+          -0.007920036187442102
+        ],
+        "simultaneous_95_percent_band": [
+          -0.020954294746469388,
+          -0.005959609542804706
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Bicubic-trained minus Area-trained / native",
+        "metric": "lpips_alex_v01",
+        "point": 0.0025117191858588794,
+        "scene_effects": {
+          "AbandonedSchool": -0.0025777413509786296,
+          "ScifiBaseNightStartStop": 0.008909842123587933,
+          "ScifiFacility": 0.012905263838668662,
+          "SeaPort": 0.005548788545032324,
+          "SunTempleBush": -0.01222755722701549
+        },
+        "leave_one_scene_out_range": [
+          -8.666697734344142e-05,
+          0.006196538289077597
+        ],
+        "nominal_95_percent_interval": [
+          -0.0057699870075837035,
+          0.009740543805621388
+        ],
+        "simultaneous_95_percent_band": [
+          -0.00844608895323743,
+          0.01346952732495519
+        ],
+        "nominal_excludes_zero": false,
+        "simultaneous_excludes_zero": false
+      }
+    ]
+  },
+  "training_input_interaction": {
+    "contrasts": 3,
+    "simultaneous_critical_value": 2.3052411910017954,
+    "rows": [
+      {
+        "id": "Training-by-input: Bicubic gain minus Area gain",
+        "metric": "y_psnr_shave2_db",
+        "point": 1.405165069064147,
+        "scene_effects": {
+          "AbandonedSchool": 1.1341255534274044,
+          "ScifiBaseNightStartStop": 1.7911585137513655,
+          "ScifiFacility": 1.877953635797764,
+          "SeaPort": 1.3644844985843183,
+          "SunTempleBush": 0.8581031437598856
+        },
+        "leave_one_scene_out_range": [
+          1.2869679273807435,
+          1.541930550390213
+        ],
+        "nominal_95_percent_interval": [
+          1.0053385630303204,
+          1.750756205729746
+        ],
+        "simultaneous_95_percent_band": [
+          0.9649904126513561,
+          1.8453397254769381
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Training-by-input: Bicubic gain minus Area gain",
+        "metric": "y_ssim_shave2",
+        "point": 0.014589215810415588,
+        "scene_effects": {
+          "AbandonedSchool": 0.014144330019645955,
+          "ScifiBaseNightStartStop": 0.006816969019965889,
+          "ScifiFacility": 0.02025209773069063,
+          "SeaPort": 0.014438166943272773,
+          "SunTempleBush": 0.017294515338502736
+        },
+        "leave_one_scene_out_range": [
+          0.01317349533034684,
+          0.01653227750802802
+        ],
+        "nominal_95_percent_interval": [
+          0.009992616876018514,
+          0.018589557377658616
+        ],
+        "simultaneous_95_percent_band": [
+          0.00949161240942216,
+          0.019686819211409017
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      },
+      {
+        "id": "Training-by-input: Bicubic gain minus Area gain",
+        "metric": "lpips_alex_v01",
+        "point": -0.017047459284464515,
+        "scene_effects": {
+          "AbandonedSchool": -0.015674084875111783,
+          "ScifiBaseNightStartStop": -0.01594317348984381,
+          "ScifiFacility": -0.026264857656011976,
+          "SeaPort": -0.01969238684202234,
+          "SunTempleBush": -0.007662793559332685
+        },
+        "leave_one_scene_out_range": [
+          -0.019393625715747473,
+          -0.014743109691577647
+        ],
+        "nominal_95_percent_interval": [
+          -0.022303381243859707,
+          -0.011745172220316822
+        ],
+        "simultaneous_95_percent_band": [
+          -0.023320232172776244,
+          -0.010774686396152786
+        ],
+        "nominal_excludes_zero": true,
+        "simultaneous_excludes_zero": true
+      }
+    ]
+  },
+  "bootstrap": {
+    "draws": 3000,
+    "seed": 20261006,
+    "clusters": "environment then source-sequence",
+    "families": [
+      15,
+      3
+    ],
+    "scope": "Five QRISP environments; not training-seed uncertainty"
+  }
+}

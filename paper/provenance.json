@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-21",
+  "kind": "Clean public snapshot; private Git history not included",
+  "image_replacement": "GameIR candidates 51, 56 and 41 replace QRISP image crops; numerical results unchanged",
+  "new_inference": false,
+  "new_training": false,
+  "arxiv_submission": false,
+  "figure_verification": "../research/gameir_figure_replacement/verification.json",
+  "pdf_sha256": "20bac60799169c73bdf9e2472d5e3feeda87a8966c5139984cebb332ffcd51d8",
+  "supplement_pdf_sha256": "5de60efe227ddc9789e46458351261b8c14a42c73c355683c864145b78269a7d"
+}

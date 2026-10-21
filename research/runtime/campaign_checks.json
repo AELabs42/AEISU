@@ -1,0 +1,12 @@
+{
+  "pytorch_model_shape_jobs": 16,
+  "pytorch_trial_sets": 160,
+  "pytorch_timed_forwards": 8000,
+  "native_resolution_mode_trials": 40,
+  "deployment_route_trials": 40,
+  "spatial_method_trials": 50,
+  "graph_parity_passed": true,
+  "source_snapshots_verified": true,
+  "shader_tensor_instruction_count": 0,
+  "all_expected_measurements_complete": true
+}

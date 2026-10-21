@@ -1,0 +1,106 @@
+{
+  "timing_points": [
+    {
+      "model": "quicksrnet_small_x2",
+      "backend": "FP16 PyTorch CUDA graph",
+      "latency_ms": 0.29203200340270996,
+      "p95_ms": 0.29392159879207613
+    },
+    {
+      "model": "quicksrnet_medium_x2",
+      "backend": "FP16 PyTorch CUDA graph",
+      "latency_ms": 0.5544959902763367,
+      "p95_ms": 0.5578623861074448
+    },
+    {
+      "model": "repnet_x2",
+      "backend": "FP16 PyTorch CUDA graph",
+      "latency_ms": 0.1287040039896965,
+      "p95_ms": 0.13042079880833626
+    },
+    {
+      "model": "rt4ksr_x2",
+      "backend": "FP16 PyTorch CUDA graph",
+      "latency_ms": 0.5091519951820374,
+      "p95_ms": 0.5106431901454925
+    },
+    {
+      "model": "span_x2",
+      "backend": "FP16 PyTorch CUDA graph",
+      "latency_ms": 5.8204638957977295,
+      "p95_ms": 5.845971012115479
+    },
+    {
+      "model": "swinir_light_x2",
+      "backend": "FP16 PyTorch CUDA graph",
+      "latency_ms": 123.52865600585938,
+      "p95_ms": 123.81095504760742
+    },
+    {
+      "model": "aif_mixed",
+      "backend": "Mixed custom CUDA graph",
+      "latency_ms": 0.131936,
+      "p95_ms": 0.151744
+    },
+    {
+      "model": "bilinear",
+      "backend": "FP32 D3D11 shader",
+      "latency_ms": 0.016352,
+      "p95_ms": 0.0174736
+    },
+    {
+      "model": "fsr1_easu",
+      "backend": "FP32 D3D11 shader",
+      "latency_ms": 0.032288,
+      "p95_ms": 0.0337632
+    },
+    {
+      "model": "fsr1_rcas_02",
+      "backend": "FP32 D3D11 shader",
+      "latency_ms": 0.047712,
+      "p95_ms": 0.0493776
+    },
+    {
+      "model": "nis_0",
+      "backend": "FP32 D3D11 shader",
+      "latency_ms": 0.040064,
+      "p95_ms": 0.0428192
+    },
+    {
+      "model": "sgsr1",
+      "backend": "FP32 D3D11 shader",
+      "latency_ms": 0.02096,
+      "p95_ms": 0.022272
+    }
+  ],
+  "quality_identity_checks": {
+    "quicksrnet_small_x2": {
+      "protocol_sha256": "46830a662846292404da682817fe2a3b4e6f5233fee3f644fa40786f78d8ab63"
+    },
+    "quicksrnet_medium_x2": {
+      "protocol_sha256": "09d5d05069e88cb0a1866eb26f4ff67b8dbb80e230ebd5286eeb25c42bdd6728"
+    },
+    "repnet_x2": {
+      "protocol_sha256": "ec48fa3fc31982e0d26e79b3da7b6d2f304794408be607860752d8728c470d0d"
+    },
+    "rt4ksr_x2": {
+      "protocol_sha256": "c789446041344381d0032ba525ba2f131d70e05b7666547f87c1c3f489221782"
+    },
+    "span_x2": {
+      "protocol_sha256": "86a6de3d523f5c2a808e99a6485088e6686f029d245b9149cbe0452d97a270b5"
+    },
+    "swinir_light_x2": {
+      "protocol_sha256": "e1c01b61524f219817c98a6fe1923428ef39c5c9a3aeb2a193c94fa23102b759"
+    },
+    "aif_mixed": {
+      "protocol_sha256": "23e25dad79eae22cd3083065867f004763105d7d3c2da7f770f86c892317376f"
+    }
+  },
+  "quality_sha256": "92bb2821d792f63bdd1dc0ac1ba42c8acc8c49d9016e3e56884ee41192b759d7",
+  "scope": "Measured implementations on one GPU, not equally optimized backends or architecture-only speedup",
+  "pytorch_summary_sha256": "7d4eb011f326ed410add0b8b09434cd26701149bbf3e2f66ddc84f57e4e0fb55",
+  "native_sha256": "5c3d82d527a1ad800e9e0eb91d5c04a16f3c0165cbe07b1adf64494242a39d19",
+  "deployment_sha256": "b75c07aa37413761f2cd4ada03aabc85d1a03ce0cd739c287d92c6695b359c25",
+  "spatial_sha256": "0f968b4d59f0441f40dd20e8446e927b497c8c4c34888465a584cf64763c5040",
+  "source_sha256": "623625955093f819191997b63c52fa306790b0c2faaa9db0b3efbb8e993f3a07"
+}

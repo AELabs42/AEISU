@@ -1,0 +1,22 @@
+{
+  "name": "repnet_x2",
+  "precision": "fp16",
+  "checkpoint": "{research_workspace}/data/benchmark_assets/classic_comparators/models/competitive_official/repnet/submission_RTVSR_for_Track1/repnet_x2.pth",
+  "checkpoint_sha256": "27c89889458948a4d22a122ef232206e68ece10a176cdd9ebb6f1b56523307ec",
+  "architecture": "{research_workspace}/data/benchmark_assets/classic_comparators/models/competitive_official/repnet/submission_RTVSR_for_Track1/arch.py",
+  "architecture_sha256": "463827b38b9de41fe06b104c71c02f420230a9469f75616389da9b015c1c550a",
+  "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+  "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "tf32": false,
+  "mask_dtype_fix": false,
+  "prepared": true,
+  "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+  "loader_hashes": {
+    "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+    "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+    "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+  },
+  "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+}

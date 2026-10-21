@@ -1,0 +1,132 @@
+[
+  {
+    "model": "bilinear",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "median_ms": 0.016352,
+    "p95_ms": 0.0174736,
+    "median_range_ms": [
+      0.016352,
+      0.01648
+    ]
+  },
+  {
+    "model": "fsr1_easu",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "median_ms": 0.032288,
+    "p95_ms": 0.0337632,
+    "median_range_ms": [
+      0.032096,
+      0.0324
+    ]
+  },
+  {
+    "model": "fsr1_rcas_02",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "median_ms": 0.047712,
+    "p95_ms": 0.0493776,
+    "median_range_ms": [
+      0.047504,
+      0.04792
+    ]
+  },
+  {
+    "model": "nis_0",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "median_ms": 0.040064,
+    "p95_ms": 0.0428192,
+    "median_range_ms": [
+      0.040048,
+      0.040336
+    ]
+  },
+  {
+    "model": "sgsr1",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "median_ms": 0.02096,
+    "p95_ms": 0.022272,
+    "median_range_ms": [
+      0.020944,
+      0.020992
+    ]
+  },
+  {
+    "model": "bilinear",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "median_ms": 0.12176,
+    "p95_ms": 0.123648,
+    "median_range_ms": [
+      0.121616,
+      0.121888
+    ]
+  },
+  {
+    "model": "fsr1_easu",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "median_ms": 0.121504,
+    "p95_ms": 0.123432,
+    "median_range_ms": [
+      0.121376,
+      0.121584
+    ]
+  },
+  {
+    "model": "fsr1_rcas_02",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "median_ms": 0.301232,
+    "p95_ms": 0.302944,
+    "median_range_ms": [
+      0.298992,
+      0.301376
+    ]
+  },
+  {
+    "model": "nis_0",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "median_ms": 0.136448,
+    "p95_ms": 0.138944,
+    "median_range_ms": [
+      0.136352,
+      0.136672
+    ]
+  },
+  {
+    "model": "sgsr1",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "median_ms": 0.122736,
+    "p95_ms": 0.124419,
+    "median_range_ms": [
+      0.122608,
+      0.122848
+    ]
+  }
+]

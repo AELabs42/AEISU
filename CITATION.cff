@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use AEISU, please cite this software and its accompanying manuscript."
+type: software
+title: "AEISU: Tensor Core-Accelerated Inverse Supersampling for Real-Time Game Upscaling"
+authors:
+  - given-names: "Charles Dale B."
+    family-names: "Gleason"
+    affiliation: "Independent Researcher"
+license: MIT
+repository-code: "https://github.com/AELabs42/AEISU"
+url: "https://github.com/AELabs42/AEISU"
+version: "0.1.0"
+date-released: 2026-10-21

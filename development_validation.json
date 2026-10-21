@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-06",
+  "torch": "2.11.0+cu130",
+  "device": "cpu",
+  "legacy_checkpoint_parity": {
+    "area_trained": {
+      "controller_max_abs": 0,
+      "rgb_max_abs": 0,
+      "folded_rgb_max_abs": 2.384185791015625e-7,
+      "trimmed_rgb_max_abs": 0,
+      "tiled_max_abs": 4.172325134277344e-7,
+      "source_checkpoint_sha256": "f8fb0f942d5743f6997f3861ab94d777fc76cbe37a0dddc638411a411693d5cd"
+    },
+    "bicubic_trained": {
+      "controller_max_abs": 0,
+      "rgb_max_abs": 0,
+      "folded_rgb_max_abs": 2.384185791015625e-7,
+      "trimmed_rgb_max_abs": 0,
+      "tiled_max_abs": 4.470348358154297e-7,
+      "source_checkpoint_sha256": "d13e960dd1f4e4999bdb505c780b1bf61010631151bd11c599a27b27aad542f8"
+    }
+  },
+  "metric_max_absolute_differences": {
+    "y_mse": 6.938893903907228e-18,
+    "y_psnr": 0,
+    "y_ssim": 1.5785983631388945e-16
+  },
+  "lpips_cpu_cached_weights_smoke": 0.1298382580280304,
+  "unit_tests_passed": 11,
+  "resume_matches_uninterrupted_exactly": true,
+  "downloads_performed": false,
+  "gpu_work_run": false,
+  "legacy_basis_projection_note": "The CUDA-only projection entry point was replaced in the isolated comparison process with the same explicit zero-DC/L1 PyTorch formula; controller, folding and dense reconstruction use the original code.",
+  "file_sha256": {
+    ".gitignore": "cc3beac8a54661967301073b5bf795cac2656aa21d6348e1c4d195385e744137",
+    "evaluate.py": "0b6c11390c4b572ff8c7e476b7032a8b333a07f31a4ef014bb2191a8f5017d71",
+    "export.py": "b1983eef139a568b238728a1bbfdf4738d1775ccb9db7b903c403930656c14c9",
+    "infer.py": "0aa1f10fcdd5eac113b3142983e5af12b4f96723f45b55ba43dedec2c1dcf642",
+    "README.md": "0260bffc9887f580e655ff1d70f662c96763011a6c933d034e93b221464e9ce3",
+    "train.py": "7289b829c226c958ff79f5e5530cb9409d6d99d46ff80cf230d74dda06fd46c7",
+    "aeisu/data.py": "ccca4389a94986aa0d561c1d8e27656bd092eff5dcb25e01b5ff0dea8a9c723d",
+    "aeisu/metrics.py": "58bc907a01316312df749a669039dfd1750a61b806554c8ef478a296a0b24d6c",
+    "aeisu/model.py": "476195286b75600c19dd3be3919103f4d2c503b81926b1beab319cda72b845c4",
+    "aeisu/reconstruction.py": "aef1d8ed2d5141f36a6b433e6932cb4de4c1c1439c79d74d0bebc1ab0061dc06",
+    "aeisu/reparameterization.py": "f2b1da0636efb198f8b5d53d2af64a55f69b876fe007e329bec6c88f0c6ef850",
+    "aeisu/runtime.py": "e4171f726ad1175f0d91090a2e9b461aaa01e3c040b4c71c563067743f96e3f6",
+    "aeisu/__init__.py": "b56eecf16930f7120c9192e87eed56aa4a4901e3deff7b468b47f792b202274c",
+    "configs/area.json": "d34c0532824c0cea2d9027d00018f513e2597bf9365a64e35a297489e1c2c13c",
+    "configs/bicubic.json": "d07f2c0675c087b65317e7ba61f634dc7635ed7401a84ecace82b0763e7d4422",
+    "configs/cpu_smoke.json": "08c9c541c2a3f8eeef4891f8925035e6db2caf9b019753a355ef032c772904cd",
+    "tests/test_reference.py": "37b7ebd2b958ba20fc6a872cf081ef634a38cd3421e7bb1a56b27d5b3324bec2",
+    "weights/aeisu_area.pt": "7ef582b0c6289098f321afde4b3f605fbc2207cbdcc7b40607aa43cb357f0e57",
+    "weights/aeisu_bicubic.pt": "e25f080c8a20e969212b12a6c53df0bcac4a1311286914a8a585616237035d89"
+  },
+  "privacy_dependency_audit_passed": true,
+  "python_syntax_and_line_length_passed": true,
+  "public_release": {
+    "uploaded": false,
+    "license_selected": false,
+    "author_information_finalized": false,
+    "training_data_bundled": false
+  }
+}

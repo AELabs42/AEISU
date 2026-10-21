@@ -1,0 +1,308 @@
+{
+  "date": "2026-10-04",
+  "scope": "Expanded QRISP 600-pair, five-condition quality evaluation",
+  "source": "G:/Output Images/QRISP Final Benchmark 2026-10-04/results/<method>/protocol.json",
+  "note": "Recorded local paths identify retained files, not public distribution URLs. Benchmark files and scores are unchanged.",
+  "models": [
+    {
+      "method": "aif_mixed",
+      "model": {
+        "checkpoint": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/Pytorch Models/aif_reparam_aggressive64_parallel32x4_ep1000_folded_production.pt",
+        "checkpoint_sha256": "d0208712e0d5e4a226335f6eddd4d926dd32f67de32ff590e836d219e99edefe",
+        "artifact": "{source_workspace}/AESS/models/aif_reparam_aggressive64_parallel32x4/adaptive_fp8.bin",
+        "artifact_sha256": "8a6ebf7042016fa50e55df3f4ad41f1e318ee66ecc2931984461df9af15f49d6",
+        "native_executable": "{source_workspace}/AESS/bin/Release/SrcPyrRuntimeTest.exe",
+        "native_executable_sha256": "5539d1d3e4cac52acba4029ee6173ce6eee6c702f10c7a10dcfbf52ea431af84",
+        "final_marker": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/final.txt",
+        "native_artifact_calibration_policy": "mixed",
+        "note": "No retraining, deployment modification, or reuse of bicubic LR images.",
+        "precision": "Deployed stage-specific FP8/FP16 mixed",
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "bicubic",
+      "model": {
+        "name": "bicubic",
+        "implementation": "PyTorch FP32 bicubic interpolation, align_corners=False, clamp [0,1]",
+        "torch": "2.11.0+cu130",
+        "scale": 2,
+        "note": "Output interpolation baseline, distinct from Pillow antialiased input degradation",
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "bilinear",
+      "model": {
+        "name": "bilinear",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "fsr1_easu",
+      "model": {
+        "name": "fsr1_easu",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "fsr1_rcas_02",
+      "model": {
+        "name": "fsr1_rcas_02",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "nis_0",
+      "model": {
+        "name": "nis_0",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "quicksrnet_medium_x2",
+      "model": {
+        "name": "quicksrnet_medium_x2",
+        "precision": "FP16",
+        "scale": 2,
+        "checkpoint": {
+          "url": "https://github.com/quic/aimet-model-zoo/releases/download/phase_2_january_artifacts/quicksrnet_medium_2x_checkpoint_float32.pth.tar",
+          "path": "{research_workspace}/data/benchmark_assets/quicksrnet/quicksrnet_medium_2x_checkpoint_float32.pth.tar",
+          "bytes": 621351,
+          "sha256": "a0d176b40a649e45a176c3b53f45e0237015f4f2c17b157ef5c81e38c4442a0d"
+        },
+        "official_source": {
+          "commit": "1bd2bf5b17cdda9251437c444009b29e1a25054b",
+          "files": [
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/models.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/models.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/blocks.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/blocks.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/imresize.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/imresize.py"
+            }
+          ]
+        },
+        "source_hashes": {
+          "blocks.py": "d74567b729de2f9c269f0a5115382aa6ebe51be7edce1099cf6b280a72ee54a4",
+          "imresize.py": "1ec3d9a2844ec9653fc5e36b090b94ddc7965de9cf4c820764950a33fef60902",
+          "models.py": "31d8425e915a082274eeeab82d18f6aeda9e6d68f7ea7f5689807c5d922ad5b6",
+          "__init__.py": "e774e6588e0c3853c44510633a7d0440bf4fb4b8671a84fc9eff8fdcac443464"
+        },
+        "implementation": "Unmodified official QuickSRNet, PyTorch channels-last eager; no retraining",
+        "preflight_fp16_vs_fp32_psnr_db": 64.69104391545847,
+        "parameters": 50604,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "quicksrnet_small_x2",
+      "model": {
+        "name": "quicksrnet_small_x2",
+        "precision": "FP16",
+        "scale": 2,
+        "checkpoint": {
+          "url": "https://github.com/quic/aimet-model-zoo/releases/download/phase_2_january_artifacts/quicksrnet_small_2x_checkpoint_float32.pth.tar",
+          "path": "{research_workspace}/data/benchmark_assets/quicksrnet/quicksrnet_small_2x_checkpoint_float32.pth.tar",
+          "bytes": 282333,
+          "sha256": "d95d70f1d2366cb9c28d99f8c7aa5bb07e1ffeaf5d7e30d9c66ab0fa28c6d0f8"
+        },
+        "official_source": {
+          "commit": "1bd2bf5b17cdda9251437c444009b29e1a25054b",
+          "files": [
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/models.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/models.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/blocks.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/blocks.py"
+            },
+            {
+              "path": "aimet_zoo_torch/quicksrnet/model/imresize.py",
+              "url": "https://raw.githubusercontent.com/quic/aimet-model-zoo/1bd2bf5b17cdda9251437c444009b29e1a25054b/aimet_zoo_torch/quicksrnet/model/imresize.py"
+            }
+          ]
+        },
+        "source_hashes": {
+          "blocks.py": "d74567b729de2f9c269f0a5115382aa6ebe51be7edce1099cf6b280a72ee54a4",
+          "imresize.py": "1ec3d9a2844ec9653fc5e36b090b94ddc7965de9cf4c820764950a33fef60902",
+          "models.py": "31d8425e915a082274eeeab82d18f6aeda9e6d68f7ea7f5689807c5d922ad5b6",
+          "__init__.py": "e774e6588e0c3853c44510633a7d0440bf4fb4b8671a84fc9eff8fdcac443464"
+        },
+        "implementation": "Unmodified official QuickSRNet, PyTorch channels-last eager; no retraining",
+        "preflight_fp16_vs_fp32_psnr_db": 68.16140521892328,
+        "parameters": 22860,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "repnet_x2",
+      "model": {
+        "name": "repnet_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/models/competitive_official/repnet/submission_RTVSR_for_Track1/repnet_x2.pth",
+        "checkpoint_sha256": "27c89889458948a4d22a122ef232206e68ece10a176cdd9ebb6f1b56523307ec",
+        "architecture": "{home}/aa_sr_benchmark/models/competitive_official/repnet/submission_RTVSR_for_Track1/arch.py",
+        "architecture_sha256": "463827b38b9de41fe06b104c71c02f420230a9469f75616389da9b015c1c550a",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": false,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "loader_hashes": {
+          "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+          "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+          "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+        },
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "rt4ksr_x2",
+      "model": {
+        "name": "rt4ksr_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/models/competitive_official/rt4ksr/code/checkpoints/rt4ksr_x2.pth",
+        "checkpoint_sha256": "9ec7500092848a480e058a9c703e4b2254bc0cc97928c076bba272177752124f",
+        "architecture": "{home}/aa_sr_benchmark/models/competitive_official/rt4ksr/code/model/arch.py",
+        "architecture_sha256": "79b604979fb90611f5d484b4541c67f92974f83185fcbc95011a2865c41d0abf",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": false,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "loader_hashes": {
+          "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+          "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+          "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+        },
+        "supporting_source_hashes": {
+          "code/model/__init__.py": "2465f23fc98359c09e984246940c39c840228be9f87983fe06737ff48265707d",
+          "code/model/modules.py": "fa6261eba7106886de050ac55668bff858a7b32e0a6c97f43633311569c324ee",
+          "code/model/utils/rep_utils.py": "2c8ed76bdd8c17f436b52e7c3face4e6cf452dc7a1683bcf616c459f0de0cf4a"
+        },
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "sgsr1",
+      "model": {
+        "name": "sgsr1",
+        "precision": "FP32 reference shader",
+        "exe_sha256": "128186ae0aed7b47186fca9df59292db4dc22e95b2d1fb3abaacc3718db21f98",
+        "shader_hashes": {
+          "bilinear.cso": "d8f2b454166196347b07fcf3d629ee27fcfe79b45bf2207f24ea5bb9a2cfa0a9",
+          "easu.cso": "e6f077ce1657aaca8a7bbf1ba9a25d7e4394c0e97b1a0b241c045266e628770e",
+          "easu_reference.cso": "358d841ad83cf30679a9ecefe3e06029d5d759d311808aceb89eacf85defd6b9",
+          "nis.cso": "18b87101f447501a697f99674589ccc83512dac853ef53a3de2803091ac5df10",
+          "rcas.cso": "adbca0cde26435aaa53a6505047cb862502587bbce737094b83368092c78430f",
+          "sgsr1.cso": "dc03cb3f9548ed7d2e99128e97593f158c3c4691b4751d3a2d6d14f2188fab9a"
+        },
+        "scale": 2,
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "span_x2",
+      "model": {
+        "name": "span_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/checkpoints/SPAN/spanx2_ch48.pth",
+        "checkpoint_sha256": "561fd5cf419a23d4de1231ce258180f61aee4aa8caa1aaaa783769c7301847bc",
+        "architecture": "{home}/aa_sr_benchmark/models_arch/span/span_arch.py",
+        "architecture_sha256": "964f5086734690734d2fd17fa9494289819d3257431721c691bfb19e2ff228f9",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": false,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "loader_hashes": {
+          "models.py": "60ffe6ddca139a82591d47b51ee6625f295fb2cdc4e2a38350da4a130a93784a",
+          "catalog.py": "9b0b6f47d1f78fbbb4f156ae79d2988639db9e4162ce566112bc1cc759571015",
+          "assets.py": "32dfae2a55c2574d106c6486c463bcdae9b88cd6d6c7795894de199ce111408a"
+        },
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    },
+    {
+      "method": "swinir_light_x2",
+      "model": {
+        "name": "swinir_light_x2",
+        "precision": "fp16",
+        "checkpoint": "{home}/aa_sr_benchmark/checkpoints/SwinIR/002_lightweightSR_DIV2K_s64w8_SwinIR-S_x2.pth",
+        "checkpoint_sha256": "193b229909ca89cd8b55de9c9e7fce146ae759d59dfcd78d8feb9dd1d6fa0fd7",
+        "architecture": "{home}/aa_sr_benchmark/models_arch/swinir.py",
+        "architecture_sha256": "9e143898679ebeebc5d2fc94ad1b89c38aa4a4d43da4e0fcba0f93e476994913",
+        "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+        "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0",
+        "tf32": false,
+        "mask_dtype_fix": true,
+        "prepared": true,
+        "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+        "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+      }
+    }
+  ]
+}

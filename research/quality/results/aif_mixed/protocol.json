@@ -1,0 +1,17 @@
+{
+  "model": {
+    "checkpoint": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/Pytorch Models/aif_reparam_aggressive64_parallel32x4_ep1000_folded_production.pt",
+    "checkpoint_sha256": "d0208712e0d5e4a226335f6eddd4d926dd32f67de32ff590e836d219e99edefe",
+    "artifact": "{source_workspace}/AESS/models/aif_reparam_aggressive64_parallel32x4/adaptive_fp8.bin",
+    "artifact_sha256": "8a6ebf7042016fa50e55df3f4ad41f1e318ee66ecc2931984461df9af15f49d6",
+    "native_executable": "{source_workspace}/AESS/bin/Release/SrcPyrRuntimeTest.exe",
+    "native_executable_sha256": "5539d1d3e4cac52acba4029ee6173ce6eee6c702f10c7a10dcfbf52ea431af84",
+    "final_marker": "{research_workspace}/Models/Training Run 2026-09-26 23-06-26 - aif_reparam_aggressive64_parallel32x4/final.txt",
+    "native_artifact_calibration_policy": "mixed",
+    "note": "No retraining, deployment modification, or reuse of bicubic LR images.",
+    "precision": "Deployed stage-specific FP8/FP16 mixed",
+    "scale": 2,
+    "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+  },
+  "global_protocol_sha256": "6ef9c1074b4b7cecfb739f47283917fed08026b0c95152fe4857f6f9a1d8d6bc"
+}

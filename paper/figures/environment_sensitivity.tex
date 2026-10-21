@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Selected environment effects and leave-one-environment-out (LOO) sensitivity. All differences are AEISU minus the named comparator. PSNR is in dB (positive favors AEISU); LPIPS is unscaled (negative favors AEISU). AS: AbandonedSchool; BN: ScifiBaseNightStartStop; SF: ScifiFacility; SP: SeaPort; ST: SunTempleBush. These descriptive values do not assume calibrated small-sample confidence coverage.}
+\label{tab:environment-sensitivity}
+\begin{tabular}{llrrrrrrl}
+\toprule
+Condition / comparator & Metric & AS & BN & SF & SP & ST & Mean & LOO range\\
+\midrule
+Area / QuickSRNet S & PSNR & $+0.920$ & $+1.314$ & $+1.554$ & $+1.017$ & $+0.750$ & $+1.111$ & $[+1.000,+1.201]$\\
+Area / SwinIR-Light & LPIPS & $+0.05175$ & $+0.01377$ & $+0.00331$ & $+0.02190$ & $+0.07852$ & $+0.03385$ & $[+0.02268,+0.04149]$\\
+Native / EASU & PSNR & $-0.329$ & $-0.740$ & $-0.822$ & $-0.596$ & $-0.731$ & $-0.644$ & $[-0.722,-0.599]$\\
+Native / EASU+RCAS & LPIPS & $+0.00173$ & $-0.00870$ & $-0.00932$ & $+0.00185$ & $-0.00812$ & $-0.00451$ & $[-0.00610,-0.00331]$\\
+\bottomrule
+\end{tabular}
+\end{table*}

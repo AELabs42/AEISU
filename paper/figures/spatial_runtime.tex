@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small
+\caption{Resident FP32 D3D11 shader timing in ms, median (p95); five trials of 100 warmup and 200 measured dispatches.}
+\label{tab:external-runtime}
+\begin{tabularx}{\columnwidth}{Yrr}
+\toprule
+Method & 540p$\to$1080p & 1080p$\to$4K\\
+\midrule
+Bilinear & 0.016 (0.017) & 0.122 (0.124)\\
+EASU & 0.032 (0.034) & 0.122 (0.123)\\
+EASU+RCAS & 0.048 (0.049) & 0.301 (0.303)\\
+NIS & 0.040 (0.043) & 0.136 (0.139)\\
+SGSR1 & 0.021 (0.022) & 0.123 (0.124)\\
+\bottomrule
+\end{tabularx}
+\end{table}

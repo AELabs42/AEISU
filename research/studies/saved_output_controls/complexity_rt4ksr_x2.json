@@ -1,0 +1,139 @@
+{
+  "parameters": 44521,
+  "buffer_elements": 0,
+  "processed_lr_shape": [
+    540,
+    960
+  ],
+  "convolution_macs": 6046617600,
+  "linear_macs": 0,
+  "attention_matmul_macs": 0,
+  "total_counted_macs": 6046617600,
+  "layers": [
+    {
+      "module": "head.0",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 335923200
+    },
+    {
+      "module": "head.0",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 335923200
+    },
+    {
+      "module": "body.0.conv1.rep_conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 671846400
+    },
+    {
+      "module": "body.1.conv1.rep_conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 671846400
+    },
+    {
+      "module": "body.2.conv1.rep_conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 671846400
+    },
+    {
+      "module": "body.3.conv1.rep_conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 671846400
+    },
+    {
+      "module": "hfb.0.rep_conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 671846400
+    },
+    {
+      "module": "tail.1.rep_conv",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        24,
+        270,
+        480
+      ],
+      "macs": 671846400
+    },
+    {
+      "module": "upsample.0",
+      "kind": "convolution_macs",
+      "output_shape": [
+        1,
+        48,
+        270,
+        480
+      ],
+      "macs": 1343692800
+    }
+  ],
+  "model": "rt4ksr_x2",
+  "requested_lr_shape": [
+    540,
+    960
+  ],
+  "macs_per_requested_lr_pixel": 11664.0,
+  "source_sha256": "25717fc85408182e83530149afaef5b85c58041bda39cc2c9f47bbbbd7f6cf31",
+  "torch": "2.11.0+cu130",
+  "cpu_meta_only": true,
+  "counting": "One multiply-accumulate is one MAC; deployed conv/linear and QK/AV products; excludes biases, activations, norms, softmax, pooling, interpolation, additions and memory movement",
+  "checkpoint_sha256": "9ec7500092848a480e058a9c703e4b2254bc0cc97928c076bba272177752124f",
+  "specification": {
+    "repo": "rt4ksr",
+    "architecture": "code/model/arch.py",
+    "checkpoint": "code/checkpoints/rt4ksr_x2.pth",
+    "factory": "rt4ksr_rep",
+    "scale": 2,
+    "kwargs": {},
+    "key": null,
+    "data_range": 1,
+    "extra": [
+      "code/model/__init__.py",
+      "code/model/modules.py",
+      "code/model/utils/rep_utils.py"
+    ]
+  }
+}

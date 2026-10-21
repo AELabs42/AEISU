@@ -1,0 +1,25 @@
+{
+  "command": [
+    "{home}/AppData/Local/Programs/Python/Python313/python.exe",
+    "-u",
+    "{source_workspace}/AESS/tools/srcpyr_fp8/export_adaptive.py",
+    "--checkpoint",
+    "{research_workspace}/output/training_campaigns/div2k_l1_3000_2026-10-17/mixed/div2k_l1_3000_folded_native.pt",
+    "--output-dir",
+    "{research_workspace}/output/training_campaigns/div2k_l1_3000_2026-10-17/mixed/artifact",
+    "--calibration-dir",
+    "{research_workspace}/output/training_campaigns/div2k_l1_3000_2026-10-17/mixed/calibration",
+    "--heldout-dir",
+    "{research_workspace}/output/training_campaigns/div2k_l1_3000_2026-10-17/mixed/calibration_check",
+    "--images",
+    "24",
+    "--heldout-images",
+    "6",
+    "--crop-size",
+    "128",
+    "--search-passes",
+    "2",
+    "--precision",
+    "mixed"
+  ]
+}

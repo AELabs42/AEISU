@@ -1,0 +1,4 @@
+{
+  "time_unix": 1791328340.6243405,
+  "nvidia_smi": "name, driver_version, pstate, temperature.gpu, utilization.gpu [%], clocks.current.graphics [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W]\nNVIDIA GeForce RTX 5090, 616.92, P1, 67, 99 %, 2775 MHz, 13801 MHz, 412.79 W, 600.00 W"
+}

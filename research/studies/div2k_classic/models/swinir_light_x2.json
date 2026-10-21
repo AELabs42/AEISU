@@ -1,0 +1,17 @@
+{
+  "name": "swinir_light_x2",
+  "precision": "fp16",
+  "checkpoint": "{research_workspace}/data/benchmark_assets/classic_comparators/checkpoints/SwinIR/002_lightweightSR_DIV2K_s64w8_SwinIR-S_x2.pth",
+  "checkpoint_sha256": "193b229909ca89cd8b55de9c9e7fce146ae759d59dfcd78d8feb9dd1d6fa0fd7",
+  "architecture": "{research_workspace}/data/benchmark_assets/classic_comparators/models_arch/swinir.py",
+  "architecture_sha256": "9e143898679ebeebc5d2fc94ad1b89c38aa4a4d43da4e0fcba0f93e476994913",
+  "implementation": "PyTorch eager; SPAN/RT4KSR deploy-folded, RepNet released deploy architecture; full frame, no ensemble/tiling",
+  "training_degradation": "released x2 checkpoints; not retrained for area inputs or QRISP",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "tf32": false,
+  "mask_dtype_fix": true,
+  "prepared": true,
+  "prepared_operations": "channels-last convolution; SwinIR single-shape shared GPU mask cache",
+  "adapter_sha256": "87652383111771543aef4022a69379655183b97701eac77852998e6d9b80c8d9"
+}

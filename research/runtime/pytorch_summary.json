@@ -1,0 +1,498 @@
+[
+  {
+    "model": "aeisu_fp16",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 7.06444787979126,
+        "p95_ms": 7.081711840629578,
+        "synchronized_loop_ms_per_frame": 7.073861999670044,
+        "peak_allocated_gib": 1.3850512504577637,
+        "peak_reserved_gib": 3.630859375,
+        "median_range_ms": [
+          7.062112092971802,
+          7.066751956939697
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 6.905376195907593,
+        "p95_ms": 6.9167694568634035,
+        "synchronized_loop_ms_per_frame": 6.9085539993830025,
+        "peak_allocated_gib": 0.12926244735717773,
+        "peak_reserved_gib": 3.630859375,
+        "median_range_ms": [
+          6.904623985290527,
+          6.906575918197632
+        ]
+      }
+    }
+  },
+  {
+    "model": "aeisu_fp16",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 1.7208000421524048,
+        "p95_ms": 1.761299192905426,
+        "synchronized_loop_ms_per_frame": 1.732635999796912,
+        "peak_allocated_gib": 0.3784627914428711,
+        "peak_reserved_gib": 0.951171875,
+        "median_range_ms": [
+          1.7198399901390076,
+          1.7220320105552673
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 1.5876799821853638,
+        "p95_ms": 1.5916880130767823,
+        "synchronized_loop_ms_per_frame": 1.591039999620989,
+        "peak_allocated_gib": 0.050522804260253906,
+        "peak_reserved_gib": 0.951171875,
+        "median_range_ms": [
+          1.5866239666938782,
+          1.5894880294799805
+        ]
+      }
+    }
+  },
+  {
+    "model": "aeisu_fp16_fp32_synthesis",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 13.17249584197998,
+        "p95_ms": 13.19859504699707,
+        "synchronized_loop_ms_per_frame": 13.179423999972641,
+        "peak_allocated_gib": 2.6806445121765137,
+        "peak_reserved_gib": 7.3515625,
+        "median_range_ms": [
+          13.1702561378479,
+          13.175951957702637
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 13.022207736968994,
+        "p95_ms": 13.05024333000183,
+        "synchronized_loop_ms_per_frame": 13.030049999943003,
+        "peak_allocated_gib": 0.23315763473510742,
+        "peak_reserved_gib": 7.3515625,
+        "median_range_ms": [
+          13.016976356506348,
+          13.024543762207031
+        ]
+      }
+    }
+  },
+  {
+    "model": "aeisu_fp16_fp32_synthesis",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 2.7695040702819824,
+        "p95_ms": 2.788217532634735,
+        "synchronized_loop_ms_per_frame": 2.779621999943629,
+        "peak_allocated_gib": 0.7158761024475098,
+        "peak_reserved_gib": 1.9453125,
+        "median_range_ms": [
+          2.7687039375305176,
+          2.7712639570236206
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 2.660688042640686,
+        "p95_ms": 2.6638351559638975,
+        "synchronized_loop_ms_per_frame": 2.663482000352815,
+        "peak_allocated_gib": 0.07673120498657227,
+        "peak_reserved_gib": 1.9453125,
+        "median_range_ms": [
+          2.660367965698242,
+          2.6610240936279297
+        ]
+      }
+    }
+  },
+  {
+    "model": "quicksrnet_medium_x2",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 3.544943928718567,
+        "p95_ms": 3.5535791635513307,
+        "synchronized_loop_ms_per_frame": 3.5507139994297177,
+        "peak_allocated_gib": 0.39858198165893555,
+        "peak_reserved_gib": 0.84375,
+        "median_range_ms": [
+          3.5444480180740356,
+          3.546031951904297
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 3.50547194480896,
+        "p95_ms": 3.512515151500702,
+        "synchronized_loop_ms_per_frame": 3.512853999854997,
+        "peak_allocated_gib": 0.1050410270690918,
+        "peak_reserved_gib": 0.84375,
+        "median_range_ms": [
+          3.505311965942383,
+          3.506959915161133
+        ]
+      }
+    }
+  },
+  {
+    "model": "quicksrnet_medium_x2",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 0.6113280057907104,
+        "p95_ms": 0.6173967957496643,
+        "synchronized_loop_ms_per_frame": 0.6131700007244945,
+        "peak_allocated_gib": 0.10065174102783203,
+        "peak_reserved_gib": 0.23046875,
+        "median_range_ms": [
+          0.6089600026607513,
+          0.6124800145626068
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 0.5544959902763367,
+        "p95_ms": 0.5578623861074448,
+        "synchronized_loop_ms_per_frame": 0.5569199996534735,
+        "peak_allocated_gib": 0.02630138397216797,
+        "peak_reserved_gib": 0.23046875,
+        "median_range_ms": [
+          0.5541599988937378,
+          0.5548799932003021
+        ]
+      }
+    }
+  },
+  {
+    "model": "quicksrnet_small_x2",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 1.859552025794983,
+        "p95_ms": 1.8676080048084258,
+        "synchronized_loop_ms_per_frame": 1.8662320007570088,
+        "peak_allocated_gib": 0.398529052734375,
+        "peak_reserved_gib": 0.84375,
+        "median_range_ms": [
+          1.8593119978904724,
+          1.8600319623947144
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 1.8387360572814941,
+        "p95_ms": 1.8421647906303407,
+        "synchronized_loop_ms_per_frame": 1.8389380001462996,
+        "peak_allocated_gib": 0.10498809814453125,
+        "peak_reserved_gib": 0.84375,
+        "median_range_ms": [
+          1.8375359773635864,
+          1.8392320275306702
+        ]
+      }
+    }
+  },
+  {
+    "model": "quicksrnet_small_x2",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 0.3261760026216507,
+        "p95_ms": 0.3313280031085014,
+        "synchronized_loop_ms_per_frame": 0.3293019998818636,
+        "peak_allocated_gib": 0.10059881210327148,
+        "peak_reserved_gib": 0.23046875,
+        "median_range_ms": [
+          0.32415999472141266,
+          0.32683201134204865
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 0.29203200340270996,
+        "p95_ms": 0.29392159879207613,
+        "synchronized_loop_ms_per_frame": 0.2942180004902184,
+        "peak_allocated_gib": 0.026248455047607422,
+        "peak_reserved_gib": 0.23046875,
+        "median_range_ms": [
+          0.29182399809360504,
+          0.29209598898887634
+        ]
+      }
+    }
+  },
+  {
+    "model": "repnet_x2",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 0.5347840189933777,
+        "p95_ms": 0.5412704169750213,
+        "synchronized_loop_ms_per_frame": 0.5410459998529404,
+        "peak_allocated_gib": 0.2445664405822754,
+        "peak_reserved_gib": 0.5234375,
+        "median_range_ms": [
+          0.5336799919605255,
+          0.5356959998607635
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 0.5139040052890778,
+        "p95_ms": 0.5169376075267792,
+        "synchronized_loop_ms_per_frame": 0.5166019999887794,
+        "peak_allocated_gib": 0.10552072525024414,
+        "peak_reserved_gib": 0.5234375,
+        "median_range_ms": [
+          0.5136479735374451,
+          0.5142560005187988
+        ]
+      }
+    }
+  },
+  {
+    "model": "repnet_x2",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 0.17289599776268005,
+        "p95_ms": 0.2440575964748859,
+        "synchronized_loop_ms_per_frame": 0.18552400055341423,
+        "peak_allocated_gib": 0.061279296875,
+        "peak_reserved_gib": 0.14453125,
+        "median_range_ms": [
+          0.1589919999241829,
+          0.2314079999923706
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 0.1287040039896965,
+        "p95_ms": 0.13042079880833626,
+        "synchronized_loop_ms_per_frame": 0.13095000060275197,
+        "peak_allocated_gib": 0.026254653930664062,
+        "peak_reserved_gib": 0.14453125,
+        "median_range_ms": [
+          0.12851199507713318,
+          0.12886400520801544
+        ]
+      }
+    }
+  },
+  {
+    "model": "rt4ksr_x2",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 1.9681599736213684,
+        "p95_ms": 2.241147172451019,
+        "synchronized_loop_ms_per_frame": 1.993767999811098,
+        "peak_allocated_gib": 0.3964653015136719,
+        "peak_reserved_gib": 0.73046875,
+        "median_range_ms": [
+          1.958303987979889,
+          2.4762719869613647
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 1.718832015991211,
+        "p95_ms": 1.725216031074524,
+        "synchronized_loop_ms_per_frame": 1.7229799996130168,
+        "peak_allocated_gib": 0.12936735153198242,
+        "peak_reserved_gib": 0.73046875,
+        "median_range_ms": [
+          1.718400001525879,
+          1.7198240160942078
+        ]
+      }
+    }
+  },
+  {
+    "model": "rt4ksr_x2",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 1.1075519919395447,
+        "p95_ms": 1.2633680045604703,
+        "synchronized_loop_ms_per_frame": 1.1305700009688735,
+        "peak_allocated_gib": 0.11727285385131836,
+        "peak_reserved_gib": 0.205078125,
+        "median_range_ms": [
+          1.0891199707984924,
+          1.128495991230011
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 0.5091519951820374,
+        "p95_ms": 0.5106431901454925,
+        "synchronized_loop_ms_per_frame": 0.511061999714002,
+        "peak_allocated_gib": 0.050110816955566406,
+        "peak_reserved_gib": 0.205078125,
+        "median_range_ms": [
+          0.5084959864616394,
+          0.5094079971313477
+        ]
+      }
+    }
+  },
+  {
+    "model": "span_x2",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 30.995728492736816,
+        "p95_ms": 31.191644191741943,
+        "synchronized_loop_ms_per_frame": 31.018141999375075,
+        "peak_allocated_gib": 3.87459135055542,
+        "peak_reserved_gib": 8.533203125,
+        "median_range_ms": [
+          30.962912559509277,
+          31.015904426574707
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 30.884047508239746,
+        "p95_ms": 31.031731128692627,
+        "synchronized_loop_ms_per_frame": 30.901211999589577,
+        "peak_allocated_gib": 0.10571813583374023,
+        "peak_reserved_gib": 8.533203125,
+        "median_range_ms": [
+          30.854623794555664,
+          30.90272045135498
+        ]
+      }
+    }
+  },
+  {
+    "model": "span_x2",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 5.922303915023804,
+        "p95_ms": 5.956278395652771,
+        "synchronized_loop_ms_per_frame": 5.919464000035077,
+        "peak_allocated_gib": 0.9772725105285645,
+        "peak_reserved_gib": 2.185546875,
+        "median_range_ms": [
+          5.910304069519043,
+          5.927887916564941
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 5.8204638957977295,
+        "p95_ms": 5.845971012115479,
+        "synchronized_loop_ms_per_frame": 5.812720000976697,
+        "peak_allocated_gib": 0.026978492736816406,
+        "peak_reserved_gib": 2.185546875,
+        "median_range_ms": [
+          5.808815956115723,
+          5.824512004852295
+        ]
+      }
+    }
+  },
+  {
+    "model": "swinir_light_x2",
+    "input_shape_wh": [
+      1920,
+      1080
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 499.28855895996094,
+        "p95_ms": 499.49115295410155,
+        "synchronized_loop_ms_per_frame": 499.2774199997075,
+        "peak_allocated_gib": 5.970288276672363,
+        "peak_reserved_gib": 11.927734375,
+        "median_range_ms": [
+          498.4097137451172,
+          499.33567810058594
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 498.412841796875,
+        "p95_ms": 498.85667419433594,
+        "synchronized_loop_ms_per_frame": 498.4272840002086,
+        "peak_allocated_gib": 0.635319709777832,
+        "peak_reserved_gib": 11.927734375,
+        "median_range_ms": [
+          498.0815124511719,
+          498.472412109375
+        ]
+      }
+    }
+  },
+  {
+    "model": "swinir_light_x2",
+    "input_shape_wh": [
+      960,
+      540
+    ],
+    "results": {
+      "eager": {
+        "median_ms": 124.58684921264648,
+        "p95_ms": 124.87571296691894,
+        "synchronized_loop_ms_per_frame": 124.64203200070187,
+        "peak_allocated_gib": 1.5367083549499512,
+        "peak_reserved_gib": 3.06640625,
+        "median_range_ms": [
+          124.44033813476562,
+          124.6859359741211
+        ]
+      },
+      "cuda_graph": {
+        "median_ms": 123.52865600585938,
+        "p95_ms": 123.81095504760742,
+        "synchronized_loop_ms_per_frame": 123.56531799887307,
+        "peak_allocated_gib": 0.1860966682434082,
+        "peak_reserved_gib": 3.06640625,
+        "median_range_ms": [
+          123.37844848632812,
+          123.5842399597168
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering\small
+\caption{Common ordinary-PyTorch resident timing in ms, median (p95). Five trials, 20 warmup and 50 measured forwards; batch one, full frame, FP16, TF32 disabled, channels-last, cuDNN autotuning. Eager and CUDA graph (G) execution use the same operators. The final auxiliary row retains FP32 analysis and synthesis, unlike the uniform-FP16 rows.}
+\label{tab:common-runtime}
+\begin{tabularx}{\textwidth}{Yrrrr}
+\toprule
+ & 540p$\to$1080p E & 540p$\to$1080p G & 1080p$\to$4K E & 1080p$\to$4K G\\
+\midrule
+AEISU & 1.721 (1.761) & 1.588 (1.592) & 7.064 (7.082) & 6.905 (6.917)\\
+QuickSRNet S & 0.326 (0.331) & 0.292 (0.294) & 1.860 (1.868) & 1.839 (1.842)\\
+QuickSRNet M & 0.611 (0.617) & 0.554 (0.558) & 3.545 (3.554) & 3.505 (3.513)\\
+RepNet & 0.173 (0.244) & 0.129 (0.130) & 0.535 (0.541) & 0.514 (0.517)\\
+RT4KSR & 1.108 (1.263) & 0.509 (0.511) & 1.968 (2.241) & 1.719 (1.725)\\
+SPAN & 5.922 (5.956) & 5.820 (5.846) & 30.996 (31.192) & 30.884 (31.032)\\
+SwinIR-Light & 124.587 (124.876) & 123.529 (123.811) & 499.289 (499.491) & 498.413 (498.857)\\
+AEISU (FP32 synthesis) & 2.770 (2.788) & 2.661 (2.664) & 13.172 (13.199) & 13.022 (13.050)\\
+\bottomrule
+\end{tabularx}
+\end{table*}
